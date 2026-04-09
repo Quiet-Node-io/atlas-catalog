@@ -1,6 +1,7 @@
 {
-  "catalog_version": 1,
+  "catalog_version": 2,
   "updated": "2026-04-08",
+  "task_tables_version": 0,
   "models": [
     {
       "id": "gemma4:31b",
@@ -1260,5 +1261,6 @@
       "catalog_version": 1,
       "registry": "huggingface"
     }
-  ]
+  ],
+  "task_table_updates": {}
 }
