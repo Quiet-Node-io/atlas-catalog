@@ -1,0 +1,189 @@
+# 2026-04-23 Daily Catalog Review
+
+- Added: 175
+- Removed: 0
+- Changed: 0
+
+## Provider Evidence
+
+- Ollama: 0 models scanned
+- HuggingFace: 100 models scanned
+- CivitAI: 75 models scanned
+
+## Diff
+
+- ADDED: HuggingFace / Ltx 2.3 22B Distilled 1.1 Gguf / Abiray/LTX-2.3-22B-DISTILLED-1.1-GGUF / 
+- ADDED: HuggingFace / Helios Distilled / BestWishYsh/Helios-Distilled / 
+- ADDED: HuggingFace / Animatediff Lightning / ByteDance/AnimateDiff-Lightning / 
+- ADDED: HuggingFace / Sdxl Lightning / ByteDance/SDXL-Lightning / 
+- ADDED: HuggingFace / Stable Diffusion V1 4 / CompVis/stable-diffusion-v1-4 / 
+- ADDED: HuggingFace / Fastwan2.2 Ti2V 5B Fullattn Diffusers / FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers / 
+- ADDED: HuggingFace / Turbowan2.1 T2V 1.3B Diffusers / IPostYellow/TurboWan2.1-T2V-1.3B-Diffusers / 
+- ADDED: HuggingFace / Amanatsu Illustrious V11 Sdxl / John6666/amanatsu-illustrious-v11-sdxl / 
+- ADDED: HuggingFace / Diving Illustrious Real Asian V50 Sdxl / John6666/diving-illustrious-real-asian-v50-sdxl / 
+- ADDED: HuggingFace / Janku V5 Nsfw Trained Noobai Rou Wei Illustrious Xl V50 Sdxl / John6666/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl / 
+- ADDED: HuggingFace / Nova Furry Xl Il V120 Sdxl / John6666/nova-furry-xl-il-v120-sdxl / 
+- ADDED: HuggingFace / Obsession Illustriousxl V10 Sdxl / John6666/obsession-illustriousxl-v10-sdxl / 
+- ADDED: HuggingFace / One Obsession 17 Red Sdxl / John6666/one-obsession-17-red-sdxl / 
+- ADDED: HuggingFace / Prefect Illustrious Xl V3 Sdxl / John6666/prefect-illustrious-xl-v3-sdxl / 
+- ADDED: HuggingFace / Noobai Xl 1.1 / Laxhar/noobai-XL-1.1 / 
+- ADDED: HuggingFace / Ltx Video 0.9.7 Distilled / Lightricks/LTX-Video-0.9.7-distilled / 
+- ADDED: HuggingFace / Ltx Video Iclora Detailer 13B 0.9.8 / Lightricks/LTX-Video-ICLoRA-detailer-13b-0.9.8 / 
+- ADDED: HuggingFace / Illustrious Xl Early Release V0 / OnomaAIResearch/Illustrious-xl-early-release-v0 / 
+- ADDED: HuggingFace / Wan2.1_14B_Vace Gguf / QuantStack/Wan2.1_14B_VACE-GGUF / 
+- ADDED: HuggingFace / Wan2.2 Fun A14B Control Camera Gguf / QuantStack/Wan2.2-Fun-A14B-Control-Camera-GGUF / 
+- ADDED: HuggingFace / Wan2.2 Fun A14B Control Gguf / QuantStack/Wan2.2-Fun-A14B-Control-GGUF / 
+- ADDED: HuggingFace / Wan2.2 Fun A14B Inp Gguf / QuantStack/Wan2.2-Fun-A14B-InP-GGUF / 
+- ADDED: HuggingFace / Wan2.2 S2V 14B Gguf / QuantStack/Wan2.2-S2V-14B-GGUF / 
+- ADDED: HuggingFace / Wan2.2 T2V A14B Gguf / QuantStack/Wan2.2-T2V-A14B-GGUF / 
+- ADDED: HuggingFace / Wan2.2 Ti2V 5B Gguf / QuantStack/Wan2.2-TI2V-5B-GGUF / 
+- ADDED: HuggingFace / Qwen Image / Qwen/Qwen-Image / 
+- ADDED: HuggingFace / Qwen Image 2512 / Qwen/Qwen-Image-2512 / 
+- ADDED: HuggingFace / Juggernaut Xl V9 / RunDiffusion/Juggernaut-XL-v9 / 
+- ADDED: HuggingFace / Realistic_Vision_V5.1_Novae / SG161222/Realistic_Vision_V5.1_noVAE / 
+- ADDED: HuggingFace / Lcm_Dreamshaper_V7 / SimianLuo/LCM_Dreamshaper_v7 / 
+- ADDED: HuggingFace / Skyreels V2 Df 1.3B 540P Diffusers / Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers / 
+- ADDED: HuggingFace / Z Image Turbo Fp8 / FP8 / FP8
+- ADDED: HuggingFace / Hunyuandit V1.1 Diffusers Distilled / Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled / 
+- ADDED: HuggingFace / Z Image Turbo / Tongyi-MAI/Z-Image-Turbo / 
+- ADDED: HuggingFace / Wan2.1 T2V 1.3B / Wan-AI/Wan2.1-T2V-1.3B / 
+- ADDED: HuggingFace / Wan2.1 T2V 1.3B Diffusers / Wan-AI/Wan2.1-T2V-1.3B-Diffusers / 
+- ADDED: HuggingFace / Wan2.1 T2V 14B / Wan-AI/Wan2.1-T2V-14B / 
+- ADDED: HuggingFace / Wan2.1 T2V 14B Diffusers / Wan-AI/Wan2.1-T2V-14B-Diffusers / 
+- ADDED: HuggingFace / Wan2.2 T2V A14B / Wan-AI/Wan2.2-T2V-A14B / 
+- ADDED: HuggingFace / Wan2.2 T2V A14B Diffusers / Wan-AI/Wan2.2-T2V-A14B-Diffusers / 
+- ADDED: HuggingFace / Wan2.2 Ti2V 5B / Wan-AI/Wan2.2-TI2V-5B / 
+- ADDED: HuggingFace / Wan2.2 Ti2V 5B Diffusers / Wan-AI/Wan2.2-TI2V-5B-Diffusers / 
+- ADDED: HuggingFace / Text To Video Ms 1.7B / ali-vilab/text-to-video-ms-1.7b / 
+- ADDED: HuggingFace / Wan2.1 Fun 14B Control / alibaba-pai/Wan2.1-Fun-14B-Control / 
+- ADDED: HuggingFace / Wan2.1 Fun Reward Loras / alibaba-pai/Wan2.1-Fun-Reward-LoRAs / 
+- ADDED: HuggingFace / Wan2.2 Fun Reward Loras / alibaba-pai/Wan2.2-Fun-Reward-LoRAs / 
+- ADDED: HuggingFace / Flux.1 Dev / black-forest-labs/FLUX.1-dev / 
+- ADDED: HuggingFace / Flux.1 Schnell / black-forest-labs/FLUX.1-schnell / 
+- ADDED: HuggingFace / Wan2.2 T2V A14B Gguf / bullerwins/Wan2.2-T2V-A14B-GGUF / 
+- ADDED: HuggingFace / Animagine Xl 3.0 / cagliostrolab/animagine-xl-3.0 / 
+- ADDED: HuggingFace / Animagine Xl 3.1 / cagliostrolab/animagine-xl-3.1 / 
+- ADDED: HuggingFace / Animagine Xl 4.0 / cagliostrolab/animagine-xl-4.0 / 
+- ADDED: HuggingFace / Ltxv0.9.6 Gguf / calcuis/ltxv0.9.6-gguf / 
+- ADDED: HuggingFace / Wan 1.3B Gguf / calcuis/wan-1.3b-gguf / 
+- ADDED: HuggingFace / Wan Gguf / calcuis/wan-gguf / 
+- ADDED: HuggingFace / Wan2 Gguf / calcuis/wan2-gguf / 
+- ADDED: HuggingFace / Zeroscope_V2_576W / cerspense/zeroscope_v2_576w / 
+- ADDED: HuggingFace / Flux.1 Dev Gguf / city96/FLUX.1-dev-gguf / 
+- ADDED: HuggingFace / Hunyuanvideo Gguf / city96/HunyuanVideo-gguf / 
+- ADDED: HuggingFace / Wan2.1 T2V 14B Gguf / city96/Wan2.1-T2V-14B-gguf / 
+- ADDED: CivitAI / NeverEnding Dream (NED) / Checkpoint / 
+- ADDED: CivitAI / SD XL / Checkpoint / 
+- ADDED: CivitAI / 国风3 GuoFeng3 / Checkpoint / 
+- ADDED: CivitAI / AniVerse / Checkpoint / 
+- ADDED: CivitAI / Anime Tarot Card Art Style LoRA (塔罗牌/タロットカード) / LORA / 
+- ADDED: CivitAI / DreamShaper XL / Checkpoint / 
+- ADDED: CivitAI / Plant Milk 🌿 - Model Suite / Checkpoint / 
+- ADDED: CivitAI / MeinaPastel / Checkpoint / 
+- ADDED: CivitAI / Detail Tweaker XL / LORA / 
+- ADDED: CivitAI / 墨心 MoXin / LORA / 
+- ADDED: CivitAI / ✨ JANKU Trained + Chenkin & NoobAI + RouWei Illustrious XL ✨ / Checkpoint / 
+- ADDED: CivitAI / Gacha splash / LORA / 
+- ADDED: CivitAI / epiCPhotoGasm / Checkpoint / 
+- ADDED: CivitAI / Juggernaut XL / Checkpoint / 
+- ADDED: CivitAI / RealVisXL V5.0 / Checkpoint / 
+- ADDED: CivitAI / Cute_girl_mix4 / LORA / 
+- ADDED: CivitAI / CyberRealistic / Checkpoint / 
+- ADDED: CivitAI / Anime Lineart / Manga-like (线稿/線画/マンガ風/漫画风) Style / LORA / 
+- ADDED: CivitAI / Realism By Stable Yogi (Pony) / Checkpoint / 
+- ADDED: CivitAI / Hands XL + SD 1.5 + F1D + Pony + Illustrious + zit / LORA / 
+- ADDED: CivitAI / All Disney Princess XL LoRA Model from Ralph Breaks the Internet / LORA / 
+- ADDED: CivitAI / Lyriel / Checkpoint / 
+- ADDED: CivitAI / AnyLoRA / Checkpoint / 
+- ADDED: CivitAI / Mistoon_Anime / Checkpoint / 
+- ADDED: CivitAI / PerfectDeliberate / Checkpoint / 
+- ADDED: CivitAI / Dark Sushi Mix 大颗寿司Mix / Checkpoint / 
+- ADDED: CivitAI / Beautiful Realistic Asians / Checkpoint / 
+- ADDED: CivitAI / epiCRealism / Checkpoint / 
+- ADDED: CivitAI / Pony Diffusion V6 XL / Checkpoint / 
+- ADDED: CivitAI / blindbox/大概是盲盒 / LORA / 
+- ADDED: CivitAI / Animagine XL V3.1 / Checkpoint / 
+- ADDED: CivitAI / Not Artists Styles for Pony Diffusion V6 XL / LORA / 
+- ADDED: CivitAI / TMND-Mix / Checkpoint / 
+- ADDED: CivitAI / AutismMix SDXL / Checkpoint / 
+- ADDED: CivitAI / Incase Style [PonyXL] / LORA / 
+- ADDED: CivitAI / ToonYou / Checkpoint / 
+- ADDED: CivitAI / LEOSAM's FilmGirl Ultra 胶片风 / Checkpoint / 
+- ADDED: CivitAI / Flat-2D Animerge / Checkpoint / 
+- ADDED: CivitAI / GhostMix / Checkpoint / 
+- ADDED: CivitAI / Pony Realism 🔮 / Checkpoint / 
+- ADDED: CivitAI / Nova Anime XL / Checkpoint / 
+- ADDED: CivitAI / Realistic Vision V6.0 B1 / Checkpoint / 
+- ADDED: CivitAI / majicMIX realistic 麦橘写实 / Checkpoint / 
+- ADDED: CivitAI / DreamShaper / Checkpoint / 
+- ADDED: CivitAI / LEOSAM's HelloWorld XL / Checkpoint / 
+- ADDED: CivitAI / Prefect Pony XL / Checkpoint / 
+- ADDED: CivitAI / CyberRealistic Pony / Checkpoint / 
+- ADDED: CivitAI / Counterfeit-V3.0 / Checkpoint / 
+- ADDED: CivitAI / XXMix_9realistic / Checkpoint / 
+- ADDED: CivitAI / Nova Furry XL / Checkpoint / 
+- ADDED: CivitAI / Pastel-Mix [Stylized Anime Model] / Checkpoint / 
+- ADDED: CivitAI / Detail Tweaker LoRA (细节调整LoRA) / LORA / 
+- ADDED: CivitAI / Velvet's Mythic Fantasy Styles | Flux + Pony + illustrious / LORA / 
+- ADDED: CivitAI / FLUX / Checkpoint / 
+- ADDED: CivitAI / Cetus-Mix / Checkpoint / 
+- ADDED: CivitAI / RealDosMix / Checkpoint / 
+- ADDED: CivitAI / MeinaMix / Checkpoint / 
+- ADDED: CivitAI / MIX-Pro-V4 / Checkpoint / 
+- ADDED: CivitAI / ReV Animated / Checkpoint / 
+- ADDED: CivitAI / Illustrious-XL / Checkpoint / 
+- ADDED: CivitAI / Analog Madness - Realistic model / Checkpoint / 
+- ADDED: CivitAI / A-Zovya RPG Artist Tools / Checkpoint / 
+- ADDED: CivitAI / AbsoluteReality / Checkpoint / 
+- ADDED: CivitAI / Add More Details - Detail Enhancer / Tweaker (细节调整) LoRA / LORA / 
+- ADDED: CivitAI / 【Character / Art Style】Fashion Girl / LORA / 
+- ADDED: CivitAI / WAI-illustrious-SDXL / Checkpoint / 
+- ADDED: CivitAI / NoobAI-XL (NAI-XL) / Checkpoint / 
+- ADDED: CivitAI / Yae Miko | Realistic Genshin / LORA / 
+- ADDED: CivitAI / Hipoly 3D Model LoRA / LORA / 
+- ADDED: CivitAI / LEOSAM's Clothing +/- Adjuster 衣物增/减 LoRA / LORA / 
+- ADDED: CivitAI / Vixon's Pony Styles - gothic neon / LORA / 
+- ADDED: CivitAI / 【】YesMix / Checkpoint / 
+- ADDED: CivitAI / NTR MIX | illustrious-XL | Noob-XL / Checkpoint / 
+- ADDED: CivitAI / 万象熔炉 | Anything XL / Checkpoint / 
+- ADDED: CivitAI / RealCartoon3D / Checkpoint / 
+- ADDED: HuggingFace / Sdxl Turbo / crynux-network/sdxl-turbo / 
+- ADDED: HuggingFace / Stable Diffusion V1 5 / crynux-network/stable-diffusion-v1-5 / 
+- ADDED: HuggingFace / Stable Diffusion Xl 1.0 Inpainting 0.1 / diffusers/stable-diffusion-xl-1.0-inpainting-0.1 / 
+- ADDED: HuggingFace / Novaanimexl_Ilv140 / frankjoshua/novaAnimeXL_ilV140 / 
+- ADDED: HuggingFace / Self Forcing / gdhe17/Self-Forcing / 
+- ADDED: HuggingFace / Mochi 1 Preview / genmo/mochi-1-preview / 
+- ADDED: HuggingFace / Animatediff Motion Adapter V1 5 2 / guoyww/animatediff-motion-adapter-v1-5-2 / 
+- ADDED: HuggingFace / Animatediff Motion Lora Zoom In / guoyww/animatediff-motion-lora-zoom-in / 
+- ADDED: HuggingFace / Animatediff Motion Lora Zoom Out / guoyww/animatediff-motion-lora-zoom-out / 
+- ADDED: HuggingFace / Ip Adapter Faceid / h94/IP-Adapter-FaceID / 
+- ADDED: HuggingFace / Hotshot Xl / hotshotco/Hotshot-XL / 
+- ADDED: HuggingFace / Open Sora V2 / hpcai-tech/Open-Sora-v2 / 
+- ADDED: HuggingFace / Hunyuanvideo 1.5 Diffusers 720P_T2V / hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-720p_t2v / 
+- ADDED: HuggingFace / Hunyuanvideo 1.5_T2V_720P Gguf / jayn7/HunyuanVideo-1.5_T2V_720p-GGUF / 
+- ADDED: HuggingFace / Fhdr_Uncensored / kpsss34/FHDR_Uncensored / 
+- ADDED: HuggingFace / Qwen Image 2512 Lightning / lightx2v/Qwen-Image-2512-Lightning / 
+- ADDED: HuggingFace / Qwen Image Lightning / lightx2v/Qwen-Image-Lightning / 
+- ADDED: HuggingFace / Wan2.2 I2V A14B Lightning Diffusers / magespace/Wan2.2-I2V-A14B-Lightning-Diffusers / 
+- ADDED: HuggingFace / Dvine82 Xl / martineux/dvine82-xl / 
+- ADDED: HuggingFace / Z Image Lora / nphSi/Z-Image-Lora / 
+- ADDED: HuggingFace / Stable Diffusion 3 Tiny Random / optimum-intel-internal-testing/stable-diffusion-3-tiny-random / 
+- ADDED: HuggingFace / Tiny Random Flux / optimum-intel-internal-testing/tiny-random-flux / 
+- ADDED: HuggingFace / Tiny Random Latent Consistency / optimum-intel-internal-testing/tiny-random-latent-consistency / 
+- ADDED: HuggingFace / Tiny Random Stable Diffusion Xl / optimum-intel-internal-testing/tiny-random-stable-diffusion-xl / 
+- ADDED: HuggingFace / Tiny Stable Diffusion Torch / optimum-intel-internal-testing/tiny-stable-diffusion-torch / 
+- ADDED: HuggingFace / Openflux.1 / ostris/OpenFLUX.1 / 
+- ADDED: HuggingFace / Playground V2.5 1024Px Aesthetic / playgroundai/playground-v2.5-1024px-aesthetic / 
+- ADDED: HuggingFace / Wan2.1 T2V 1.3B Gguf / samuelchristlie/Wan2.1-T2V-1.3B-GGUF / 
+- ADDED: HuggingFace / Small Sd / segmind/small-sd / 
+- ADDED: HuggingFace / Sd Turbo / stabilityai/sd-turbo / 
+- ADDED: HuggingFace / Sdxl Turbo / stabilityai/sdxl-turbo / 
+- ADDED: HuggingFace / Stable Diffusion 3.5 Medium / stabilityai/stable-diffusion-3.5-medium / 
+- ADDED: HuggingFace / Stable Diffusion Xl Base 1.0 / stabilityai/stable-diffusion-xl-base-1.0 / 
+- ADDED: HuggingFace / Stable Diffusion Inpainting / stable-diffusion-v1-5/stable-diffusion-inpainting / 
+- ADDED: HuggingFace / Stable Diffusion V1 5 / stable-diffusion-v1-5/stable-diffusion-v1-5 / 
+- ADDED: HuggingFace / Animatelcm / wangfuyun/AnimateLCM / 
+- ADDED: HuggingFace / Controlnet Union Sdxl 1.0 / xinsir/controlnet-union-sdxl-1.0 / 
+- ADDED: HuggingFace / Cogvideox 2B / zai-org/CogVideoX-2b / 
+- ADDED: HuggingFace / Cogvideox 5B / zai-org/CogVideoX-5b / 
+- ADDED: HuggingFace / Cogvideox1.5 5B / zai-org/CogVideoX1.5-5B / 
