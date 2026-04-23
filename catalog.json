@@ -8293,7 +8293,7 @@
     },
     {
       "id": "gemma4:4.5b",
-      "name": "Gemma 4 4.5B Q4_K_M",
+      "name": "Gemma 4 4.5B",
       "description": "Smallest Gemma 4. Use when you need to run multiple models simultaneously or have limited RAM. Still has vision and tool use. Atlas uses this as its default routing model for quick classification and triage tasks.",
       "category": "general",
       "parameters": "4.5B",
@@ -8320,11 +8320,17 @@
       "use_this_for": "Quick classification, triage, and lightweight tasks. Runs alongside other models.",
       "max_context_tokens": 32768,
       "variant_group": "gemma4:4.5b",
-      "ollama_pull_tag": "gemma4:e4b-it-q4_K_M"
+      "ollama_pull_tag": "gemma4:e4b-it-q4_K_M",
+      "display_name": "Gemma 4 4.5B",
+      "variant_label": "4.5B",
+      "quantization": "",
+      "family": "Gemma 4",
+      "publisher": "Google",
+      "provider": "Ollama"
     },
     {
       "id": "bge-m3:f16",
-      "name": "BGE-M3 F16",
+      "name": "BGE-M3",
       "description": "Multilingual dense/sparse/multi-vector embedding model. Atlas's default embedding baseline \u2014 used by RAG, memory retrieval, and semantic search. F16 quantization keeps quality high; ~1.2 GB RAM.",
       "category": "embedding",
       "parameters": "567M",
@@ -8347,7 +8353,13 @@
       "catalog_version": 1,
       "registry": "ollama",
       "use_this_for": "Embeddings for retrieval, RAG, and semantic search.",
-      "ollama_pull_tag": "bge-m3:567m-fp16"
+      "ollama_pull_tag": "bge-m3:567m-fp16",
+      "display_name": "BGE-M3",
+      "variant_label": "567M",
+      "quantization": "F16",
+      "family": "BGE-M3",
+      "publisher": "BAAI",
+      "provider": "Ollama"
     }
   ],
   "task_table_updates": {}
