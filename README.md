@@ -16,7 +16,7 @@ The catalog is checked periodically. When a new model is added or a default is c
 
 ```jsonc
 {
-  "catalog_version": 1,        // Bump when schema changes
+  "catalog_version": 3,        // Bump when schema changes
   "updated": "2026-04-08",     // Last edit date
   "models": [
     {
@@ -33,7 +33,15 @@ The catalog is checked periodically. When a new model is added or a default is c
       "unrestricted": false,   // True = uncensored model
       "atlas_pick": true,      // Recommended by Atlas
       "default": true,         // Default model for new installs
-      "registry": "ollama",    // ollama or huggingface
+      "registry": "ollama",    // ollama, huggingface, civitai, or cloud
+      "task_fitness": {        // per-task picker score, 0-100
+        "general_chat": 95,
+        "vision_input": 90
+      },
+      "task_stance": {         // per-task "Pick this when..." text
+        "general_chat": "Pick this when ...",
+        "vision_input": "Pick this when ..."
+      },
       "superseded_by": null,   // Model ID that replaces this one
       "update_policy": "optional" // optional, recommended, required
     }
@@ -43,15 +51,16 @@ The catalog is checked periodically. When a new model is added or a default is c
 
 ## Current Catalog
 
-37 models across 5 categories:
+241 models across 6 categories, including metadata-only cloud rows:
 
 | Category | Count | Examples |
 |----------|-------|---------|
-| General | 19 | Gemma 4 31B, Llama 3.3, Dolphin 3, Qwen 2.5 |
+| General | 24 | Gemma 4 31B, Llama 3.3, Dolphin 3, Qwen 2.5 |
 | Coding | 4 | Qwen 2.5 Coder, Codestral, DeepSeek Coder |
 | Reasoning | 3 | DeepSeek R1, QwQ |
-| Vision | 5 | Moondream, LLaVA, MiniCPM-V |
-| Image Gen | 6 | Flux 2, SDXL, Hunyuan Video |
+| Vision | 28 | Claude, GPT, Gemini, Grok, Moondream, LLaVA, MiniCPM-V |
+| Image Gen | 181 | Flux 2, SDXL, Hunyuan Video |
+| Embedding | 1 | Nomic Embed |
 
 ## Contributing
 
