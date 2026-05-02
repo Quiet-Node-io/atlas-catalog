@@ -16,8 +16,19 @@ The catalog is checked periodically. When a new model is added or a default is c
 
 ```jsonc
 {
-  "catalog_version": 3,        // Bump when schema changes
-  "updated": "2026-04-08",     // Last edit date
+  "catalog_version": 4,        // Bump when schema changes
+  "updated": "2026-05-02",     // Last edit date
+  "task_benchmark_weights": {  // Per-task benchmark portfolios — drives Atlas score composite (RAN-192)
+    "vision_input": {
+      "mmmu": 0.35, "ai2d": 0.20, "chartqa": 0.20,
+      "docvqa": 0.15, "mathvista": 0.10
+    },
+    "code_generation": {
+      "swe_bench_verified": 0.35, "livecodebench": 0.25,
+      "bigcodebench": 0.20, "humaneval": 0.20
+    }
+    // ... one entry per task; each task's weights MUST sum to 1.0
+  },
   "models": [
     {
       "id": "gemma4:31b",      // Ollama tag or HuggingFace model ID
@@ -34,11 +45,15 @@ The catalog is checked periodically. When a new model is added or a default is c
       "atlas_pick": true,      // Recommended by Atlas
       "default": true,         // Default model for new installs
       "registry": "ollama",    // ollama, huggingface, civitai, or cloud
-      "task_fitness": {        // per-task picker score, 0-100
+      "benchmarks": {          // Raw 0-1 benchmark scores (RAN-192). Atlas computes per-task display score from these.
+        "mmmu": 0.78,          //   Use null/omit when you do not have a cited public source — never invent.
+        "humaneval": 0.92      //   Field names match keys in `task_benchmark_weights`.
+      },
+      "task_fitness": {        // Legacy per-task picker score 0-100. Computed score from benchmarks supersedes when coverage exists.
         "general_chat": 95,
         "vision_input": 90
       },
-      "task_stance": {         // per-task "Pick this when..." text
+      "task_stance": {         // Per-model-per-task "Pick this when..." text. MUST be authored per row — no copy-paste.
         "general_chat": "Pick this when ...",
         "vision_input": "Pick this when ..."
       },
@@ -48,6 +63,42 @@ The catalog is checked periodically. When a new model is added or a default is c
   ]
 }
 ```
+
+### `benchmarks` field (RAN-192)
+
+Each model row carries a `benchmarks` object with raw 0-1 scores:
+
+- Field names are stable identifiers (e.g. `mmmu`, `swe_bench_verified`,
+  `humaneval`, `gpqa_diamond`, `lmarena_normalized`, `mt_bench`,
+  `ifeval`, `bfcl`, `mmlu_pro`, `flores_200`, etc.).
+- Values are numeric in `[0, 1]`. Source benchmarks reported on a
+  0-100 scale are divided by 100 before being recorded here. ELO and
+  latency metrics are min-max normalized into 0-1; record those under
+  the `_normalized` suffixed name (e.g. `lmarena_normalized`,
+  `speed_score`).
+- `null` or omitted means "no cited value" — the score aggregator is
+  null-aware and renormalizes on the present weights.
+- **Never invent a score.** If you cannot cite an official model card,
+  vendor announcement, or reputable public leaderboard, omit the field.
+
+See `knowledge/system/model-scoring-methodology.md` in the Atlas repo
+for the full source-hierarchy and update-cadence rules.
+
+### `task_benchmark_weights` (RAN-192)
+
+Top-level `task_benchmark_weights` defines per-task benchmark portfolios.
+Each task entry maps benchmark names to weights summing to `1.0`. Atlas
+multiplies each model's `benchmarks` value by the task's weight, sums
+present weights only (null-aware), then rounds to a 0-100 display score.
+Update weights here — not in the Atlas codebase — when methodology shifts.
+
+### `task_stance` authoring rules (RAN-192)
+
+- One `task_stance` string per `(model_id, task_id)` pair.
+- No copy-paste across rows. CI rejects identical placeholder strings.
+- Lead with the task-specific reason a user picks THIS row over its
+  neighbours: frontier benchmark gap, free-local cost trade, deprecated
+  pointer to the replacement row, or specialty niche.
 
 ## Current Catalog
 

@@ -1,7 +1,160 @@
 {
-  "catalog_version": 3,
-  "updated": "2026-05-01",
+  "catalog_version": 4,
+  "updated": "2026-05-02",
   "task_tables_version": 0,
+  "task_benchmark_weights": {
+    "vision_input": {
+      "mmmu": 0.35,
+      "ai2d": 0.2,
+      "chartqa": 0.2,
+      "docvqa": 0.15,
+      "mathvista": 0.1
+    },
+    "code_generation": {
+      "swe_bench_verified": 0.35,
+      "livecodebench": 0.25,
+      "bigcodebench": 0.2,
+      "humaneval": 0.2
+    },
+    "infrastructure_ssh": {
+      "swe_bench_verified": 0.25,
+      "terminal_bench": 0.25,
+      "bfcl": 0.25,
+      "gpqa_diamond": 0.15,
+      "livecodebench": 0.1
+    },
+    "research_analysis": {
+      "mmlu_pro": 0.3,
+      "gpqa_diamond": 0.3,
+      "mmlu": 0.15,
+      "longbench": 0.15,
+      "ifeval": 0.1
+    },
+    "review_logic": {
+      "mmlu_pro": 0.3,
+      "gpqa_diamond": 0.3,
+      "mmlu": 0.15,
+      "longbench": 0.15,
+      "ifeval": 0.1
+    },
+    "general_chat": {
+      "lmarena_normalized": 0.4,
+      "mt_bench": 0.25,
+      "ifeval": 0.2,
+      "speed_score": 0.15
+    },
+    "quick_questions": {
+      "lmarena_normalized": 0.4,
+      "mt_bench": 0.25,
+      "ifeval": 0.2,
+      "speed_score": 0.15
+    },
+    "creative_writing": {
+      "eq_bench_creative": 0.35,
+      "mt_bench_writing": 0.25,
+      "lmarena_normalized": 0.2,
+      "ifeval": 0.1,
+      "speed_score": 0.1
+    },
+    "social_media": {
+      "eq_bench_creative": 0.35,
+      "mt_bench_writing": 0.25,
+      "lmarena_normalized": 0.2,
+      "ifeval": 0.1,
+      "speed_score": 0.1
+    },
+    "email_drafting": {
+      "mt_bench_writing": 0.3,
+      "ifeval": 0.3,
+      "eq_bench_creative": 0.2,
+      "mmlu_pro": 0.1,
+      "speed_score": 0.1
+    },
+    "instruction_generation": {
+      "mt_bench_writing": 0.3,
+      "ifeval": 0.3,
+      "eq_bench_creative": 0.2,
+      "mmlu_pro": 0.1,
+      "speed_score": 0.1
+    },
+    "email_triage": {
+      "ifeval": 0.3,
+      "bfcl": 0.25,
+      "classification_eval": 0.25,
+      "speed_score": 0.2
+    },
+    "cross_mode_classification": {
+      "ifeval": 0.3,
+      "bfcl": 0.25,
+      "classification_eval": 0.25,
+      "speed_score": 0.2
+    },
+    "data_parsing": {
+      "ifeval": 0.3,
+      "bfcl": 0.25,
+      "classification_eval": 0.25,
+      "speed_score": 0.2
+    },
+    "reminders_tasks": {
+      "ifeval": 0.3,
+      "bfcl": 0.25,
+      "classification_eval": 0.25,
+      "speed_score": 0.2
+    },
+    "financial": {
+      "gpqa_diamond": 0.25,
+      "math": 0.25,
+      "tabular_qa": 0.25,
+      "mmlu_pro": 0.15,
+      "ifeval": 0.1
+    },
+    "home_automation": {
+      "bfcl": 0.4,
+      "toolbench": 0.25,
+      "ifeval": 0.2,
+      "speed_score": 0.15
+    },
+    "summarization": {
+      "longbench": 0.35,
+      "qasper": 0.2,
+      "xsum_rouge_l": 0.2,
+      "ifeval": 0.15,
+      "speed_score": 0.1
+    },
+    "translation": {
+      "flores_200": 0.45,
+      "wmt": 0.35,
+      "ifeval": 0.1,
+      "speed_score": 0.1
+    },
+    "review_integration": {
+      "swe_bench_verified": 0.3,
+      "longbench": 0.25,
+      "bfcl": 0.2,
+      "gpqa_diamond": 0.15,
+      "ifeval": 0.1
+    },
+    "review_security": {
+      "cyber_safety_eval": 0.3,
+      "swe_bench_verified": 0.25,
+      "bfcl": 0.2,
+      "gpqa_diamond": 0.15,
+      "ifeval": 0.1
+    },
+    "review_style": {
+      "ifeval": 0.35,
+      "mt_bench_writing": 0.25,
+      "swe_bench_verified": 0.2,
+      "speed_score": 0.2
+    },
+    "review_user_impact": {
+      "mmlu_pro": 0.25,
+      "gpqa_diamond": 0.25,
+      "lmarena_normalized": 0.2,
+      "ifeval": 0.2,
+      "longbench": 0.1
+    }
+  },
   "models": [
     {
       "id": "gemma4:31b",
@@ -100,8 +253,9 @@
         "social_media": "Pick this when free local social content \u2014 solid creative output at 20 tok/s with zero API cost.",
         "summarization": "Pick this when free local summarization \u2014 near-cloud accuracy for sensitive documents that can't leave your machine.",
         "translation": "Pick this when free local translation \u2014 solid for European languages and Japanese at 20 tok/s, zero API cost.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when you need free local vision plus general writing, code, and reasoning in one model. Built-in vision is solid for diagrams and screenshots; Llama 3.2 Vision is more accurate for OCR, and frontier cloud models lead on dense visual reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemma4:26b",
@@ -169,8 +323,9 @@
         "review_security": "Pick this when mid-tier free local option for basic security checks.",
         "review_style": "Pick this when free mid-tier style reviewer. MoE efficiency makes it fast enough for convention checks.",
         "review_user_impact": "Pick this when mid-tier free local option for basic user impact assessment.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when speed matters more than peak vision accuracy. MoE active params keep latency low for live-camera or batch screenshot triage."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemma4",
@@ -262,8 +417,9 @@
         "social_media": "Pick this when ultra-lightweight free posts at 120 tok/s on 8 GB RAM \u2014 fine for short captions.",
         "summarization": "Pick this when ultra-lightweight free summaries at 120 tok/s on 8 GB RAM \u2014 fine for short articles.",
         "translation": "Pick this when ultra-lightweight free translation at 120 tok/s on 8 GB RAM \u2014 fine for short common-language text.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for free local vision triage at minimal RAM cost \u2014 Atlas's default routing target. Use Llama 3.2 Vision 11B when OCR fidelity matters."
+      },
+      "benchmarks": {}
     },
     {
       "id": "llama3.2-vision:11b",
@@ -317,7 +473,16 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
+        "vision_input": "Pick this when you need free local OCR / document parsing and can accept the frontier gap. Per Meta's model card: MMMU 50.7, DocVQA 88.4, AI2D 91.1, ChartQA 83.4 \u2014 strong for receipts, screenshots, and diagrams; lags frontier cloud models on dense reasoning over complex images."
+      },
+      "benchmarks": {
+        "mmmu": 0.507,
+        "mmmu_pro": 0.33,
+        "ai2d": 0.911,
+        "chartqa": 0.834,
+        "docvqa": 0.884,
+        "mathvista": 0.515,
+        "vqav2": 0.752
       }
     },
     {
@@ -373,7 +538,8 @@
       },
       "task_stance": {
         "research_analysis": "Pick this when best free local reasoning model \u2014 chain-of-thought visible in output. Below tier minimum."
-      }
+      },
+      "benchmarks": {}
     },
     {
       "id": "dolphin3:8b",
@@ -424,7 +590,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "mistral-nemo:12b",
@@ -475,7 +642,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "nollama/mythomax-l2-13b:Q4_K_M",
@@ -526,7 +694,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "gemma4:e2b",
@@ -580,8 +749,9 @@
         "vision_input": 36
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Deprecated \u2014 use Gemma 4 4.5B instead. Only listed for users who already have it installed."
+      },
+      "benchmarks": {}
     },
     {
       "id": "llama3.3:70b",
@@ -660,7 +830,8 @@
         "review_user_impact": "Pick this when meta's large model for local user impact review.",
         "summarization": "Pick this when best local comprehensive summarization \u2014 better context retention than gemma4:31b if 48 GB available.",
         "translation": "Pick this when strong local translation for European languages \u2014 comparable to qwen2.5:72b on Latin-script languages."
-      }
+      },
+      "benchmarks": {}
     },
     {
       "id": "llama3.3:8b",
@@ -711,7 +882,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "qwen2.5:72b",
@@ -790,7 +962,8 @@
         "review_style": "Pick this when large local model for thorough style review if RAM allows.",
         "review_user_impact": "Pick this when multilingual user impact review for international user bases.",
         "translation": "Pick this when best local CJK translation \u2014 Qwen's Chinese/Japanese/Korean is best-in-class for 48+ GB systems."
-      }
+      },
+      "benchmarks": {}
     },
     {
       "id": "qwen2.5:32b",
@@ -841,7 +1014,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "qwen2.5:7b",
@@ -892,7 +1066,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "dolphin3:70b",
@@ -943,7 +1118,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "phi4:14b",
@@ -994,7 +1170,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "dolphin-mistral:7b",
@@ -1045,7 +1222,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "llama-maverick:400b",
@@ -1096,7 +1274,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "qwen3.5:397b",
@@ -1147,7 +1326,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "qwen2.5-coder:32b",
@@ -1214,7 +1394,8 @@
         "review_security": "Pick this when best free local security reviewer. Code-specialized with good vulnerability pattern recognition.",
         "review_style": "Pick this when code-specialized local model. Strong at detecting style issues in Python code specifically.",
         "review_user_impact": "Pick this when code-focused model, less suited for UX assessment but can catch API breaking changes."
-      }
+      },
+      "benchmarks": {}
     },
     {
       "id": "qwen2.5-coder:7b",
@@ -1265,7 +1446,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "codestral:22b",
@@ -1316,7 +1498,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "deepseek-coder-v2:16b",
@@ -1367,7 +1550,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "deepseek-r1:32b",
@@ -1418,7 +1602,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "qwq:32b",
@@ -1469,7 +1654,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "deepseek-r1:671b",
@@ -1520,7 +1706,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "moondream:1.8b",
@@ -1574,8 +1761,9 @@
         "vision_input": 54
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this only on extremely RAM-constrained devices that can't run Gemma 4 4.5B. Light-weight vision encoder; quality is far below Llama 3.2 Vision 11B."
+      },
+      "benchmarks": {}
     },
     {
       "id": "llama3.2-vision:90b",
@@ -1629,7 +1817,14 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
+        "vision_input": "Pick this for the strongest free local vision encoder when 48-64 GB RAM is available \u2014 closes most of the 11B gap on MMMU and MathVista, but still trails frontier cloud on saturated MMMU-Pro reasoning."
+      },
+      "benchmarks": {
+        "mmmu": 0.604,
+        "ai2d": 0.928,
+        "chartqa": 0.851,
+        "docvqa": 0.901,
+        "mathvista": 0.578
       }
     },
     {
@@ -1684,8 +1879,9 @@
         "vision_input": 72
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when you want fast batch image processing at low RAM and Llama 3.2 Vision 11B is too heavy. Strong OCR for size; lags 11B on dense documents."
+      },
+      "benchmarks": {}
     },
     {
       "id": "llava:13b",
@@ -1739,8 +1935,9 @@
         "vision_input": 72
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this only for LLaVA-ecosystem compatibility. Llama 3.2 Vision 11B has superseded it on every published vision benchmark."
+      },
+      "benchmarks": {}
     },
     {
       "id": "llava:34b",
@@ -1794,8 +1991,9 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this only when you specifically prefer LLaVA's verbose description style. Llama 3.2 Vision 11B matches its quality at a third the RAM."
+      },
+      "benchmarks": {}
     },
     {
       "id": "flux2",
@@ -1846,7 +2044,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "sdxl",
@@ -1897,7 +2096,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "svd",
@@ -1948,7 +2148,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "hunyuan-video",
@@ -1999,7 +2200,8 @@
       "system_candidate": true,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "sd1.5",
@@ -2050,7 +2252,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "sdxl-turbo",
@@ -2101,7 +2304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stabilityai/stable-diffusion-xl-base-1.0",
@@ -2140,7 +2344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
@@ -2179,7 +2384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Tongyi-MAI/Z-Image-Turbo",
@@ -2218,7 +2424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stabilityai/sdxl-turbo",
@@ -2257,7 +2464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "black-forest-labs/FLUX.1-schnell",
@@ -2296,7 +2504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "black-forest-labs/FLUX.1-dev",
@@ -2335,7 +2544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "crynux-network/sdxl-turbo",
@@ -2374,7 +2584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stabilityai/sd-turbo",
@@ -2413,7 +2624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "crynux-network/stable-diffusion-v1-5",
@@ -2452,7 +2664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "CompVis/stable-diffusion-v1-4",
@@ -2491,7 +2704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "frankjoshua/novaAnimeXL_ilV140",
@@ -2530,7 +2744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/diving-illustrious-real-asian-v50-sdxl",
@@ -2569,7 +2784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/one-obsession-17-red-sdxl",
@@ -2608,7 +2824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "lightx2v/Qwen-Image-Lightning",
@@ -2647,7 +2864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "playgroundai/playground-v2.5-1024px-aesthetic",
@@ -2686,7 +2904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "cagliostrolab/animagine-xl-4.0",
@@ -2725,7 +2944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "martineux/dvine82-xl",
@@ -2764,7 +2984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "diffusers/stable-diffusion-xl-1.0-inpainting-0.1",
@@ -2803,7 +3024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "kpsss34/FHDR_Uncensored",
@@ -2842,7 +3064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stable-diffusion-v1-5/stable-diffusion-inpainting",
@@ -2881,7 +3104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/janku-v5-nsfw-trained-noobai-rou-wei-illustrious-xl-v50-sdxl",
@@ -2920,7 +3144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Qwen/Qwen-Image",
@@ -2959,7 +3184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Tencent-Hunyuan/HunyuanDiT-v1.1-Diffusers-Distilled",
@@ -2998,7 +3224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/amanatsu-illustrious-v11-sdxl",
@@ -3037,7 +3264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "h94/IP-Adapter-FaceID",
@@ -3076,7 +3304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/obsession-illustriousxl-v10-sdxl",
@@ -3115,7 +3344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/prefect-illustrious-xl-v3-sdxl",
@@ -3154,7 +3384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "cagliostrolab/animagine-xl-3.1",
@@ -3193,7 +3424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "John6666/nova-furry-xl-il-v120-sdxl",
@@ -3232,7 +3464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "ByteDance/SDXL-Lightning",
@@ -3271,7 +3504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "nphSi/Z-Image-Lora",
@@ -3310,7 +3544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "segmind/small-sd",
@@ -3349,7 +3584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "optimum-intel-internal-testing/tiny-stable-diffusion-torch",
@@ -3388,7 +3624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "optimum-intel-internal-testing/tiny-random-stable-diffusion-xl",
@@ -3427,7 +3664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "ostris/OpenFLUX.1",
@@ -3466,7 +3704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "stabilityai/stable-diffusion-3.5-medium",
@@ -3505,7 +3744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "optimum-intel-internal-testing/stable-diffusion-3-tiny-random",
@@ -3544,7 +3784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "city96/FLUX.1-dev-gguf",
@@ -3583,7 +3824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "SG161222/Realistic_Vision_V5.1_noVAE",
@@ -3622,7 +3864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "cagliostrolab/animagine-xl-3.0",
@@ -3661,7 +3904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "optimum-intel-internal-testing/tiny-random-flux",
@@ -3700,7 +3944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "lightx2v/Qwen-Image-2512-Lightning",
@@ -3739,7 +3984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "RunDiffusion/Juggernaut-XL-v9",
@@ -3778,7 +4024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Laxhar/noobai-XL-1.1",
@@ -3817,7 +4064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "xinsir/controlnet-union-sdxl-1.0",
@@ -3856,7 +4104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "SimianLuo/LCM_Dreamshaper_v7",
@@ -3895,7 +4144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "optimum-intel-internal-testing/tiny-random-latent-consistency",
@@ -3934,7 +4184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "T5B/Z-Image-Turbo-FP8",
@@ -3973,7 +4224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Qwen/Qwen-Image-2512",
@@ -4012,7 +4264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "OnomaAIResearch/Illustrious-xl-early-release-v0",
@@ -4051,7 +4304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
@@ -4090,7 +4344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
@@ -4129,7 +4384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.2-T2V-A14B-Diffusers",
@@ -4168,7 +4424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.1-T2V-14B",
@@ -4207,7 +4464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-T2V-A14B-GGUF",
@@ -4246,7 +4504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "ali-vilab/text-to-video-ms-1.7b",
@@ -4285,7 +4544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "magespace/Wan2.2-I2V-A14B-Lightning-Diffusers",
@@ -4324,7 +4584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Lightricks/LTX-Video-ICLoRA-detailer-13b-0.9.8",
@@ -4363,7 +4624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "zai-org/CogVideoX-5b",
@@ -4402,7 +4664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "alibaba-pai/Wan2.2-Fun-Reward-LoRAs",
@@ -4441,7 +4704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.1-T2V-14B-Diffusers",
@@ -4480,7 +4744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "FastVideo/FastWan2.2-TI2V-5B-FullAttn-Diffusers",
@@ -4519,7 +4784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "zai-org/CogVideoX-2b",
@@ -4558,7 +4824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "city96/Wan2.1-T2V-14B-gguf",
@@ -4597,7 +4864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-TI2V-5B-GGUF",
@@ -4636,7 +4904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "bullerwins/Wan2.2-T2V-A14B-GGUF",
@@ -4675,7 +4944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.1-T2V-1.3B",
@@ -4714,7 +4984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "hpcai-tech/Open-Sora-v2",
@@ -4753,7 +5024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "alibaba-pai/Wan2.1-Fun-14B-Control",
@@ -4792,7 +5064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.1_14B_VACE-GGUF",
@@ -4831,7 +5104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "ByteDance/AnimateDiff-Lightning",
@@ -4870,7 +5144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "calcuis/wan-gguf",
@@ -4909,7 +5184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "wangfuyun/AnimateLCM",
@@ -4948,7 +5224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "IPostYellow/TurboWan2.1-T2V-1.3B-Diffusers",
@@ -4987,7 +5264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-Fun-A14B-Control-Camera-GGUF",
@@ -5026,7 +5304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "jayn7/HunyuanVideo-1.5_T2V_720p-GGUF",
@@ -5065,7 +5344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "genmo/mochi-1-preview",
@@ -5104,7 +5384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.2-TI2V-5B",
@@ -5143,7 +5424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "calcuis/wan2-gguf",
@@ -5182,7 +5464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "hunyuanvideo-community/HunyuanVideo-1.5-Diffusers-720p_t2v",
@@ -5221,7 +5504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "BestWishYsh/Helios-Distilled",
@@ -5260,7 +5544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Abiray/LTX-2.3-22B-DISTILLED-1.1-GGUF",
@@ -5299,7 +5584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-S2V-14B-GGUF",
@@ -5338,7 +5624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "cerspense/zeroscope_v2_576w",
@@ -5377,7 +5664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "calcuis/wan-1.3b-gguf",
@@ -5416,7 +5704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Wan-AI/Wan2.2-T2V-A14B",
@@ -5455,7 +5744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Skywork/SkyReels-V2-DF-1.3B-540P-Diffusers",
@@ -5494,7 +5784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-Fun-A14B-Control-GGUF",
@@ -5533,7 +5824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "city96/HunyuanVideo-gguf",
@@ -5572,7 +5864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "guoyww/animatediff-motion-adapter-v1-5-2",
@@ -5611,7 +5904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "alibaba-pai/Wan2.1-Fun-Reward-LoRAs",
@@ -5650,7 +5944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "samuelchristlie/Wan2.1-T2V-1.3B-GGUF",
@@ -5689,7 +5984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "calcuis/ltxv0.9.6-gguf",
@@ -5728,7 +6024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "gdhe17/Self-Forcing",
@@ -5767,7 +6064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "hotshotco/Hotshot-XL",
@@ -5806,7 +6104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "Lightricks/LTX-Video-0.9.7-distilled",
@@ -5845,7 +6144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "QuantStack/Wan2.2-Fun-A14B-InP-GGUF",
@@ -5884,7 +6184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "zai-org/CogVideoX1.5-5B",
@@ -5923,7 +6224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "guoyww/animatediff-motion-lora-zoom-out",
@@ -5962,7 +6264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "guoyww/animatediff-motion-lora-zoom-in",
@@ -6001,7 +6304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:827184",
@@ -6040,7 +6344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:257749",
@@ -6079,7 +6384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:43331",
@@ -6118,7 +6424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:4384",
@@ -6157,7 +6464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:4201",
@@ -6196,7 +6504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:4468",
@@ -6235,7 +6544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:122359",
@@ -6274,7 +6584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:7240",
@@ -6313,7 +6624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:7371",
@@ -6352,7 +6664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:288584",
@@ -6391,7 +6704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:133005",
@@ -6430,7 +6744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:58390",
@@ -6469,7 +6784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:372465",
@@ -6508,7 +6824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:443821",
@@ -6547,7 +6864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:6755",
@@ -6586,7 +6904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:439889",
@@ -6625,7 +6944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:25694",
@@ -6664,7 +6984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:264290",
@@ -6703,7 +7024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:9409",
@@ -6742,7 +7064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:36520",
@@ -6781,7 +7104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:15003",
@@ -6820,7 +7144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:47274",
@@ -6859,7 +7184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:618692",
@@ -6898,7 +7224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:25494",
@@ -6937,7 +7264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:12597",
@@ -6976,7 +7304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:24350",
@@ -7015,7 +7344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:112902",
@@ -7054,7 +7384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:24149",
@@ -7093,7 +7424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:212532",
@@ -7132,7 +7464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:16014",
@@ -7171,7 +7504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:82098",
@@ -7210,7 +7544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:300005",
@@ -7249,7 +7584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:24779",
@@ -7288,7 +7624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:23900",
@@ -7327,7 +7664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:1277670",
@@ -7366,7 +7704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:30240",
@@ -7405,7 +7744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:10415",
@@ -7444,7 +7784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:260267",
@@ -7483,7 +7824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:795765",
@@ -7522,7 +7864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:14171",
@@ -7561,7 +7904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:833294",
@@ -7600,7 +7944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:166609",
@@ -7639,7 +7984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:10028",
@@ -7678,7 +8024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:139562",
@@ -7717,7 +8064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:5414",
@@ -7756,7 +8104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:376130",
@@ -7795,7 +8144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:81458",
@@ -7834,7 +8184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:101055",
@@ -7873,7 +8224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:1162518",
@@ -7912,7 +8264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:43977",
@@ -7951,7 +8304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:926443",
@@ -7990,7 +8344,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:8730",
@@ -8029,7 +8384,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:200255",
@@ -8068,7 +8424,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:888231",
@@ -8107,7 +8464,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:9139",
@@ -8146,7 +8504,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:33208",
@@ -8185,7 +8544,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:88132",
@@ -8224,7 +8584,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:8030",
@@ -8263,7 +8624,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:94809",
@@ -8302,7 +8664,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:22922",
@@ -8341,7 +8704,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:503815",
@@ -8380,7 +8744,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:132632",
@@ -8419,7 +8784,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:11866",
@@ -8458,7 +8824,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:8217",
@@ -8497,7 +8864,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:25995",
@@ -8536,7 +8904,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:8124",
@@ -8575,7 +8944,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:8484",
@@ -8614,7 +8984,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:107842",
@@ -8653,7 +9024,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:13090",
@@ -8692,7 +9064,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:7241",
@@ -8731,7 +9104,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:11177",
@@ -8770,7 +9144,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:599757",
@@ -8809,7 +9184,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:35960",
@@ -8848,7 +9224,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:6925",
@@ -8887,7 +9264,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "civitai:27259",
@@ -8926,7 +9304,8 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "gemma4:4.5b",
@@ -8968,8 +9347,9 @@
         "vision_input": 54
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for free local vision triage at minimal RAM cost \u2014 Atlas's default routing target. Use Llama 3.2 Vision 11B when OCR fidelity matters."
+      },
+      "benchmarks": {}
     },
     {
       "id": "bge-m3:f16",
@@ -9004,7 +9384,8 @@
       "publisher": "BAAI",
       "provider": "Ollama",
       "task_fitness": {},
-      "task_stance": {}
+      "task_stance": {},
+      "benchmarks": {}
     },
     {
       "id": "gemma4:31b-it-q8_0",
@@ -9045,8 +9426,9 @@
         "vision_input": 72
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when you want the Q8 fidelity step over Q4 on the same Gemma 4 31B vision capability. Same trade-offs as the Q4 row with extra RAM headroom for clearer image reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemma4:31b-it-bf16",
@@ -9087,8 +9469,9 @@
         "vision_input": 72
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this only on 128 GB+ hardware when you need reference-quality vision output and won't accept any quantization loss. Manual selection \u2014 Auto caps at Q8."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemma4:e4b-it-q8_0",
@@ -9128,8 +9511,9 @@
         "vision_input": 54
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when the 4.5B triage baseline needs Q8 fidelity and your hardware has the RAM headroom."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemma4:e4b-it-bf16",
@@ -9169,8 +9553,9 @@
         "vision_input": 54
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this on 128 GB+ hardware for reference-quality 4.5B vision triage. Manual selection \u2014 Auto caps at Q8."
+      },
+      "benchmarks": {}
     },
     {
       "id": "claude-opus-4-6",
@@ -9251,8 +9636,9 @@
         "review_user_impact": "Pick this when most nuanced user impact analysis. Catches subtle UX consequences and migration needs others miss.",
         "summarization": "Pick this when the benchmark. Critical summaries requiring perfect accuracy \u2014 no important detail will be missed.",
         "translation": "Pick this when the benchmark. Critical translations requiring cultural nuance \u2014 legal, literary, diplomatic text.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for frontier-grade visual reasoning on dense diagrams, scientific images, or long multi-page PDFs. Highest quality on Atlas; 5x more expensive than Sonnet \u2014 reserve for hard cases."
+      },
+      "benchmarks": {}
     },
     {
       "id": "claude-sonnet-4-6",
@@ -9341,8 +9727,9 @@
         "social_media": "Pick this when the benchmark. Professional social content with consistent brand voice \u2014 Smart Auto's default.",
         "summarization": "Pick this when 95% of Opus comprehension at one-third the cost. Smart Auto's default for document summarization.",
         "translation": "Pick this when 95% of Opus translation quality at one-third the cost. Smart Auto's default for most translation tasks.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for everyday cloud vision \u2014 strong on screenshots, charts, and document QA at Sonnet pricing. Good Smart Auto pick when OCR fidelity matters and budget is tight."
+      },
+      "benchmarks": {}
     },
     {
       "id": "claude-haiku-4-5-20251001",
@@ -9419,8 +9806,9 @@
         "review_style": "Pick this when fast cheap style review from Anthropic. Good conventions knowledge at budget pricing.",
         "review_user_impact": "Pick this when fast Anthropic option for basic user impact checks. Less depth on migration analysis.",
         "social_media": "Pick this when quick posts and replies \u2014 5\u00d7 cheaper than Sonnet when you just need a fast caption.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for fast, cheap cloud vision triage \u2014 captioning, rough OCR, screenshot classification. Step down from Sonnet in dense visual reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-5.4",
@@ -9479,7 +9867,10 @@
         "creative_writing": "Pick this when openAI's best creative writer \u2014 near-Opus quality at half the input cost.",
         "infrastructure_ssh": "Pick this when openAI's best for infrastructure \u2014 near-Opus quality at half Opus input cost.",
         "research_analysis": "Pick this when openAI's best researcher \u2014 near-Opus analytical depth at half Opus input cost.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
+        "vision_input": "Pick this for frontier visual reasoning with broad multimodal coverage. Ticket-cited at 81% MMMU-Pro alongside Gemini 3 Pro in the frontier saturation band."
+      },
+      "benchmarks": {
+        "mmmu_pro": 0.81
       }
     },
     {
@@ -9563,8 +9954,9 @@
         "social_media": "Pick this when budget social content from OpenAI's flagship line \u2014 4\u00d7 cheaper than Sonnet with good creativity.",
         "summarization": "Pick this when budget summarization from OpenAI's flagship line \u2014 3\u00d7 cheaper than GPT-4.1 with good quality.",
         "translation": "Pick this when budget translation from OpenAI's flagship line \u2014 3\u00d7 cheaper than GPT-4.1 for routine content.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for cheap GPT-class vision when full GPT-5.4 is overkill. Trades depth on dense reasoning for cost; still ahead of free local options on saturated benchmarks."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-5.4-nano",
@@ -9617,8 +10009,9 @@
       },
       "task_stance": {
         "email_triage": "Pick this when gPT-5.4 nano variant \u2014 flagship training at nano cost, solid for classification tasks.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for highest-throughput, lowest-cost OpenAI vision \u2014 captioning and bulk image triage. Not for dense reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-4.1",
@@ -9697,8 +10090,9 @@
         "review_user_impact": "Pick this when broad knowledge for assessing user impact across different domains and use cases.",
         "summarization": "Pick this when openAI's best for document summarization \u2014 strong instruction adherence for custom summary formats.",
         "translation": "Pick this when large document translation with 1M context \u2014 good for technical manuals and long-form content.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for legacy GPT-4.1 multimodal compatibility when a pinned model id is required. Superseded by GPT-5.4 for new work."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-4.1-mini",
@@ -9773,8 +10167,9 @@
         "review_style": "Pick this when cheap OpenAI option for basic style checks.",
         "review_user_impact": "Pick this when cheap OpenAI option for basic user impact assessment.",
         "social_media": "Pick this when high-volume social drafts \u2014 7\u00d7 cheaper than Sonnet for repetitive post formats.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for legacy GPT-4.1 mini multimodal pinning. New work should target GPT-5.4 mini."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-4.1-nano",
@@ -9833,8 +10228,9 @@
         "email_triage": "Pick this when cheapest OpenAI option \u2014 use only for high-volume simple classification where cost dominates.",
         "quick_questions": "Pick this when cheapest cloud option \u2014 10\u00d7 cheaper than Haiku. Acceptable for trivial factual questions only.",
         "reminders_tasks": "Pick this when cheapest OpenAI option \u2014 10\u00d7 cheaper than Haiku for simple reminder parsing.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for the cheapest legacy GPT-4.1 vision tier when a pinned id is required."
+      },
+      "benchmarks": {}
     },
     {
       "id": "o3",
@@ -9893,8 +10289,9 @@
         "financial": "Pick this when best for complex financial modeling \u2014 reasoning model that shows its math step by step.",
         "infrastructure_ssh": "Pick this when best for complex root cause analysis \u2014 reasoning model that methodically traces infra failures.",
         "research_analysis": "Pick this when best for mathematical and scientific research \u2014 reasoning model designed for multi-step analysis.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this when you want OpenAI's reasoning-trace model on a vision task \u2014 slow and expensive but shows its work. Reserve for forensic image analysis."
+      },
+      "benchmarks": {}
     },
     {
       "id": "o4-mini",
@@ -9949,8 +10346,9 @@
       "task_stance": {
         "code_generation": "Pick this when budget reasoning for code \u2014 2\u00d7 cheaper than o3 for straightforward algorithmic tasks.",
         "research_analysis": "Pick this when budget reasoning research \u2014 2\u00d7 cheaper than o3 for straightforward analysis tasks.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for cheaper OpenAI reasoning-trace vision when o3 is overkill. Lower latency than o3, weaker on dense reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gpt-4o",
@@ -10001,8 +10399,9 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Legacy GPT-4o multimodal \u2014 kept for compatibility. New vision work should target GPT-5.4 or GPT-4.1."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemini-2.5-pro",
@@ -10085,8 +10484,9 @@
         "social_media": "Pick this when near-Sonnet quality at half input cost \u2014 best value for corporate/safe brand content.",
         "summarization": "Pick this when near-Opus summarization at Sonnet input prices \u2014 best value for long document processing.",
         "translation": "Pick this when near-Opus translation at Sonnet input prices \u2014 Google's multilingual strength shines here.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for long-context document vision \u2014 1M-token context handles whole-PDF reasoning. Strong on charts, math images, and long-form layout."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemini-2.5-flash",
@@ -10169,8 +10569,9 @@
         "social_media": "Pick this when lowest-cost cloud option \u2014 20\u00d7 cheaper than Sonnet for safe/corporate social content at scale.",
         "summarization": "Pick this when bulk summarization at minimal cost \u2014 20\u00d7 cheaper than Sonnet for high-volume document processing.",
         "translation": "Pick this when budget translation at minimal cost \u2014 20\u00d7 cheaper than Sonnet for high-volume translation needs.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for fast, cheap Gemini vision \u2014 captioning, light OCR, and screenshot QA. Step down from Pro on dense reasoning."
+      },
+      "benchmarks": {}
     },
     {
       "id": "gemini-2.5-flash-lite",
@@ -10227,8 +10628,9 @@
         "data_parsing": "Pick this when rock-bottom cost parsing \u2014 10\u00d7 cheaper than Haiku for simple key-value extraction at scale.",
         "email_triage": "Pick this when rock-bottom cost for simple binary triage \u2014 2\u00d7 cheaper than Flash with acceptable accuracy.",
         "reminders_tasks": "Pick this when 10\u00d7 cheaper than Haiku for simple reminder parsing \u2014 ideal for high-frequency task creation.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for the cheapest Gemini vision tier \u2014 bulk caption or classification jobs where latency dominates."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-4.20-0309-reasoning",
@@ -10287,8 +10689,9 @@
         "financial": "Pick this when lowest hallucination rate with 2M context \u2014 fits entire financial reports without chunking.",
         "infrastructure_ssh": "Pick this when reasoning-heavy debugging with 2M context \u2014 fits entire log files without truncation.",
         "research_analysis": "Pick this when lowest hallucination rate on uncensored topics \u2014 best for controversial or sensitive research.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for xAI reasoning-trace vision when you want explicit step-by-step image analysis at xAI pricing."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-4.20-0309-non-reasoning",
@@ -10359,8 +10762,9 @@
         "review_user_impact": "Pick this when fast user impact review with broad knowledge and massive context window.",
         "social_media": "Pick this when best for edgy/uncensored brand voice \u2014 no content restrictions, 2M context for large content calendars.",
         "summarization": "Pick this when largest context window in the table \u2014 summarize 2\u00d7 more content per call than any 1M model.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for fast xAI vision with low content filtering \u2014 useful when other frontier providers refuse the prompt."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-4.20-multi-agent-0309",
@@ -10413,8 +10817,9 @@
       },
       "task_stance": {
         "research_analysis": "Pick this when multi-perspective analysis through 4-agent collaboration \u2014 unique depth no single model can match.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for xAI's multi-agent vision pipeline \u2014 slower but more thorough than the single-pass non-reasoning row."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-4-1-fast-reasoning",
@@ -10473,8 +10878,9 @@
         "financial": "Pick this when budget financial analysis with reasoning \u2014 10\u00d7 cheaper than o3 for routine calculations.",
         "infrastructure_ssh": "Pick this when cheapest reasoning option for infra \u2014 10\u00d7 cheaper than o3 for routine debugging.",
         "instruction_generation": "Pick this when budget reasoning-based instruction generation \u2014 15\u00d7 cheaper than Sonnet with reasoning support.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for cheaper xAI reasoning-trace vision when 4.20 is overkill."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-4-1-fast-non-reasoning",
@@ -10559,8 +10965,9 @@
         "social_media": "Pick this when high-volume uncensored content \u2014 10\u00d7 cheaper than Grok flagship with no content limits.",
         "summarization": "Pick this when budget summaries with 2M context \u2014 10\u00d7 cheaper than Grok flagship, still handles massive docs.",
         "translation": "Pick this when budget uncensored translation \u2014 useful for content that other models refuse to translate.",
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for the cheapest fast xAI vision tier \u2014 bulk image triage with low filtering."
+      },
+      "benchmarks": {}
     },
     {
       "id": "grok-3",
@@ -10611,8 +11018,9 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Legacy Grok 3 vision \u2014 kept for compatibility. Use Grok 4.20 or 4.1 Fast for new work."
+      },
+      "benchmarks": {}
     },
     {
       "id": "o3-pro",
@@ -10663,8 +11071,9 @@
         "vision_input": 90
       },
       "task_stance": {
-        "vision_input": "Pick this when the task needs image understanding over photos, screenshots, diagrams, or scanned documents."
-      }
+        "vision_input": "Pick this for the highest-effort OpenAI reasoning pass on a vision task. Premium pricing; only worth it when explicit step-by-step image reasoning matters."
+      },
+      "benchmarks": {}
     }
   ],
   "task_table_updates": {}
