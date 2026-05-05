@@ -100,6 +100,24 @@ Update weights here — not in the Atlas codebase — when methodology shifts.
   neighbours: frontier benchmark gap, free-local cost trade, deprecated
   pointer to the replacement row, or specialty niche.
 
+### Ollama structured variant fields (RAN-186)
+
+Every row with `"registry": "ollama"` must use structured variant metadata:
+
+- `name` and `display_name`: user-facing base name, without a trailing
+  quantization token.
+- `variant_label`: size or variant phrase such as `31B`, `4.5B`, or `567M`.
+- `quantization`: explicit quant marker such as `Q4_K_M`, `Q8_0`, `BF16`, or
+  `F16`.
+- `family`, `publisher`, and `provider`: populated display metadata.
+- `variant_group`: populated on every Ollama row. Swappable siblings share a
+  group id; singleton rows use their own `id`.
+- `ollama_pull_tag`: set only when the Atlas catalog id differs from the real
+  Ollama registry tag. Omit it when `id` is the pullable tag.
+
+Run `python scripts/validate_catalog.py catalog.json` before opening catalog
+PRs. The GitHub workflow runs the same validator on catalog changes.
+
 ## Current Catalog
 
 241 models across 6 categories, including metadata-only cloud rows:
