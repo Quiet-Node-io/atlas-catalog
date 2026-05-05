@@ -325,7 +325,8 @@
         "review_user_impact": "Pick this when mid-tier free local option for basic user impact assessment.",
         "vision_input": "Pick this when speed matters more than peak vision accuracy. MoE active params keep latency low for live-camera or batch screenshot triage."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "gemma4:26b"
     },
     {
       "id": "gemma4",
@@ -419,7 +420,8 @@
         "translation": "Pick this when ultra-lightweight free translation at 120 tok/s on 8 GB RAM \u2014 fine for short common-language text.",
         "vision_input": "Pick this for free local vision triage at minimal RAM cost \u2014 Atlas's default routing target. Use Llama 3.2 Vision 11B when OCR fidelity matters."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "gemma4"
     },
     {
       "id": "llama3.2-vision:11b",
@@ -483,7 +485,8 @@
         "docvqa": 0.884,
         "mathvista": 0.515,
         "vqav2": 0.752
-      }
+      },
+      "variant_group": "llama3.2-vision:11b"
     },
     {
       "id": "deepseek-r1:70b",
@@ -539,7 +542,8 @@
       "task_stance": {
         "research_analysis": "Pick this when best free local reasoning model \u2014 chain-of-thought visible in output. Below tier minimum."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "deepseek-r1:70b"
     },
     {
       "id": "dolphin3:8b",
@@ -591,7 +595,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "dolphin3:8b"
     },
     {
       "id": "mistral-nemo:12b",
@@ -643,7 +648,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "mistral-nemo:12b"
     },
     {
       "id": "nollama/mythomax-l2-13b:Q4_K_M",
@@ -682,7 +688,7 @@
       "publisher": "Community",
       "family": "Mythomax",
       "display_name": "Mythomax 13B",
-      "variant_label": "13B Q4_K_M",
+      "variant_label": "13B",
       "quantization": "Q4_K_M",
       "model_type": "llm",
       "intended_use": "Community model; intended scope/application not verified.",
@@ -695,7 +701,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "nollama/mythomax-l2-13b:Q4_K_M"
     },
     {
       "id": "gemma4:e2b",
@@ -751,7 +758,8 @@
       "task_stance": {
         "vision_input": "Deprecated \u2014 use Gemma 4 4.5B instead. Only listed for users who already have it installed."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "gemma4:e2b"
     },
     {
       "id": "llama3.3:70b",
@@ -831,7 +839,8 @@
         "summarization": "Pick this when best local comprehensive summarization \u2014 better context retention than gemma4:31b if 48 GB available.",
         "translation": "Pick this when strong local translation for European languages \u2014 comparable to qwen2.5:72b on Latin-script languages."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "llama3.3:70b"
     },
     {
       "id": "llama3.3:8b",
@@ -871,7 +880,7 @@
       "family": "Llama 3.3",
       "display_name": "Llama 3.3 8B",
       "variant_label": "8B",
-      "quantization": "",
+      "quantization": "Q4_K_M",
       "model_type": "llm",
       "intended_use": "Community model; intended scope/application not verified.",
       "ram_target_gb": 8.0,
@@ -883,7 +892,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "llama3.3:8b"
     },
     {
       "id": "qwen2.5:72b",
@@ -963,7 +973,8 @@
         "review_user_impact": "Pick this when multilingual user impact review for international user bases.",
         "translation": "Pick this when best local CJK translation \u2014 Qwen's Chinese/Japanese/Korean is best-in-class for 48+ GB systems."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen2.5:72b"
     },
     {
       "id": "qwen2.5:32b",
@@ -1015,7 +1026,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen2.5:32b"
     },
     {
       "id": "qwen2.5:7b",
@@ -1067,7 +1079,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen2.5:7b"
     },
     {
       "id": "dolphin3:70b",
@@ -1107,7 +1120,7 @@
       "family": "Dolphin 3.0",
       "display_name": "Dolphin 3.0 70B",
       "variant_label": "70B",
-      "quantization": "",
+      "quantization": "Q4_K_M",
       "model_type": "llm",
       "intended_use": "Community model; intended scope/application not verified.",
       "ram_target_gb": 64.0,
@@ -1119,7 +1132,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "dolphin3:70b"
     },
     {
       "id": "phi4:14b",
@@ -1171,7 +1185,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "phi4:14b"
     },
     {
       "id": "dolphin-mistral:7b",
@@ -1223,7 +1238,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "dolphin-mistral:7b"
     },
     {
       "id": "llama-maverick:400b",
@@ -1263,7 +1279,7 @@
       "family": "Llama Maverick",
       "display_name": "Llama Maverick 400B",
       "variant_label": "400B",
-      "quantization": "",
+      "quantization": "Q4_K_M",
       "model_type": "llm",
       "intended_use": "Community model; intended scope/application not verified.",
       "ram_target_gb": 384.0,
@@ -1275,7 +1291,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "llama-maverick:400b"
     },
     {
       "id": "qwen3.5:397b",
@@ -1315,7 +1332,7 @@
       "family": "Qwen 3.5",
       "display_name": "Qwen 3.5 397B",
       "variant_label": "397B",
-      "quantization": "",
+      "quantization": "Q4_K_M",
       "model_type": "llm",
       "intended_use": "Community model; intended scope/application not verified.",
       "ram_target_gb": 384.0,
@@ -1327,7 +1344,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen3.5:397b"
     },
     {
       "id": "qwen2.5-coder:32b",
@@ -1395,7 +1413,8 @@
         "review_style": "Pick this when code-specialized local model. Strong at detecting style issues in Python code specifically.",
         "review_user_impact": "Pick this when code-focused model, less suited for UX assessment but can catch API breaking changes."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen2.5-coder:32b"
     },
     {
       "id": "qwen2.5-coder:7b",
@@ -1447,7 +1466,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwen2.5-coder:7b"
     },
     {
       "id": "codestral:22b",
@@ -1499,7 +1519,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "codestral:22b"
     },
     {
       "id": "deepseek-coder-v2:16b",
@@ -1551,7 +1572,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "deepseek-coder-v2:16b"
     },
     {
       "id": "deepseek-r1:32b",
@@ -1603,7 +1625,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "deepseek-r1:32b"
     },
     {
       "id": "qwq:32b",
@@ -1655,7 +1678,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "qwq:32b"
     },
     {
       "id": "deepseek-r1:671b",
@@ -1707,7 +1731,8 @@
       "status": "active",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "deepseek-r1:671b"
     },
     {
       "id": "moondream:1.8b",
@@ -1763,7 +1788,8 @@
       "task_stance": {
         "vision_input": "Pick this only on extremely RAM-constrained devices that can't run Gemma 4 4.5B. Light-weight vision encoder; quality is far below Llama 3.2 Vision 11B."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "moondream:1.8b"
     },
     {
       "id": "llama3.2-vision:90b",
@@ -1825,7 +1851,8 @@
         "chartqa": 0.851,
         "docvqa": 0.901,
         "mathvista": 0.578
-      }
+      },
+      "variant_group": "llama3.2-vision:90b"
     },
     {
       "id": "minicpm-v:8b",
@@ -1881,7 +1908,8 @@
       "task_stance": {
         "vision_input": "Pick this when you want fast batch image processing at low RAM and Llama 3.2 Vision 11B is too heavy. Strong OCR for size; lags 11B on dense documents."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "minicpm-v:8b"
     },
     {
       "id": "llava:13b",
@@ -1937,7 +1965,8 @@
       "task_stance": {
         "vision_input": "Pick this only for LLaVA-ecosystem compatibility. Llama 3.2 Vision 11B has superseded it on every published vision benchmark."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "llava:13b"
     },
     {
       "id": "llava:34b",
@@ -1993,7 +2022,8 @@
       "task_stance": {
         "vision_input": "Pick this only when you specifically prefer LLaVA's verbose description style. Llama 3.2 Vision 11B matches its quality at a third the RAM."
       },
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "llava:34b"
     },
     {
       "id": "flux2",
@@ -9385,7 +9415,8 @@
       "provider": "Ollama",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {}
+      "benchmarks": {},
+      "variant_group": "bge-m3:f16"
     },
     {
       "id": "gemma4:31b-it-q8_0",
