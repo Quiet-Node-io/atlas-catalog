@@ -51,6 +51,8 @@ REQUIRED_OLLAMA_FIELDS = (
     "variant_group",
 )
 
+KNOWN_VARIANTS = {"standard", "unrestricted"}
+
 
 def _nonempty_string(row: dict[str, Any], field: str) -> bool:
     value = row.get(field)
@@ -73,6 +75,14 @@ def validate_catalog(path: Path) -> list[str]:
         if model_id in seen_ids:
             errors.append(f"{model_id}: duplicate model id")
         seen_ids.add(model_id)
+
+        variant = row.get("variant")
+        if variant not in KNOWN_VARIANTS:
+            errors.append(f"{model_id}: variant must be one of standard, unrestricted")
+        if variant == "unrestricted" and row.get("unrestricted") is not True:
+            errors.append(f"{model_id}: variant=unrestricted requires unrestricted=true")
+        if row.get("unrestricted") is True and variant != "unrestricted":
+            errors.append(f"{model_id}: unrestricted=true requires variant=unrestricted")
 
         if row.get("registry") != "ollama":
             continue
