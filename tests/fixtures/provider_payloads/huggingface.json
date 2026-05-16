@@ -1,0 +1,10 @@
+{
+  "models": [
+    {
+      "id": "org/model-a",
+      "downloads": 10,
+      "likes": 5,
+      "pipeline_tag": "text-generation"
+    }
+  ]
+}

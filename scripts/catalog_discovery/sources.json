@@ -1,0 +1,38 @@
+{
+  "providers": [
+    {
+      "id": "openai",
+      "url": "https://api.openai.com/v1/models",
+      "token_env": "OPENAI_API_KEY"
+    },
+    {
+      "id": "anthropic",
+      "url": "https://api.anthropic.com/v1/models",
+      "token_env": "ANTHROPIC_API_KEY",
+      "auth_header": "x-api-key",
+      "auth_scheme": "",
+      "headers": {
+        "anthropic-version": "2023-06-01"
+      }
+    },
+    {
+      "id": "google",
+      "url": "https://generativelanguage.googleapis.com/v1beta/models"
+    },
+    {
+      "id": "xai",
+      "url": "https://api.x.ai/v1/models",
+      "token_env": "XAI_API_KEY"
+    },
+    {
+      "id": "huggingface",
+      "url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+      "token_env": "HF_TOKEN"
+    },
+    {
+      "id": "ollama",
+      "url": "https://ollama.com/library",
+      "format": "ollama_library_html"
+    }
+  ]
+}

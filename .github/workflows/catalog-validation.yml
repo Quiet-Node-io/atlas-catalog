@@ -5,21 +5,41 @@ on:
     paths:
       - "catalog.json"
       - "scripts/validate_catalog.py"
+      - "scripts/catalog_discovery/**"
+      - "scripts/run_catalog_discovery.py"
+      - "tests/**"
       - ".github/workflows/catalog-validation.yml"
+      - ".github/workflows/catalog-discovery.yml"
   push:
     branches: [main]
     paths:
       - "catalog.json"
       - "scripts/validate_catalog.py"
+      - "scripts/catalog_discovery/**"
+      - "scripts/run_catalog_discovery.py"
+      - "tests/**"
       - ".github/workflows/catalog-validation.yml"
+      - ".github/workflows/catalog-discovery.yml"
 
 jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
       - name: Validate catalog
         run: python scripts/validate_catalog.py catalog.json
+      - name: Run unit tests
+        run: python -m unittest discover -s tests -p 'test_*.py'
+      - name: Safety guard
+        if: github.event_name == 'pull_request'
+        run: |
+          git fetch origin "${{ github.base_ref }}" --depth=1
+          git show "origin/${{ github.base_ref }}:catalog.json" > /tmp/base-catalog.json
+          python scripts/catalog_discovery/safety.py \
+            --base /tmp/base-catalog.json \
+            --proposed catalog.json

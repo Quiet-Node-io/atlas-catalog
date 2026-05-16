@@ -1,0 +1,28 @@
+{
+  "catalog_version": 4,
+  "updated": "2026-05-16",
+  "models": [
+    {
+      "id": "openai:gpt-existing",
+      "name": "GPT Existing",
+      "registry": "cloud",
+      "provider": "OpenAI",
+      "provider_model_ref": "gpt-existing",
+      "status": "active",
+      "default": true,
+      "discovery_evidence": {
+        "sources": [
+          {
+            "kind": "provider_model_list",
+            "url": "https://api.openai.com/v1/models"
+          }
+        ]
+      }
+    }
+  ],
+  "task_benchmark_weights": {
+    "research_analysis": {
+      "mmlu_pro": 1.0
+    }
+  }
+}
