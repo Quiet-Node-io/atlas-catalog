@@ -42,6 +42,7 @@ The catalog is checked periodically. When a new model is added or a default is c
         "chat": 5, "speed": 3, "vision": 4
       },
       "unrestricted": false,   // True = uncensored model
+      "variant": "standard",   // standard or unrestricted content-safety variant
       "atlas_pick": true,      // Recommended by Atlas
       "default": true,         // Default model for new installs
       "registry": "ollama",    // ollama, huggingface, civitai, or cloud
@@ -117,6 +118,19 @@ Every row with `"registry": "ollama"` must use structured variant metadata:
 
 Run `python scripts/validate_catalog.py catalog.json` before opening catalog
 PRs. The GitHub workflow runs the same validator on catalog changes.
+
+### Content-safety variant field (RAN-337)
+
+Every model row must include `variant` with one of:
+
+- `standard`: default safety-aligned model row.
+- `unrestricted`: unrestricted model row. Rows with this value must also set
+  `unrestricted: true`.
+
+For system-slot alternatives, `variant_group` continues to group swappable
+siblings by family/size, `quantization` continues to identify Q4/Q8/BF16, and
+`variant` identifies the content-safety family used by Atlas's unrestricted
+system-variant picker.
 
 ## Maintainer-side discovery worker
 
