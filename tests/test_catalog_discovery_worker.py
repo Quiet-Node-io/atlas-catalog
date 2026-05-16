@@ -28,6 +28,10 @@ class WorkerIntegrationTests(unittest.TestCase):
                 json.dumps({"data": [{"id": "gpt-new"}]}),
                 encoding="utf-8",
             )
+            (provider_dir / "huggingface.json").write_text(
+                json.dumps([{"id": "org/model-a"}]),
+                encoding="utf-8",
+            )
             (research_dir / "openai_gpt-new.json").write_text(
                 json.dumps(
                     {
@@ -35,6 +39,7 @@ class WorkerIntegrationTests(unittest.TestCase):
                             {
                                 "kind": "huggingface_leaderboard",
                                 "url": "https://huggingface.co/spaces/test",
+                                "retrieved_at": "2026-05-16T00:00:00+00:00",
                                 "benchmarks": {
                                     "mmlu_pro": {
                                         "value": 0.82,
@@ -55,10 +60,26 @@ class WorkerIntegrationTests(unittest.TestCase):
                 create_pr=False,
             )
 
-            self.assertEqual(result["summary"]["added"], 1)
+            self.assertEqual(result["summary"]["added"], 2)
             proposed = json.loads((output / "proposed-catalog.json").read_text(encoding="utf-8"))
-            self.assertEqual(proposed["models"][0]["id"], "openai:gpt-new")
-            self.assertIn("discovery_evidence", proposed["models"][0])
+            by_id = {row["id"]: row for row in proposed["models"]}
+            self.assertIn("openai:gpt-new", by_id)
+            self.assertIn("huggingface:org/model-a", by_id)
+            self.assertEqual(by_id["openai:gpt-new"]["benchmarks"]["mmlu_pro"], 0.82)
+            self.assertEqual(
+                by_id["openai:gpt-new"]["benchmarks_meta"]["mmlu_pro"]["source_url"],
+                "https://huggingface.co/spaces/test",
+            )
+            self.assertEqual(
+                by_id["openai:gpt-new"]["benchmarks_meta"]["mmlu_pro"]["retrieved_at"],
+                "2026-05-16T00:00:00+00:00",
+            )
+            self.assertIsNone(by_id["huggingface:org/model-a"]["benchmarks"]["mmlu_pro"])
+            self.assertEqual(
+                by_id["huggingface:org/model-a"]["benchmarks_meta"]["mmlu_pro"]["missing_reason"],
+                "not_publicly_reported",
+            )
+            self.assertIn("discovery_evidence", by_id["openai:gpt-new"])
             self.assertTrue((output / "catalog-review-report.md").exists())
             self.assertTrue((output / "manifest.json").exists())
             self.assertTrue((output / "provider-evidence" / "discoveries.json").exists())

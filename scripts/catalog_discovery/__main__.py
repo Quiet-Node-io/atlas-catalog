@@ -48,10 +48,16 @@ def _catalog_row(discovery: dict[str, Any], research: dict[str, Any]) -> dict[st
         "status": "review_required",
         "default": False,
         "atlas_pick": False,
+        "unrestricted": False,
+        "variant": "standard",
         "update_policy": "optional",
         "benchmarks": {
             key: metric["value"]
             for key, metric in sorted(research.get("benchmarks", {}).items())
+        },
+        "benchmarks_meta": {
+            key: value
+            for key, value in sorted(research.get("benchmarks_meta", {}).items())
         },
         "discovery_evidence": {
             "source_url": discovery.get("source_url"),

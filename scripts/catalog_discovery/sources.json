@@ -1,4 +1,26 @@
 {
+  "research_sources": [
+    {
+      "id": "huggingface_leaderboard",
+      "priority": 1,
+      "description": "Public HuggingFace leaderboard or dataset evidence."
+    },
+    {
+      "id": "artificial_analysis",
+      "priority": 2,
+      "description": "Artificial Analysis benchmark, latency, throughput, and pricing evidence when API or permitted public access is available."
+    },
+    {
+      "id": "project_readme",
+      "priority": 3,
+      "description": "Project README or model-card benchmark tables."
+    },
+    {
+      "id": "provider_page",
+      "priority": 4,
+      "description": "Provider-published benchmark, latency, throughput, and pricing pages."
+    }
+  ],
   "providers": [
     {
       "id": "openai",
