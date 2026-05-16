@@ -118,6 +118,59 @@ Every row with `"registry": "ollama"` must use structured variant metadata:
 Run `python scripts/validate_catalog.py catalog.json` before opening catalog
 PRs. The GitHub workflow runs the same validator on catalog changes.
 
+## Maintainer-side discovery worker
+
+RAN-339 adds a maintainer-only discovery worker. The worker runs in this repo,
+not inside Atlas runtime, so Atlas instances continue to read only the
+published `catalog.json`.
+
+Manual dry run:
+
+```bash
+python scripts/run_catalog_discovery.py \
+  --catalog catalog.json \
+  --offline-fixtures tests/fixtures \
+  --output .atlas-review/test-run \
+  --no-pr
+```
+
+Scheduled runs live in `.github/workflows/catalog-discovery.yml`. The workflow
+queries configured provider/model registry sources, writes bounded review
+artifacts under `.atlas-review/runs/<run-id>/`, and opens a draft PR for human
+review. Draft PRs are the only automated publish path; maintainers must review
+and merge catalog changes manually.
+
+The worker stores review state in `review-state/` so ignored, reviewed, and
+already-open discoveries are not repeatedly surfaced unless their source hash
+changes. If repo-state JSON stops being enough, persistent storage belongs in
+the RAN-144 infrastructure track.
+
+### Discovery safety rules
+
+Publish safety is enforced by `scripts/catalog_discovery/safety.py`.
+
+Default behavior blocks destructive or non-additive changes:
+
+```bash
+python scripts/catalog_discovery/safety.py \
+  --base catalog.json \
+  --proposed .atlas-review/test-run/proposed-catalog.json
+```
+
+Explicit override is required for destructive publishes:
+
+```bash
+python scripts/catalog_discovery/safety.py \
+  --base catalog.json \
+  --proposed .atlas-review/test-run/proposed-catalog.json \
+  --allow-destructive
+```
+
+Benchmark and provenance enrichment happens only during discovery / publish.
+The worker records cited public benchmark values when the metric key is already
+known to `task_benchmark_weights`; unknown or uncited values stay out of
+`benchmarks`.
+
 ## Current Catalog
 
 241 models across 6 categories, including metadata-only cloud rows:

@@ -1,0 +1,29 @@
+{
+  "sources": [
+    {
+      "kind": "huggingface_leaderboard",
+      "url": "https://huggingface.co/spaces/test",
+      "benchmarks": {
+        "mmlu_pro": {
+          "value": 0.82,
+          "source_url": "https://huggingface.co/spaces/test"
+        }
+      }
+    },
+    {
+      "kind": "artificial_analysis",
+      "url": "https://artificialanalysis.ai/models/gpt-new",
+      "benchmarks": {
+        "speed_score": {
+          "value": 0.7,
+          "source_url": "https://artificialanalysis.ai/models/gpt-new"
+        }
+      }
+    },
+    {
+      "kind": "project_readme",
+      "url": "https://example.com/project-readme",
+      "text": "Project README evidence for gpt-new."
+    }
+  ]
+}

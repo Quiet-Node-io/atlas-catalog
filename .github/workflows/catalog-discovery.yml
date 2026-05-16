@@ -1,0 +1,91 @@
+name: Catalog discovery
+
+on:
+  schedule:
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: "Run discovery without opening a draft PR"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+      allow_destructive:
+        description: "Explicitly allow destructive catalog safety findings"
+        required: false
+        default: "false"
+        type: choice
+        options:
+          - "false"
+          - "true"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  discover:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run catalog discovery
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          XAI_API_KEY: ${{ secrets.XAI_API_KEY }}
+          HF_TOKEN: ${{ secrets.HF_TOKEN }}
+        run: |
+          run_id="$(date -u +%Y-%m-%d)-${GITHUB_RUN_ID}"
+          output_dir=".atlas-review/runs/${run_id}"
+          args=(
+            --catalog catalog.json
+            --output "${output_dir}"
+          )
+          if [ "${{ inputs.dry_run || 'false' }}" = "true" ]; then
+            args+=(--no-pr)
+          fi
+          if [ "${{ inputs.allow_destructive || 'false' }}" = "true" ]; then
+            args+=(--allow-destructive)
+          fi
+          python scripts/run_catalog_discovery.py "${args[@]}"
+          {
+            echo "run_id=${run_id}"
+            echo "output_dir=${output_dir}"
+          } >> "$GITHUB_ENV"
+
+      - name: Validate proposed catalog safety
+        run: |
+          args=(
+            --base catalog.json
+            --proposed "${output_dir}/proposed-catalog.json"
+          )
+          if [ "${{ inputs.allow_destructive || 'false' }}" = "true" ]; then
+            args+=(--allow-destructive)
+          fi
+          python scripts/catalog_discovery/safety.py \
+            "${args[@]}"
+
+      - name: Create discovery draft PR
+        if: ${{ (inputs.dry_run || 'false') != 'true' }}
+        uses: peter-evans/create-pull-request@v6
+        with:
+          branch: catalog/discovery-${{ env.run_id }}
+          title: "Catalog discovery review ${{ env.run_id }}"
+          body-path: ${{ env.output_dir }}/catalog-review-report.md
+          commit-message: "chore: catalog discovery review ${{ env.run_id }}"
+          add-paths: |
+            ${{ env.output_dir }}
+            review-state/discoveries.json
+            review-state/publish-state.json
+          draft: true
+          labels: catalog, automated-discovery

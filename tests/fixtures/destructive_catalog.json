@@ -1,0 +1,10 @@
+{
+  "catalog_version": 4,
+  "updated": "2026-05-16",
+  "models": [],
+  "task_benchmark_weights": {
+    "research_analysis": {
+      "mmlu_pro": 1.0
+    }
+  }
+}
