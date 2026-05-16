@@ -1,3 +1,1644 @@
 {
-  "discoveries": {}
+  "discoveries": {
+    "huggingface:BAAI/bge-base-en-v1.5": {
+      "provider": "huggingface",
+      "source_hash": "9bfb7520b856e3dec2b73f54d3391ba4242aa6a9279b071ad525ee03a3187433",
+      "state": "open_pr"
+    },
+    "huggingface:BAAI/bge-large-en-v1.5": {
+      "provider": "huggingface",
+      "source_hash": "cf0d4db6dc1142fef2496443ca6dbb7e419603d37266d5bf757daf3912a1b577",
+      "state": "open_pr"
+    },
+    "huggingface:BAAI/bge-m3": {
+      "provider": "huggingface",
+      "source_hash": "9b4cf75c79851b7ee79124b424799072b86d753aad0e89a343b54e72caacc5da",
+      "state": "open_pr"
+    },
+    "huggingface:BAAI/bge-reranker-base": {
+      "provider": "huggingface",
+      "source_hash": "55ce1116ed7bf28bf8c38d77e5ccb0d3ccdd6f78c7d5401e49a06f67d74c8e26",
+      "state": "open_pr"
+    },
+    "huggingface:BAAI/bge-reranker-v2-m3": {
+      "provider": "huggingface",
+      "source_hash": "ab64e735ac05609d32fef7da04211922bcad507374c9e0164bed4817f9f45122",
+      "state": "open_pr"
+    },
+    "huggingface:BAAI/bge-small-en-v1.5": {
+      "provider": "huggingface",
+      "source_hash": "4388471ceb56e483061559b6a7bad54c8c4c2c1e0267bf7d90ff4dcc30af9916",
+      "state": "open_pr"
+    },
+    "huggingface:Bingsu/adetailer": {
+      "provider": "huggingface",
+      "source_hash": "9435c3fb72febb3c397b55fc8b019162c0ce216a5b12cc06f20f880131443089",
+      "state": "open_pr"
+    },
+    "huggingface:Comfy-Org/Wan_2.2_ComfyUI_Repackaged": {
+      "provider": "huggingface",
+      "source_hash": "ce225322eb5cc7fef84073e2c96af9852ac6cb810d1bf7d15009ce99550069b9",
+      "state": "open_pr"
+    },
+    "huggingface:FacebookAI/roberta-base": {
+      "provider": "huggingface",
+      "source_hash": "1e5a1e03799aa8bcc1ae63ee5195ddb7914549d403a39421979c811eda2bcda9",
+      "state": "open_pr"
+    },
+    "huggingface:FacebookAI/roberta-large": {
+      "provider": "huggingface",
+      "source_hash": "3115ddfa1a2db90babee1621da5169ea7ec6bd3ccbaa2352f4ad5cec208ba349",
+      "state": "open_pr"
+    },
+    "huggingface:FacebookAI/xlm-roberta-base": {
+      "provider": "huggingface",
+      "source_hash": "1a94f085241bef6e41c1216ebdef0b4f8ba06cc5ad21ff821ef4d298ce3e0c30",
+      "state": "open_pr"
+    },
+    "huggingface:FacebookAI/xlm-roberta-large": {
+      "provider": "huggingface",
+      "source_hash": "0532fd20f7775202d32963fcbf1f2b17c550ba1c7459e70dbd58bb4c58bd8f39",
+      "state": "open_pr"
+    },
+    "huggingface:Falconsai/nsfw_image_detection": {
+      "provider": "huggingface",
+      "source_hash": "8ad65d947c403d0fa7820d5fe67345e7fcdf25d0c232ef203fac04f4ade6cb9a",
+      "state": "open_pr"
+    },
+    "huggingface:FinLang/finance-embeddings-investopedia": {
+      "provider": "huggingface",
+      "source_hash": "3a2a366fd1b9c38edb23604a0c4c090a2628191aad11acfc76d97b98ebfcec49",
+      "state": "open_pr"
+    },
+    "huggingface:Kijai/WanVideo_comfy": {
+      "provider": "huggingface",
+      "source_hash": "c1aee4dc54af3453a66f9c8bed40c3b90fdcfe0775bb28f00d6a5e3bdf5357ef",
+      "state": "open_pr"
+    },
+    "huggingface:ProsusAI/finbert": {
+      "provider": "huggingface",
+      "source_hash": "333afb99f57a2a80af0181c5d64c65653f210bada9ea101fe999744e0ac7894d",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2-1.5B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "93552c8bbd94fc5a748a06cbc82c859569cf8ee6cc6fe69117d494e49cbc4cbd",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2-VL-2B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "e5e4d23b068f769f1367e579f6bdd4e4b6a6734e5a323312892f95f68b10efc7",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-0.5B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "6b7c66d0c10c221da63dfdcb6b9c79f3142d4e6a4406660e936d7cdae61857ee",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-1.5B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "661d24fc860d76791f75ba4a5090c002f2510913e4d9d419896ebfc7e6ae011b",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-3B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "94dd0e9ad36019db250b12fb3fbeb481514a9cdfc1451d1042dd41a955cfc8d8",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-7B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "7b735d25de1d42d2a7353860d81675f02f45e643938fd8af4661d1d9b8ad8e7f",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-VL-3B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "58e7ad3ae07576240efe10a8fc6b432054574bbeccfe624e4ffd5002a2b58b70",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen2.5-VL-7B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "303ff41716118b26e323ca93a4e38effd9f788694931a124991e4cc279ae6a01",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-0.6B": {
+      "provider": "huggingface",
+      "source_hash": "7a17df68652389803a74791c90681ae9278722a268e086b567d79364bc6b9ca5",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-1.7B": {
+      "provider": "huggingface",
+      "source_hash": "a9aa1ac1ba950470275f477e86701524f672fad13417f81af7fd8de65ab32d98",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-32B": {
+      "provider": "huggingface",
+      "source_hash": "19babb83e79db13b97932dcd7611dfb47e3fe70afd58f703b49d6217c82ab31c",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-4B": {
+      "provider": "huggingface",
+      "source_hash": "82c20ebf2cb2aec2995d059b8ecfc58e3072e0254822fc2062991af596995c11",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-4B-Instruct-2507": {
+      "provider": "huggingface",
+      "source_hash": "9def5689d024d9c8d0c14c6ff7e83d0bb1f58f5373e5bac01037e2f88f21705e",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-8B": {
+      "provider": "huggingface",
+      "source_hash": "4b0bcd88312ac8e18a303c00fa04fbf4072b3a18e31355f5788b1eed275180df",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-Embedding-0.6B": {
+      "provider": "huggingface",
+      "source_hash": "4acaec9aece0a2534d038904250337ec3326777a8926ee806ef020a7c56c01d3",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-VL-2B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "5309ed374a57d14bbc675b82f5932342a1f1cadd2769a4c8354d86b488d3321a",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3-VL-8B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "ba6fb0c02c8f93c99021d98d1a663e6cd82d80e8d024a3731b41a042a038526a",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3.5-4B": {
+      "provider": "huggingface",
+      "source_hash": "569ad199962f4af15391da5b22cbbc1992e741da1c4ecce1963e9fff2665af43",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3.5-9B": {
+      "provider": "huggingface",
+      "source_hash": "f12f77addb5bd4bfe9117e223f21adf716e1685b92094a00c53b9febf4738905",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3.6-27B-FP8": {
+      "provider": "huggingface",
+      "source_hash": "2b9dbd4dbc9d5ba958a3e40d096ee16e29927e764ed23744a71a35cc8ea287d4",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3.6-35B-A3B": {
+      "provider": "huggingface",
+      "source_hash": "765501f81eb2bf7d92627365f4f4ecfc0a26751bf1c772d6478b33a6c65841cb",
+      "state": "open_pr"
+    },
+    "huggingface:Qwen/Qwen3.6-35B-A3B-FP8": {
+      "provider": "huggingface",
+      "source_hash": "a51b682c038ef80977f1a7f4b1b0604360b619f9252ebdc7295f1a4f994cfd47",
+      "state": "open_pr"
+    },
+    "huggingface:TostAI/nsfw-image-detection-large": {
+      "provider": "huggingface",
+      "source_hash": "36abe36d27fccad532157c0562313d3fbed660baf288370a9789feb4161d72a2",
+      "state": "open_pr"
+    },
+    "huggingface:Xenova/all-MiniLM-L6-v2": {
+      "provider": "huggingface",
+      "source_hash": "18ed9567d46d172004698aff440b7a6c3d0542504fad0b63f027f041f5c3973b",
+      "state": "open_pr"
+    },
+    "huggingface:amazon/chronos-2": {
+      "provider": "huggingface",
+      "source_hash": "14f10ed95cd0f131e21c4f9ae55b9ddd8388f5d9ef8a4f8ce3a6f0e26d0c3e56",
+      "state": "open_pr"
+    },
+    "huggingface:amazon/chronos-bolt-base": {
+      "provider": "huggingface",
+      "source_hash": "fdab2f2b141aa2b6d258bf1f47c57f1182ac5eff5fa2eeeb99ff8376deda93fc",
+      "state": "open_pr"
+    },
+    "huggingface:argmaxinc/whisperkit-coreml": {
+      "provider": "huggingface",
+      "source_hash": "ca9911bac6ca57a2d8d8e5d2f2c3011511d346f0b48ebfca1f6c17e1b53455eb",
+      "state": "open_pr"
+    },
+    "huggingface:autogluon/chronos-2": {
+      "provider": "huggingface",
+      "source_hash": "952d17f5ffa7243737690e2e0f408aefd07e80d2bc0e1f4d154245f3aacabe6e",
+      "state": "open_pr"
+    },
+    "huggingface:autogluon/chronos-bolt-base": {
+      "provider": "huggingface",
+      "source_hash": "9ea3d1f385a5ee7f6463b2ebbd151ad74e7194417b00391c5c1f17b9ffd9661a",
+      "state": "open_pr"
+    },
+    "huggingface:autogluon/chronos-bolt-small": {
+      "provider": "huggingface",
+      "source_hash": "5f7e0ef0aaee746759f317adb7e7bf127a8728c69b52280f1c0931a963697916",
+      "state": "open_pr"
+    },
+    "huggingface:colbert-ir/colbertv2.0": {
+      "provider": "huggingface",
+      "source_hash": "b7202e4386501490567b898ce977e6a77b7881d8a3696534bab088da8cc8bc39",
+      "state": "open_pr"
+    },
+    "huggingface:coqui/XTTS-v2": {
+      "provider": "huggingface",
+      "source_hash": "2478ac9412b6f31d8cce0741f281b9583395de2133ffe36fa59b22d0f3575f59",
+      "state": "open_pr"
+    },
+    "huggingface:cross-encoder/ms-marco-MiniLM-L6-v2": {
+      "provider": "huggingface",
+      "source_hash": "09e51e928271285baf706bb186fe02bbed69f6edf52d079b242f7d4e00081c4b",
+      "state": "open_pr"
+    },
+    "huggingface:deepseek-ai/DeepSeek-R1": {
+      "provider": "huggingface",
+      "source_hash": "f3a7078c556ecb8e64d3f74250b70eca7390f4a23684464693b451b598a314a4",
+      "state": "open_pr"
+    },
+    "huggingface:deepseek-ai/DeepSeek-V3.2": {
+      "provider": "huggingface",
+      "source_hash": "cea20f99792e1ff25e72b90e435030eb6dc36668d6c94f3317d60300ef8b99da",
+      "state": "open_pr"
+    },
+    "huggingface:dima806/fairface_age_image_detection": {
+      "provider": "huggingface",
+      "source_hash": "416883d141e0b6125f174e09fc3553ff0e959d2b884fe0447719e9c2e0c0f06a",
+      "state": "open_pr"
+    },
+    "huggingface:distilbert/distilbert-base-uncased": {
+      "provider": "huggingface",
+      "source_hash": "32027b2e5434586015b20b04a4386a16e8fb2e0ffc6a010a7998164cd02a2597",
+      "state": "open_pr"
+    },
+    "huggingface:dphn/dolphin-2.9.1-yi-1.5-34b": {
+      "provider": "huggingface",
+      "source_hash": "a73536e73ff60289bdd24cfb0488eba5e9b834e7a61f6a4cb88a6fd74fc16cb1",
+      "state": "open_pr"
+    },
+    "huggingface:facebook/contriever": {
+      "provider": "huggingface",
+      "source_hash": "c6db18735d077066b6baecf8808df99d8af2d7e381877c2947c10d9a562d41f9",
+      "state": "open_pr"
+    },
+    "huggingface:facebook/dinov2-large": {
+      "provider": "huggingface",
+      "source_hash": "2d4776048d57580fd0c8d7b4413f27d1b2a84eabd4b3272d92e6cd5d70ecff6d",
+      "state": "open_pr"
+    },
+    "huggingface:facebook/opt-125m": {
+      "provider": "huggingface",
+      "source_hash": "dfc520ee55b11090d68859b36bf838816511c6c2e9057de7a2460d7a165eba89",
+      "state": "open_pr"
+    },
+    "huggingface:google-bert/bert-base-cased": {
+      "provider": "huggingface",
+      "source_hash": "64ff4140ca84744cac4d508f6187537058cd8c91ce6136c91aff4e135e369980",
+      "state": "open_pr"
+    },
+    "huggingface:google-bert/bert-base-multilingual-cased": {
+      "provider": "huggingface",
+      "source_hash": "945b2dee9c5c0b72ec429d6e4e06d002a4b0a1c6500f64b4c5fec443bbe80982",
+      "state": "open_pr"
+    },
+    "huggingface:google-bert/bert-base-multilingual-uncased": {
+      "provider": "huggingface",
+      "source_hash": "f92dca9d1a242f65112fbf3e25bd7b14979cb44d7bfc6c3c6cd72f5535e80f8f",
+      "state": "open_pr"
+    },
+    "huggingface:google-bert/bert-base-uncased": {
+      "provider": "huggingface",
+      "source_hash": "816d6366214611afad0435975e82a5855a9fae1785fb7b6202d75f00bf5ed753",
+      "state": "open_pr"
+    },
+    "huggingface:google/electra-base-discriminator": {
+      "provider": "huggingface",
+      "source_hash": "834dd468c60c6e445fd5799deed036173db16c9e313296b1129a76b6a5dcfd75",
+      "state": "open_pr"
+    },
+    "huggingface:google/gemma-4-26B-A4B-it": {
+      "provider": "huggingface",
+      "source_hash": "4f1c00df6ccab3698dca230100bc51136df7783552c03282738871a33b80a640",
+      "state": "open_pr"
+    },
+    "huggingface:google/gemma-4-31B-it": {
+      "provider": "huggingface",
+      "source_hash": "b80ff2f3a361a7060bfbb957c1af6b8a56103302ca749ea5e584a8c68f4e3cbb",
+      "state": "open_pr"
+    },
+    "huggingface:google/gemma-4-E4B-it": {
+      "provider": "huggingface",
+      "source_hash": "60ca856bb15745e6f1b5fbc0761dcf160ef7610039265a5e30000a7aa6057170",
+      "state": "open_pr"
+    },
+    "huggingface:google/vit-base-patch16-224": {
+      "provider": "huggingface",
+      "source_hash": "ccb916ec0bf65680ba370d32d9ed440a9ae5308953245f296dbcb04f4906cea5",
+      "state": "open_pr"
+    },
+    "huggingface:hexgrad/Kokoro-82M": {
+      "provider": "huggingface",
+      "source_hash": "fef88495234f50373d32f730529af0f9bb950d5f462c858818e139e483aa17ae",
+      "state": "open_pr"
+    },
+    "huggingface:intfloat/multilingual-e5-base": {
+      "provider": "huggingface",
+      "source_hash": "39d803c4c90d61532446f782939f4f6c96713e91a8c247634f706810a4050a19",
+      "state": "open_pr"
+    },
+    "huggingface:intfloat/multilingual-e5-large": {
+      "provider": "huggingface",
+      "source_hash": "da69d092519de1eec7bd6e055e7fa9b24320a71ec82ae5adea2a8ae1c6890d73",
+      "state": "open_pr"
+    },
+    "huggingface:intfloat/multilingual-e5-small": {
+      "provider": "huggingface",
+      "source_hash": "ed4ae458c2e5e5fbe082c787a02185d40df038ff4b03d0874881ec1e8bc98d6c",
+      "state": "open_pr"
+    },
+    "huggingface:jonatasgrosman/wav2vec2-large-xlsr-53-portuguese": {
+      "provider": "huggingface",
+      "source_hash": "011ca27d6240794b466d8d1d3cac3e49034ca006bb9349e10148490085eee7ea",
+      "state": "open_pr"
+    },
+    "huggingface:jonatasgrosman/wav2vec2-large-xlsr-53-russian": {
+      "provider": "huggingface",
+      "source_hash": "5fa0af66aa3cf484d7fc8da159b335c55494ffb0a4b57b0bc80cb6b2634a6fb0",
+      "state": "open_pr"
+    },
+    "huggingface:laion/clap-htsat-fused": {
+      "provider": "huggingface",
+      "source_hash": "0735e1d2898554f5bf330602a621517c436f97d2da283e8825be22f4906cb210",
+      "state": "open_pr"
+    },
+    "huggingface:lpiccinelli/unidepth-v2-vitl14": {
+      "provider": "huggingface",
+      "source_hash": "80ef2f69fb9e124072ffeb6bd10b9e07414e1348cdbab1efbed1b755c14b9f5d",
+      "state": "open_pr"
+    },
+    "huggingface:meta-llama/Llama-3.1-8B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "601130b4df81943db1d255f3a6e8e927a7244d146e45fdb495f199631c0479f3",
+      "state": "open_pr"
+    },
+    "huggingface:meta-llama/Llama-3.2-1B-Instruct": {
+      "provider": "huggingface",
+      "source_hash": "c8cc75f450d2ad9ff4443cb4c10b8920f2ad78d53283da4eaa91346cd35810d0",
+      "state": "open_pr"
+    },
+    "huggingface:mistralai/Mistral-7B-Instruct-v0.3": {
+      "provider": "huggingface",
+      "source_hash": "1d292021fbca9fdfcc73eaf203360fa18492afa769ecbbcba032b8eb727f589c",
+      "state": "open_pr"
+    },
+    "huggingface:mixedbread-ai/mxbai-embed-large-v1": {
+      "provider": "huggingface",
+      "source_hash": "7574e89f47c8cec6d5b689400b5871504d4d582f0fdb2bdb5359f0b4627eba06",
+      "state": "open_pr"
+    },
+    "huggingface:nomic-ai/nomic-embed-text-v1": {
+      "provider": "huggingface",
+      "source_hash": "88b5ff85d9c7ebabc2daaf9b1b480a3d1b6a21ea2eb6b01b74de7ea77554863e",
+      "state": "open_pr"
+    },
+    "huggingface:nomic-ai/nomic-embed-text-v1.5": {
+      "provider": "huggingface",
+      "source_hash": "9e37ddb9f7a456cdb56ebf9855219be719ce51d9ddff8fbde402b93cda18e1bd",
+      "state": "open_pr"
+    },
+    "huggingface:openai-community/gpt2": {
+      "provider": "huggingface",
+      "source_hash": "eafb76e5c8fd9920cc33ca7888515b87f4632dccfd7ee5eeab461ad51197d7d7",
+      "state": "open_pr"
+    },
+    "huggingface:openai/clip-vit-base-patch32": {
+      "provider": "huggingface",
+      "source_hash": "9996b4c849d157648c9bd5d69f7f2ad4f42dccc75cc718a236bffe98d0a9e297",
+      "state": "open_pr"
+    },
+    "huggingface:openai/clip-vit-large-patch14": {
+      "provider": "huggingface",
+      "source_hash": "dcc5779941f592471469fb4b885cf999fd9773471c4179be0733a8203d828d61",
+      "state": "open_pr"
+    },
+    "huggingface:openai/clip-vit-large-patch14-336": {
+      "provider": "huggingface",
+      "source_hash": "b069e1309e88c66e427bb2b9bcb118b66a211549b671aadc4d39804f5a4b95d2",
+      "state": "open_pr"
+    },
+    "huggingface:openai/gpt-oss-120b": {
+      "provider": "huggingface",
+      "source_hash": "36ddf0b529b727eeac30e391ca7f6bffea721579d399b154892e57c4a334d6f8",
+      "state": "open_pr"
+    },
+    "huggingface:openai/gpt-oss-20b": {
+      "provider": "huggingface",
+      "source_hash": "9e1a94efc3c97b753d752b5b5abca0e47ccce3208926f098282049b505b47e8a",
+      "state": "open_pr"
+    },
+    "huggingface:openai/whisper-large-v3": {
+      "provider": "huggingface",
+      "source_hash": "08fc0eb694763be9a620c8231ef57deb7fcfba9f17f132aad423c856e60b0fe0",
+      "state": "open_pr"
+    },
+    "huggingface:openai/whisper-large-v3-turbo": {
+      "provider": "huggingface",
+      "source_hash": "9b5bf66f1e5e279eb55fa8fcf4020684693886e20b909110921809bcef1223cb",
+      "state": "open_pr"
+    },
+    "huggingface:pyannote/segmentation": {
+      "provider": "huggingface",
+      "source_hash": "cabaeef892948d7a8b1ba1888ddc3a1a71497f15d3ec7ea5612be4f6e6b8ef01",
+      "state": "open_pr"
+    },
+    "huggingface:pyannote/segmentation-3.0": {
+      "provider": "huggingface",
+      "source_hash": "b23a86bec21a3bee3900acc50d664be8598fb0c6f82e3f2dcd070876b0ba1bab",
+      "state": "open_pr"
+    },
+    "huggingface:pyannote/speaker-diarization-3.1": {
+      "provider": "huggingface",
+      "source_hash": "d8bf6aa087efc0e04ba128e4e780ccac295e93a18b925a0067a30a8f21a7dfb8",
+      "state": "open_pr"
+    },
+    "huggingface:pyannote/wespeaker-voxceleb-resnet34-LM": {
+      "provider": "huggingface",
+      "source_hash": "ec1fa5ba75f0449ffba44ab49054276777ad511476f8bf6124b86b3368ef1762",
+      "state": "open_pr"
+    },
+    "huggingface:sentence-transformers/all-MiniLM-L6-v2": {
+      "provider": "huggingface",
+      "source_hash": "ac1db910c2e630c5eb8c7fe49c71512ed7a2a184b95f466c649d0ef693657d24",
+      "state": "open_pr"
+    },
+    "huggingface:sentence-transformers/all-mpnet-base-v2": {
+      "provider": "huggingface",
+      "source_hash": "8bf72a4329bb4820c188bfecb171ea2f1dedd991bb49114e45c178911bdb273d",
+      "state": "open_pr"
+    },
+    "huggingface:sentence-transformers/paraphrase-MiniLM-L6-v2": {
+      "provider": "huggingface",
+      "source_hash": "24de9bb93b19c8ed02b919509a6353873e1fbe1dcf0f751a9892f8138e1324c6",
+      "state": "open_pr"
+    },
+    "huggingface:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2": {
+      "provider": "huggingface",
+      "source_hash": "d4d24e3c284a031ac9ff059d61707dda88a201ecde99ae390baad7f1d0bf5c70",
+      "state": "open_pr"
+    },
+    "huggingface:sentence-transformers/paraphrase-multilingual-mpnet-base-v2": {
+      "provider": "huggingface",
+      "source_hash": "67f5df361c7439e80b242156ac5419637b2c77d3e7dd61abb34d71d702c01d7c",
+      "state": "open_pr"
+    },
+    "huggingface:timm/mobilenetv3_small_100.lamb_in1k": {
+      "provider": "huggingface",
+      "source_hash": "1f3d0f4c950e5fa94d13d0fdaf76062baa5de53637dcca7c2b377737910e7cde",
+      "state": "open_pr"
+    },
+    "huggingface:trl-internal-testing/tiny-Qwen2ForCausalLM-2.5": {
+      "provider": "huggingface",
+      "source_hash": "8de16f8d858eff685d08e2f71b43ac1391687493629544050fbc0e5ae070df27",
+      "state": "open_pr"
+    },
+    "huggingface:zai-org/GLM-OCR": {
+      "provider": "huggingface",
+      "source_hash": "b890b36ab26d8a566b3f21880873a1903cac476790a3f5995f53db204083fd9a",
+      "state": "open_pr"
+    },
+    "ollama:alfred": {
+      "provider": "ollama",
+      "source_hash": "7b2b547ab5377906300c69cd065aa48ecc143ddcd9501ef2b7c6408cc3592ac3",
+      "state": "open_pr"
+    },
+    "ollama:all-minilm": {
+      "provider": "ollama",
+      "source_hash": "a51ea6ac970865616f6442c59374278d9c611ea1696f2603c11bfee662247789",
+      "state": "open_pr"
+    },
+    "ollama:athene-v2": {
+      "provider": "ollama",
+      "source_hash": "1869c84e6eba53d012a493a4636634405095ea1c81ab9d865222a88021521d2c",
+      "state": "open_pr"
+    },
+    "ollama:aya": {
+      "provider": "ollama",
+      "source_hash": "7e91f0cff4ec76deae8af961a8c92a755b5fd3a791b6ea87b4db59db7a8101dd",
+      "state": "open_pr"
+    },
+    "ollama:aya-expanse": {
+      "provider": "ollama",
+      "source_hash": "7f91e494ce3bd328a1e1079cbeb828aa0a8b2c2733cc8dfa2bb3980da0f468b2",
+      "state": "open_pr"
+    },
+    "ollama:bakllava": {
+      "provider": "ollama",
+      "source_hash": "253d41480aeccb3695a0857adf3910386e77720ea18c96b3a0e53b1035533fca",
+      "state": "open_pr"
+    },
+    "ollama:bespoke-minicheck": {
+      "provider": "ollama",
+      "source_hash": "5755b48d05bc15b85e3c1a18ea604e10d0d78fee9ba86e34e7d17e4c665219a8",
+      "state": "open_pr"
+    },
+    "ollama:bge-large": {
+      "provider": "ollama",
+      "source_hash": "40a4bd14659f0f4f61698ae0c71e69c1fedfbcf83723ff0cf1a60fe462e1d298",
+      "state": "open_pr"
+    },
+    "ollama:bge-m3": {
+      "provider": "ollama",
+      "source_hash": "8c041954a2909f2bdb9b04870bf27d3733396941c66698cfa29824014672f44d",
+      "state": "open_pr"
+    },
+    "ollama:codebooga": {
+      "provider": "ollama",
+      "source_hash": "d28eb8f6d456a02d73b009b828a1467f23232cdef64b8d3989a228c5f7b78e3d",
+      "state": "open_pr"
+    },
+    "ollama:codegeex4": {
+      "provider": "ollama",
+      "source_hash": "17b7f1c8fe59247c7c3bba7526136207e4b23881309663e82dcecc743a9b96f6",
+      "state": "open_pr"
+    },
+    "ollama:codegemma": {
+      "provider": "ollama",
+      "source_hash": "949b54e254375b13ddc4d7b1a67719ded35e80ca088fa2fb5fd9a1e49ed49910",
+      "state": "open_pr"
+    },
+    "ollama:codellama": {
+      "provider": "ollama",
+      "source_hash": "5d7269a515e497bd4e14a9cbbf1ffcfbf24a6cfaf4500b9ef5a6d40e870f1a88",
+      "state": "open_pr"
+    },
+    "ollama:codeqwen": {
+      "provider": "ollama",
+      "source_hash": "3c2022e3bd01e1e8993b9067754186b85f4484f7285a1822fb4e8501a2c9c63a",
+      "state": "open_pr"
+    },
+    "ollama:codestral": {
+      "provider": "ollama",
+      "source_hash": "1c33f1f4e5c5bec3255747e748adb07b48832d5fe0dedef5239df15255f6b2dc",
+      "state": "open_pr"
+    },
+    "ollama:codeup": {
+      "provider": "ollama",
+      "source_hash": "09ab52037190cebf30e59c12f92efce4bb44bd64347e712ce9950f33d484d3f4",
+      "state": "open_pr"
+    },
+    "ollama:cogito": {
+      "provider": "ollama",
+      "source_hash": "d2915f0e9118f5ae8dbf87f8e7b3686f73d4905b0776284398949d80255dc575",
+      "state": "open_pr"
+    },
+    "ollama:cogito-2.1": {
+      "provider": "ollama",
+      "source_hash": "d56d9016c1fff48177e7717b8637940b45af22f06f76b4105bb28844f96297dc",
+      "state": "open_pr"
+    },
+    "ollama:command-a": {
+      "provider": "ollama",
+      "source_hash": "a57df22028ac9b1151ef45822550190915b090b4f81918782b31a2b223384c80",
+      "state": "open_pr"
+    },
+    "ollama:command-r": {
+      "provider": "ollama",
+      "source_hash": "88b077c3c41e61f580332e6a460a9e629a56dd27e060bfc4c2b75ce436dac408",
+      "state": "open_pr"
+    },
+    "ollama:command-r-plus": {
+      "provider": "ollama",
+      "source_hash": "8c2f0bf09668064b049745d22fa5d9b07b07a2e951ade8bb79659fccf9e88fa2",
+      "state": "open_pr"
+    },
+    "ollama:command-r7b": {
+      "provider": "ollama",
+      "source_hash": "222c264a00e5922e079d87763b053c944a6e517353ab40df3b9b6d88fe120301",
+      "state": "open_pr"
+    },
+    "ollama:command-r7b-arabic": {
+      "provider": "ollama",
+      "source_hash": "f64cd9375ae2d235ce4da75a50989b281c20b85e631c055f70435f4bfe2f6657",
+      "state": "open_pr"
+    },
+    "ollama:dbrx": {
+      "provider": "ollama",
+      "source_hash": "dff4f10fbafec8cc6d6a287e33d1992ea4db55ee03f49d1d6adc00c34e513eab",
+      "state": "open_pr"
+    },
+    "ollama:deepcoder": {
+      "provider": "ollama",
+      "source_hash": "42e6985cbb6e1373c91a6d443b04f49352b7866e35859a6c997a4407fb29fd08",
+      "state": "open_pr"
+    },
+    "ollama:deepscaler": {
+      "provider": "ollama",
+      "source_hash": "fff3f4a8d1f6538f9a941b20feaef0163c9bc0dae4a7e24c1ee29a81808633a1",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-coder": {
+      "provider": "ollama",
+      "source_hash": "b8f4b7a28d15a70a69cc71c575236daf56f486a937a4d48b5a7408c7a8f03ed2",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-coder-v2": {
+      "provider": "ollama",
+      "source_hash": "04eb984f2790d9a6c5058450705e2ff6f6e986c70273c981c1ae900227510e05",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-llm": {
+      "provider": "ollama",
+      "source_hash": "39246d6c97daa81d08dda616188e20273e17bbc2c6ac3e222f10314de9aeae9c",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-ocr": {
+      "provider": "ollama",
+      "source_hash": "a787bc358d9480815a679194daefed91a3bad81a42a03dbfb6698d816d6cd6dc",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-r1": {
+      "provider": "ollama",
+      "source_hash": "28616143fb25a8ed6d0c80088205d9ddbb2e9b91c26e9848d08322a32ed6545d",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v2": {
+      "provider": "ollama",
+      "source_hash": "0eda1ed6416aa5fa70c0a3f065541077a16d154246f0ea63ed7f45485d8b8110",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v2.5": {
+      "provider": "ollama",
+      "source_hash": "d8f101e3b6a53464e29c515e418e0d5fe18303c1792bf4c9c25229ea735acc03",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v3": {
+      "provider": "ollama",
+      "source_hash": "9d12a9fe706d0b0cbee0a642eb21f5b378f88ba06bc13d8db3a99461e0fe177c",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v3.1": {
+      "provider": "ollama",
+      "source_hash": "da84ac0c3db886e93b9911935d859d2e94897bc31f43f878e88d5c8301693c4d",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v3.2": {
+      "provider": "ollama",
+      "source_hash": "c4e6a3d9e5d22f4b120b2d03a4cbcbe5f87ee1186061b8bc063c7f18839ac50b",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v4-flash": {
+      "provider": "ollama",
+      "source_hash": "f61ff5cf8e1cc88da6944d6bcd3e2e7da5ff27dd3288a8781908018cb8240cd6",
+      "state": "open_pr"
+    },
+    "ollama:deepseek-v4-pro": {
+      "provider": "ollama",
+      "source_hash": "052e4fc0bc88e2a5376eb7461a1ec3686311e42a1f2219ebf9beeac1414e252e",
+      "state": "open_pr"
+    },
+    "ollama:devstral": {
+      "provider": "ollama",
+      "source_hash": "756ec6d4df0447abfbf0261522477f2c4956a6530878f5daf4c716d815ab0196",
+      "state": "open_pr"
+    },
+    "ollama:devstral-2": {
+      "provider": "ollama",
+      "source_hash": "4685d45ed8af4057b4367f5a738c883fb786cc94e842bac0834b9f117969d09d",
+      "state": "open_pr"
+    },
+    "ollama:devstral-small-2": {
+      "provider": "ollama",
+      "source_hash": "498156d955c12058626cf63b51083159e5caab773fc8b15351308fdb9be43b92",
+      "state": "open_pr"
+    },
+    "ollama:dolphin-llama3": {
+      "provider": "ollama",
+      "source_hash": "4f599ca56c9ddea1edb4a90bb9a573210b987a2b120fb3c6b19630c4a4331291",
+      "state": "open_pr"
+    },
+    "ollama:dolphin-mistral": {
+      "provider": "ollama",
+      "source_hash": "e30969a24305756b230342dc787b6f7da4a5ca08d7d066e8cad15967258427b1",
+      "state": "open_pr"
+    },
+    "ollama:dolphin-mixtral": {
+      "provider": "ollama",
+      "source_hash": "1c9946718db7969661bb32bd769abfd47325d076227a29400ba63f895b4b9fa1",
+      "state": "open_pr"
+    },
+    "ollama:dolphin-phi": {
+      "provider": "ollama",
+      "source_hash": "21f080354b5a72ebaa08c316f084e9b8ed71adb293fba44e11b5589fea3c2caf",
+      "state": "open_pr"
+    },
+    "ollama:dolphin3": {
+      "provider": "ollama",
+      "source_hash": "be2cd9f0c8b0bac65f583b3e3824592f016bb94175ca842214e0be30f43fe1a8",
+      "state": "open_pr"
+    },
+    "ollama:dolphincoder": {
+      "provider": "ollama",
+      "source_hash": "be1ecbc0122cde4ccdde2f53f952df0f5c7627b6b08647ac00d60b8b911ff4d7",
+      "state": "open_pr"
+    },
+    "ollama:duckdb-nsql": {
+      "provider": "ollama",
+      "source_hash": "56c4939b86b866a474bf2ac650ee5bad5fb6fa4301843e0e81174a6a8ab247e9",
+      "state": "open_pr"
+    },
+    "ollama:embeddinggemma": {
+      "provider": "ollama",
+      "source_hash": "83ebf1a1f7798131b309f590f7307cb6b1cd5e2ddcda8dca4fc7bf6f727e06cc",
+      "state": "open_pr"
+    },
+    "ollama:everythinglm": {
+      "provider": "ollama",
+      "source_hash": "e3613470e406849ffd2f7d6e06ee3827900ed7510592571f7b82227255f83d02",
+      "state": "open_pr"
+    },
+    "ollama:exaone-deep": {
+      "provider": "ollama",
+      "source_hash": "91dc69f53b81c1b6b78c9d5a448d2d00285b43f47237817bf0eb4da79d1a0652",
+      "state": "open_pr"
+    },
+    "ollama:exaone3.5": {
+      "provider": "ollama",
+      "source_hash": "87ec8cb29f5aec476c22081cee766cf1659357fec03f39b672e7bda0aadf4bc4",
+      "state": "open_pr"
+    },
+    "ollama:falcon": {
+      "provider": "ollama",
+      "source_hash": "a84571394b5e99fe70aae39ece25f844acbaf83479e27f39a30732e092b19677",
+      "state": "open_pr"
+    },
+    "ollama:falcon2": {
+      "provider": "ollama",
+      "source_hash": "bfa31f248067ea8bd6a40fd5e3fc6cfc3c826b66cd13856ef7e245bd28cefd0c",
+      "state": "open_pr"
+    },
+    "ollama:falcon3": {
+      "provider": "ollama",
+      "source_hash": "62568d42471f6979644c1ff51b369497552668ae80eb62042054da8eb186eea3",
+      "state": "open_pr"
+    },
+    "ollama:firefunction-v2": {
+      "provider": "ollama",
+      "source_hash": "afbbd424a6354c6960510f15f1afe7810093152f19f80a49f20db555efb3ebe1",
+      "state": "open_pr"
+    },
+    "ollama:functiongemma": {
+      "provider": "ollama",
+      "source_hash": "f0a854a40dcde36ac30ebb8f01ec1313c375f3f7fa1ee5fa0d92f7235b336504",
+      "state": "open_pr"
+    },
+    "ollama:gemini-3-flash-preview": {
+      "provider": "ollama",
+      "source_hash": "bb3981be524564f65adbc5424e0b8bfce98285c12e4a45300653c09a33927bb4",
+      "state": "open_pr"
+    },
+    "ollama:gemma": {
+      "provider": "ollama",
+      "source_hash": "3fb22a5597fb91ee4f9abbf30ea69d318be150e0fcf3ca1db8ca334b520d2894",
+      "state": "open_pr"
+    },
+    "ollama:gemma2": {
+      "provider": "ollama",
+      "source_hash": "844dbf8fb9d0d91695e8c043348c63026e281189928778efb909469ce6c25441",
+      "state": "open_pr"
+    },
+    "ollama:gemma3": {
+      "provider": "ollama",
+      "source_hash": "d10904b4e8c455d5650c2061af4d2be591e09b50be7788fed3b88646a0bd6d17",
+      "state": "open_pr"
+    },
+    "ollama:gemma3n": {
+      "provider": "ollama",
+      "source_hash": "b7bfeebc821a7be9975217893c5f8e59e070d9afffff1e7a41a4805d80d2ca45",
+      "state": "open_pr"
+    },
+    "ollama:glm-4.6": {
+      "provider": "ollama",
+      "source_hash": "539581ed680ef633460be5d74b5d6644391086cf84644e048aad29bfad5188f2",
+      "state": "open_pr"
+    },
+    "ollama:glm-4.7": {
+      "provider": "ollama",
+      "source_hash": "070a6e92355eb4badbfcfc03c6df87522b615989f8b49abff6f79fb9765c1028",
+      "state": "open_pr"
+    },
+    "ollama:glm-4.7-flash": {
+      "provider": "ollama",
+      "source_hash": "906b3da4dbf71489afa02bfe8a90925ec3bfe383939dabca87b0f391e84ef539",
+      "state": "open_pr"
+    },
+    "ollama:glm-5": {
+      "provider": "ollama",
+      "source_hash": "343fb7bd0d85299db4704c8d38dab3433f709e652c22e4881eef4403d710daab",
+      "state": "open_pr"
+    },
+    "ollama:glm-5.1": {
+      "provider": "ollama",
+      "source_hash": "0d371c4eb8c7bba6166fa27383234b348b2b06bacac1b3d2af1e243eaa1e80de",
+      "state": "open_pr"
+    },
+    "ollama:glm-ocr": {
+      "provider": "ollama",
+      "source_hash": "f6d592bce36c8c5cb0a2b1ebf49cfa9813bb21c34831104d314065470d41788b",
+      "state": "open_pr"
+    },
+    "ollama:glm4": {
+      "provider": "ollama",
+      "source_hash": "0f4087fff9284d7651d3c96c0222e62128fae780c592b767b7b8883adbf44fe8",
+      "state": "open_pr"
+    },
+    "ollama:goliath": {
+      "provider": "ollama",
+      "source_hash": "71aaca2df6978aba4c91b4be3e4d98c2bea0ca99f6580174918d5b329934cd36",
+      "state": "open_pr"
+    },
+    "ollama:gpt-oss": {
+      "provider": "ollama",
+      "source_hash": "8217cfd13ef56bd77949fd41152f765cd651c1cb90caf33feb9afce6a820ce36",
+      "state": "open_pr"
+    },
+    "ollama:gpt-oss-safeguard": {
+      "provider": "ollama",
+      "source_hash": "662ea70922d3f250a5d341365612ae67d13f0f1d288874fadaf881c7bfe47125",
+      "state": "open_pr"
+    },
+    "ollama:granite-code": {
+      "provider": "ollama",
+      "source_hash": "d0717b16d7f7b61df366fc0407f4fb117e553dbf3866e5ded37f7337b6bd7b76",
+      "state": "open_pr"
+    },
+    "ollama:granite-embedding": {
+      "provider": "ollama",
+      "source_hash": "94f464bb6262c90fef8ad91155de62323fdcbaa6901bfb56874dd51640a03e4f",
+      "state": "open_pr"
+    },
+    "ollama:granite3-dense": {
+      "provider": "ollama",
+      "source_hash": "4bf8fed9f0478be2e7a7ef6fc9e6aa8cadf8d31c8c0145001bf0edfbbb71ae6d",
+      "state": "open_pr"
+    },
+    "ollama:granite3-guardian": {
+      "provider": "ollama",
+      "source_hash": "22327c61ee0a6c86ca26d2d01cdb6ee0e0c5475313e94cb19c6c5eae68df8bf2",
+      "state": "open_pr"
+    },
+    "ollama:granite3-moe": {
+      "provider": "ollama",
+      "source_hash": "6a649706f49990da5007f62e072c424db9e00f45f5f03e2115c9f40de229aba2",
+      "state": "open_pr"
+    },
+    "ollama:granite3.1-dense": {
+      "provider": "ollama",
+      "source_hash": "23adba7f758a76661cbe5e878b3c77595e2a72fa3cc13e5b8aa4594aac5bc7ec",
+      "state": "open_pr"
+    },
+    "ollama:granite3.1-moe": {
+      "provider": "ollama",
+      "source_hash": "0f664cf8f21e7f0b205b589deabc75213d5001376ea428c3cc650492932ff40b",
+      "state": "open_pr"
+    },
+    "ollama:granite3.2": {
+      "provider": "ollama",
+      "source_hash": "74e67ceeaca7e6bd5f00b8cd15e39066fd3006a2b1b42c7c3af737d785506c4b",
+      "state": "open_pr"
+    },
+    "ollama:granite3.2-vision": {
+      "provider": "ollama",
+      "source_hash": "f0af8e48108148a77f29e56f76bd09161ba6bd127f2cbc3407dd8c04e0b718e8",
+      "state": "open_pr"
+    },
+    "ollama:granite3.3": {
+      "provider": "ollama",
+      "source_hash": "197a1ae4d09620f3f2a315bf217e775645e14e6c3a1e4a20f8d5bed5c6acc1b2",
+      "state": "open_pr"
+    },
+    "ollama:granite4": {
+      "provider": "ollama",
+      "source_hash": "d290526b7250c17d392b80f4c7429f0fba3966f3903b0f63cbe9e159719b3659",
+      "state": "open_pr"
+    },
+    "ollama:granite4.1": {
+      "provider": "ollama",
+      "source_hash": "e10c8c78472af6758141edc32ee5233b9f27ca7f6f2d87d38342d6193d52c1ae",
+      "state": "open_pr"
+    },
+    "ollama:hermes3": {
+      "provider": "ollama",
+      "source_hash": "bf36b9f4a5d6e4dfab397d58800dc021a33483d92edf17a1019c1c217ac207cc",
+      "state": "open_pr"
+    },
+    "ollama:internlm2": {
+      "provider": "ollama",
+      "source_hash": "5b8478fa8f5fcf00c376968373a9cea5784f91da362993d4bb4fc05d92bcb183",
+      "state": "open_pr"
+    },
+    "ollama:kimi-k2": {
+      "provider": "ollama",
+      "source_hash": "bcd55e8b9edce9eae2b685f3874b5d76e5fa0d79729d54c6ed54b6eed0fea741",
+      "state": "open_pr"
+    },
+    "ollama:kimi-k2-thinking": {
+      "provider": "ollama",
+      "source_hash": "2495a95c38be4709ffaba174ddf902109675321fda3b89e5a0de66503a254e29",
+      "state": "open_pr"
+    },
+    "ollama:kimi-k2.5": {
+      "provider": "ollama",
+      "source_hash": "47ab0eb3862b80afd34621a2f9e3fdda3fafca2ff197298c62d6222798d5c6d6",
+      "state": "open_pr"
+    },
+    "ollama:kimi-k2.6": {
+      "provider": "ollama",
+      "source_hash": "aae2bf7d3eb34afd9848f1b9571875fa445184054948efbda937fcdd60751d09",
+      "state": "open_pr"
+    },
+    "ollama:laguna-xs.2": {
+      "provider": "ollama",
+      "source_hash": "4cbcc5fa52f5429c92e85311b301d8368363ab38313d73320320e2287a5f68f3",
+      "state": "open_pr"
+    },
+    "ollama:lfm2": {
+      "provider": "ollama",
+      "source_hash": "d612a097d83e6a920885f8c06b48db1370d07cd67a62af6599c29ae6612d4454",
+      "state": "open_pr"
+    },
+    "ollama:lfm2.5-thinking": {
+      "provider": "ollama",
+      "source_hash": "ad805461ce5eefd8f1ef8313b782a45d7a729713a16fd49da208c754341e3ff1",
+      "state": "open_pr"
+    },
+    "ollama:llama-guard3": {
+      "provider": "ollama",
+      "source_hash": "d179e36a2218ba3d73f4fe9950be2a9c858880cceae527f1918e31c08e19e023",
+      "state": "open_pr"
+    },
+    "ollama:llama-pro": {
+      "provider": "ollama",
+      "source_hash": "61e95779f9e7a5e4746a1eb3d6a57587798133bf18b52f9b74ea79139ea09e10",
+      "state": "open_pr"
+    },
+    "ollama:llama2": {
+      "provider": "ollama",
+      "source_hash": "d41c0af6c8278228e6912e310197059aca502a16987aa9c6901dc4ab5586224c",
+      "state": "open_pr"
+    },
+    "ollama:llama2-chinese": {
+      "provider": "ollama",
+      "source_hash": "258e76da79f4ff43a0ec82dbd5046754a4bd3b58a667ed685d71b4b0809f385d",
+      "state": "open_pr"
+    },
+    "ollama:llama2-uncensored": {
+      "provider": "ollama",
+      "source_hash": "8d91d85c4b928fa89f7c8486057a324075172d8ebfdbcbafe55d4e249aeee80d",
+      "state": "open_pr"
+    },
+    "ollama:llama3": {
+      "provider": "ollama",
+      "source_hash": "4fb53885862e0f970d5063417cd343ab5f75c770897578ce0cf7b37cd04b5122",
+      "state": "open_pr"
+    },
+    "ollama:llama3-chatqa": {
+      "provider": "ollama",
+      "source_hash": "c39f72e255b95c69b419b1ecb4c4b8a12e7f865c58488f9a44b2062b364be609",
+      "state": "open_pr"
+    },
+    "ollama:llama3-gradient": {
+      "provider": "ollama",
+      "source_hash": "63ce865509b9e46355aa2302630df33a794e537974e6135f959cdc5a4d9693b4",
+      "state": "open_pr"
+    },
+    "ollama:llama3-groq-tool-use": {
+      "provider": "ollama",
+      "source_hash": "dc6198c8bd31872c52da49073ce291c351397777f34bbc1e7d0512cc8bd7bb77",
+      "state": "open_pr"
+    },
+    "ollama:llama3.1": {
+      "provider": "ollama",
+      "source_hash": "b9734b127ab5c5431a0dcd5b1a83336b2ec6b79f2f5f1eb28d409d8915ee997a",
+      "state": "open_pr"
+    },
+    "ollama:llama3.2": {
+      "provider": "ollama",
+      "source_hash": "45b1c9806e74e0494dd9a08d54a93258ffe5b6ed6468a2c6c274a21bddd7d380",
+      "state": "open_pr"
+    },
+    "ollama:llama3.2-vision": {
+      "provider": "ollama",
+      "source_hash": "dd59d5a1dd2ba0c3f1423c0b36b91f93c078cdde6768b96753e0b80e539beb7c",
+      "state": "open_pr"
+    },
+    "ollama:llama3.3": {
+      "provider": "ollama",
+      "source_hash": "a909b82f64ac8efc8dfc373cc6a3e838111d3321a8801f4e1745dd0b5d8af444",
+      "state": "open_pr"
+    },
+    "ollama:llama4": {
+      "provider": "ollama",
+      "source_hash": "e00d2bc18c83c80d47c2c29527fdb11e1c334121ab91268bee343aa4e0d1e54e",
+      "state": "open_pr"
+    },
+    "ollama:llava": {
+      "provider": "ollama",
+      "source_hash": "89d5a3256f5af0afb14219db371dcdbd1183376727ad83ca71e39192cf0f681a",
+      "state": "open_pr"
+    },
+    "ollama:llava-llama3": {
+      "provider": "ollama",
+      "source_hash": "92b15000e64b4459c819296268399ed5824a82b3088339e8e886d150a43b3b46",
+      "state": "open_pr"
+    },
+    "ollama:llava-phi3": {
+      "provider": "ollama",
+      "source_hash": "46b406c629f302c1ea29f2a50329eec6d53aa362edc44801b5c673cc9192d5ef",
+      "state": "open_pr"
+    },
+    "ollama:magicoder": {
+      "provider": "ollama",
+      "source_hash": "6161fe182689229e1d16f91b9926773e48096c32d93a921c1ddfabf0ecc71e4e",
+      "state": "open_pr"
+    },
+    "ollama:magistral": {
+      "provider": "ollama",
+      "source_hash": "10146443df33e8b82826fc018104b59ced6603eeabcaee29ffb9e5a44bc88d52",
+      "state": "open_pr"
+    },
+    "ollama:marco-o1": {
+      "provider": "ollama",
+      "source_hash": "89bf0b064d2f001888e6905226e17d5637f704833e43c63d8fbfeeb872187b9a",
+      "state": "open_pr"
+    },
+    "ollama:mathstral": {
+      "provider": "ollama",
+      "source_hash": "8c7d1ce6d92d4b8035e25dabf2a2a5734953544e67d4508f7414c17aa50c6f12",
+      "state": "open_pr"
+    },
+    "ollama:medgemma": {
+      "provider": "ollama",
+      "source_hash": "7e09f51e9c75427626996f057354231c857ebc331a6379fb0cbebde603855ac5",
+      "state": "open_pr"
+    },
+    "ollama:medgemma1.5": {
+      "provider": "ollama",
+      "source_hash": "05d6a39c4bf76e9518cfa34944ecea9e73120b071b1b53bd1874239a088d800c",
+      "state": "open_pr"
+    },
+    "ollama:meditron": {
+      "provider": "ollama",
+      "source_hash": "6656b277be59ba6d5cb50699127c5817cbb0e849f7b5d8990aafe445f7cb455a",
+      "state": "open_pr"
+    },
+    "ollama:medllama2": {
+      "provider": "ollama",
+      "source_hash": "a9b3c0a356ef75ed1020c44cf99c4367181c44183a5fd1f520b4d4bb89b2280f",
+      "state": "open_pr"
+    },
+    "ollama:megadolphin": {
+      "provider": "ollama",
+      "source_hash": "566d5ac894fb93af1190cc1eb0e953bebb513850e6b848d99ea9d891cf45259d",
+      "state": "open_pr"
+    },
+    "ollama:minicpm-v": {
+      "provider": "ollama",
+      "source_hash": "77d575506e4dd8687b8e3a50c893a35509478d3745438c69da5e70c769be1368",
+      "state": "open_pr"
+    },
+    "ollama:minimax-m2": {
+      "provider": "ollama",
+      "source_hash": "1d1b96dc28a024d3dffe4e48c8d183da7647c32f15b18f998d978255df68a0fe",
+      "state": "open_pr"
+    },
+    "ollama:minimax-m2.1": {
+      "provider": "ollama",
+      "source_hash": "2b453a891ac8fb0f6de7fc0e54d2a62b00c67c29ac72926f29a6f8bc94e9e039",
+      "state": "open_pr"
+    },
+    "ollama:minimax-m2.5": {
+      "provider": "ollama",
+      "source_hash": "835996680aaa0ca166b44ac08d30b66b24286e0575be83198230534bdce88e67",
+      "state": "open_pr"
+    },
+    "ollama:minimax-m2.7": {
+      "provider": "ollama",
+      "source_hash": "1e8d2e4733b404b67eea933402c62983d0d9e049ab98f2a37f6b0a2fd05ea507",
+      "state": "open_pr"
+    },
+    "ollama:ministral-3": {
+      "provider": "ollama",
+      "source_hash": "e1ec402f48c0bd3f726f7dd6e3e740e138a2f6ada84a92f4c4e413fdfb6a52fc",
+      "state": "open_pr"
+    },
+    "ollama:mistral": {
+      "provider": "ollama",
+      "source_hash": "920510199770f4d65cb8aaa2cd12bdb2b8c37f5b3907c50a734a0e3409da2823",
+      "state": "open_pr"
+    },
+    "ollama:mistral-large": {
+      "provider": "ollama",
+      "source_hash": "451324ec0b1a531df73c7ebe483644668e6930c0261fa6286fc05d84eed974e1",
+      "state": "open_pr"
+    },
+    "ollama:mistral-large-3": {
+      "provider": "ollama",
+      "source_hash": "37d0ad746b46f6dc1fe8715f2003be61a371235c7c720569d54071895fb63d34",
+      "state": "open_pr"
+    },
+    "ollama:mistral-medium-3.5": {
+      "provider": "ollama",
+      "source_hash": "827c67faab861b523bfbd32325e8875b97645ba391c8e45ed1cd8c54cadaf7b9",
+      "state": "open_pr"
+    },
+    "ollama:mistral-nemo": {
+      "provider": "ollama",
+      "source_hash": "96da30a59672fbbbd5ed955c55adbceb1a7f0700abf950528277197d7eb31e55",
+      "state": "open_pr"
+    },
+    "ollama:mistral-openorca": {
+      "provider": "ollama",
+      "source_hash": "2a18a99f20e82dadafdd6dfd694c826f0c59a0375fd730ad05cfc02b4f20192d",
+      "state": "open_pr"
+    },
+    "ollama:mistral-small": {
+      "provider": "ollama",
+      "source_hash": "2b28a00529bfa667061fa7aa699feb6a92eb83ce7a28924974de3e3b3013f118",
+      "state": "open_pr"
+    },
+    "ollama:mistral-small3.1": {
+      "provider": "ollama",
+      "source_hash": "3a7beb0c0737dbffcbe4531de527cde587947e4c61ce395d3a02df904df5875c",
+      "state": "open_pr"
+    },
+    "ollama:mistral-small3.2": {
+      "provider": "ollama",
+      "source_hash": "b0985c1b2270f4a4dda219fee7acf2c762b2fcac6c8980ed60406198f843197a",
+      "state": "open_pr"
+    },
+    "ollama:mistrallite": {
+      "provider": "ollama",
+      "source_hash": "11f6532b187db2b413cd7f9a19e66698af2fa27b9b24969295269e7cd5602748",
+      "state": "open_pr"
+    },
+    "ollama:mixtral": {
+      "provider": "ollama",
+      "source_hash": "c97504235ab15009f6c5f11ba890007a5f3fdd20c9e57b53ea74855033572ddf",
+      "state": "open_pr"
+    },
+    "ollama:moondream": {
+      "provider": "ollama",
+      "source_hash": "ff9fef1eee67cdf0538854e744d0c6fd505624cef31f2a94c27e7fed934ec00d",
+      "state": "open_pr"
+    },
+    "ollama:mxbai-embed-large": {
+      "provider": "ollama",
+      "source_hash": "1aa5dd19c3d900f19e14fdc81f64128514d083934b997272a00e78061e766ac7",
+      "state": "open_pr"
+    },
+    "ollama:nemotron": {
+      "provider": "ollama",
+      "source_hash": "751a16d8cb41ea83c7b7c76d8deaa859cb1d10760163b5f184be6a79ed913c85",
+      "state": "open_pr"
+    },
+    "ollama:nemotron-3-nano": {
+      "provider": "ollama",
+      "source_hash": "3143e6610f673fd66c1c503dc360f642e637a8729bbba0460018f3a72c1d54f0",
+      "state": "open_pr"
+    },
+    "ollama:nemotron-3-super": {
+      "provider": "ollama",
+      "source_hash": "74d6e5ad36f4167681263b2943ed988d9cdc93e62dad282245e74b466a31b500",
+      "state": "open_pr"
+    },
+    "ollama:nemotron-cascade-2": {
+      "provider": "ollama",
+      "source_hash": "03f2f38bc9a5b8e69afb6c38d364e6ace3c500139ffdcc3cb03f3f1dd9d998a6",
+      "state": "open_pr"
+    },
+    "ollama:nemotron-mini": {
+      "provider": "ollama",
+      "source_hash": "6e17456e4f674a78ba9efe3229c3611bc54987f705c9f769d0d72a29c3555c2a",
+      "state": "open_pr"
+    },
+    "ollama:nemotron3": {
+      "provider": "ollama",
+      "source_hash": "4e1efb968b18465025e4fd35a9faf9b504fe7956fb6e4363664cd5187d0f4025",
+      "state": "open_pr"
+    },
+    "ollama:neural-chat": {
+      "provider": "ollama",
+      "source_hash": "940488d3e5963792c9277d59f2f5fb9c1b6c0e4238531097e2063153f5ad51b4",
+      "state": "open_pr"
+    },
+    "ollama:nexusraven": {
+      "provider": "ollama",
+      "source_hash": "188147aa06ea0376745b55fcba71805f7046a0b5b3f0f081ebde0d75f413a8c9",
+      "state": "open_pr"
+    },
+    "ollama:nomic-embed-text": {
+      "provider": "ollama",
+      "source_hash": "a4134b0e39785810a45922e0b9dcf450702ce8d7d2514ef5d4c4ef3c81a08e5b",
+      "state": "open_pr"
+    },
+    "ollama:nomic-embed-text-v2-moe": {
+      "provider": "ollama",
+      "source_hash": "f12f4f28cec80055b38daa2e6626a15b23b9bd3281749dcfdac976d544d8e10b",
+      "state": "open_pr"
+    },
+    "ollama:notus": {
+      "provider": "ollama",
+      "source_hash": "4ff6562c8002aaa053782c31b2625e6a67028d16e1bfcc884cb11dfd1ba4d4c6",
+      "state": "open_pr"
+    },
+    "ollama:notux": {
+      "provider": "ollama",
+      "source_hash": "1fe5fd23d7af5f3a7b916cdeb7942e976a11fd0282bf0a46ede69248e1f75139",
+      "state": "open_pr"
+    },
+    "ollama:nous-hermes": {
+      "provider": "ollama",
+      "source_hash": "8092fe16c46b3d4b88dda5850e55d4a88840037ddd4af6f4c167d1eca1ae94fd",
+      "state": "open_pr"
+    },
+    "ollama:nous-hermes2": {
+      "provider": "ollama",
+      "source_hash": "64b1b38bd1ce1fe1ccf8cd49318147b5dc3e50962df031e5e7df20f31056d44b",
+      "state": "open_pr"
+    },
+    "ollama:nous-hermes2-mixtral": {
+      "provider": "ollama",
+      "source_hash": "154b1d8e502933f3324c3fc2807a6a0ede374ef623a1e8933fab71a1be35197a",
+      "state": "open_pr"
+    },
+    "ollama:nuextract": {
+      "provider": "ollama",
+      "source_hash": "42ef6f09f0e4e5515977099681bd48a20735b199f18965c54ee7fc6957ee4770",
+      "state": "open_pr"
+    },
+    "ollama:olmo-3": {
+      "provider": "ollama",
+      "source_hash": "f43fc10763715b7d6af3d3afeb5bb692823d6ccb8e86b5d151d471b41807ef37",
+      "state": "open_pr"
+    },
+    "ollama:olmo-3.1": {
+      "provider": "ollama",
+      "source_hash": "7b5c9e8956884dc7e60980c3aa653da178c30927ee2b3ce6b00fdff6b0628323",
+      "state": "open_pr"
+    },
+    "ollama:olmo2": {
+      "provider": "ollama",
+      "source_hash": "a88389a1976d4e4b00d30911347e0c0b7f607145aa71a3ac1a98a4e5c1b7075f",
+      "state": "open_pr"
+    },
+    "ollama:open-orca-platypus2": {
+      "provider": "ollama",
+      "source_hash": "38602422b6a13f5ea0f1311e7ef4ff47b6dcf549353f3103422ebd71dcccf91f",
+      "state": "open_pr"
+    },
+    "ollama:openchat": {
+      "provider": "ollama",
+      "source_hash": "36b41beb089797292c31236e9250dad35c1a72301314d88788c8a485fb118efe",
+      "state": "open_pr"
+    },
+    "ollama:opencoder": {
+      "provider": "ollama",
+      "source_hash": "ab4fc568a6bd7ab34d0b9367a0203741921eecbe863344a9924927e8a372af81",
+      "state": "open_pr"
+    },
+    "ollama:openhermes": {
+      "provider": "ollama",
+      "source_hash": "4f8192c882852e26c7ea7b3eddf4106019d214f48bbbbf5675813ed1d57cd9c3",
+      "state": "open_pr"
+    },
+    "ollama:openthinker": {
+      "provider": "ollama",
+      "source_hash": "a79dcffa85904e96eb8f35d2715f54aa6f81c2db827ddb57ae758d62c8518797",
+      "state": "open_pr"
+    },
+    "ollama:orca-mini": {
+      "provider": "ollama",
+      "source_hash": "c9a6de540399ef9e7c20595a209f34cc828fd8357e256c7fb67ddf70ea01894b",
+      "state": "open_pr"
+    },
+    "ollama:orca2": {
+      "provider": "ollama",
+      "source_hash": "2cb14a9ab902d16900be9df036724740dcc42893fa16f6ccf7ab0031445a0baa",
+      "state": "open_pr"
+    },
+    "ollama:paraphrase-multilingual": {
+      "provider": "ollama",
+      "source_hash": "3a0126ef178d845b07ce65ac24c2c7e6f12431eca40d3bc60177372af8b55425",
+      "state": "open_pr"
+    },
+    "ollama:phi": {
+      "provider": "ollama",
+      "source_hash": "7f754d3dbef2f9c8be86a085d505d9bf943e8a9d0c2d84c5015e92e97c53040d",
+      "state": "open_pr"
+    },
+    "ollama:phi3": {
+      "provider": "ollama",
+      "source_hash": "f4a92fb5a4addcfc2a82d033dec357b0a6ea4f687d9bf492024355f70713ca07",
+      "state": "open_pr"
+    },
+    "ollama:phi3.5": {
+      "provider": "ollama",
+      "source_hash": "1618c1b01324b90840d076c6e29e49149832c43df668df7e522e35feaecdec11",
+      "state": "open_pr"
+    },
+    "ollama:phi4": {
+      "provider": "ollama",
+      "source_hash": "7be1a5685de2633c9c9835cbdc388563e8a8f62ce689f14a5d88ffe63ddece59",
+      "state": "open_pr"
+    },
+    "ollama:phi4-mini": {
+      "provider": "ollama",
+      "source_hash": "ef2358c104f0fc68fb992bb9798f04b630e128b6d96aa5da28327a4f19fe6fb6",
+      "state": "open_pr"
+    },
+    "ollama:phi4-mini-reasoning": {
+      "provider": "ollama",
+      "source_hash": "056befd681b7e4e22708ee06cccfc51468489239adf098a98e9823f368a5f02d",
+      "state": "open_pr"
+    },
+    "ollama:phi4-reasoning": {
+      "provider": "ollama",
+      "source_hash": "d4a9c83ef6134b4c71e58430516c17e40150178a9b9de528901ffd2c95ffab68",
+      "state": "open_pr"
+    },
+    "ollama:phind-codellama": {
+      "provider": "ollama",
+      "source_hash": "f881ccae2f5f7a079d44c17c165d27f3a50d5bbc7ca6510b58d7f302e9843eaf",
+      "state": "open_pr"
+    },
+    "ollama:qwen": {
+      "provider": "ollama",
+      "source_hash": "67f2d22514622d1be30c14ee9f3cb104503a159a33a656ca91a1953aa9616429",
+      "state": "open_pr"
+    },
+    "ollama:qwen2": {
+      "provider": "ollama",
+      "source_hash": "a7b9a042ed47b2e33c54acf5b92815729f08e700415a38a8d744a7938f773f4c",
+      "state": "open_pr"
+    },
+    "ollama:qwen2-math": {
+      "provider": "ollama",
+      "source_hash": "74211d6b45c1144a2e1c6046eec4edcf3eed727c020516ec6627abc1319988e4",
+      "state": "open_pr"
+    },
+    "ollama:qwen2.5": {
+      "provider": "ollama",
+      "source_hash": "4a65eed368b066945e57bb625e89d33190ea4863abb1c53422d4f9118a6d5e81",
+      "state": "open_pr"
+    },
+    "ollama:qwen2.5-coder": {
+      "provider": "ollama",
+      "source_hash": "8ca35f228d71a2f45206ef82386894581a53f6d5b7a60dba11bdf628ac649fb2",
+      "state": "open_pr"
+    },
+    "ollama:qwen2.5vl": {
+      "provider": "ollama",
+      "source_hash": "da0ea8f04866447d19a215f085b80318a197b78d3ac102fcdaf7f6589f194226",
+      "state": "open_pr"
+    },
+    "ollama:qwen3": {
+      "provider": "ollama",
+      "source_hash": "61b6a80524bed7a2b8b0702c24f050fbc3a72a02875a4deddd7cd41a9f29e1d3",
+      "state": "open_pr"
+    },
+    "ollama:qwen3-coder": {
+      "provider": "ollama",
+      "source_hash": "64d0c085c15a8f98a6b670ddf4f4eb2142397d08541c0ece745fc20124f9f0a7",
+      "state": "open_pr"
+    },
+    "ollama:qwen3-coder-next": {
+      "provider": "ollama",
+      "source_hash": "600c8b0d48155fbed0b96277d364cc98439471614467fffdca8abd4b90985568",
+      "state": "open_pr"
+    },
+    "ollama:qwen3-embedding": {
+      "provider": "ollama",
+      "source_hash": "d1f2367ec3d82ff5345ab1b09d2065289485fbc61dfbbfbaf6b70a62d1dd92b1",
+      "state": "open_pr"
+    },
+    "ollama:qwen3-next": {
+      "provider": "ollama",
+      "source_hash": "d5529da90edcf5223b8ece72cd3cd52b941a82434a49fe47c5c6970e44f9d751",
+      "state": "open_pr"
+    },
+    "ollama:qwen3-vl": {
+      "provider": "ollama",
+      "source_hash": "5f7af12a5c339ead91a44c73031460ae4c5a18813f777a7619624707e5927792",
+      "state": "open_pr"
+    },
+    "ollama:qwen3.5": {
+      "provider": "ollama",
+      "source_hash": "29be8bce39bb53af9e2fa06e8c7fdf32727be13b7d3d3888364ba5e37cd8074b",
+      "state": "open_pr"
+    },
+    "ollama:qwen3.6": {
+      "provider": "ollama",
+      "source_hash": "bdd9a1d75b245e7b15066bc9adde2a8538f59e719066a3a9726193cdc865b51e",
+      "state": "open_pr"
+    },
+    "ollama:qwq": {
+      "provider": "ollama",
+      "source_hash": "53ddd800a3ef24a55414bd607d995fe121836375b71ecbeb9d8d0eba710cce4f",
+      "state": "open_pr"
+    },
+    "ollama:r1-1776": {
+      "provider": "ollama",
+      "source_hash": "d98816398d5758c6049e91ebc06ec8042fee6a4daac48f642b7db27a2a98f65f",
+      "state": "open_pr"
+    },
+    "ollama:reader-lm": {
+      "provider": "ollama",
+      "source_hash": "55b06bfe375778bbf4ae320d7324f6f052737540d4b5068c41be0fc1159c404e",
+      "state": "open_pr"
+    },
+    "ollama:reflection": {
+      "provider": "ollama",
+      "source_hash": "f30409c51a78ed6906df6e53052bcb0fe52ae708ebd809bd2d52820fceb253ed",
+      "state": "open_pr"
+    },
+    "ollama:rnj-1": {
+      "provider": "ollama",
+      "source_hash": "2840a7bab4fc74b3a7477d8c0c6104c37d1451eaa894dcda3219904c47a56e28",
+      "state": "open_pr"
+    },
+    "ollama:sailor2": {
+      "provider": "ollama",
+      "source_hash": "155f561e5095a5411577ae1fc89f97636d1aa4b44ac6abb4d632a2633c7b667e",
+      "state": "open_pr"
+    },
+    "ollama:samantha-mistral": {
+      "provider": "ollama",
+      "source_hash": "848499eb95664e60343468ae200fecade15346702154dfa8abef7b9c5c26f599",
+      "state": "open_pr"
+    },
+    "ollama:shieldgemma": {
+      "provider": "ollama",
+      "source_hash": "02a10e8d8438254b2da8366bd90d1b630912ebf4ee1e05b190af00daf8daceed",
+      "state": "open_pr"
+    },
+    "ollama:smallthinker": {
+      "provider": "ollama",
+      "source_hash": "b9956d71a8a4662632ec6cf6f8df7f110d8d50f4b1d405ff29189e15510b8e45",
+      "state": "open_pr"
+    },
+    "ollama:smollm": {
+      "provider": "ollama",
+      "source_hash": "ff5c7e22fe1e88c4551bcdaf54fe3c45a78f565267a6573c1777e6903d281e91",
+      "state": "open_pr"
+    },
+    "ollama:smollm2": {
+      "provider": "ollama",
+      "source_hash": "2d6e5b4efedbc3a739d84f09bfd11328b7807c96ba35aeb2643aed289c4b0604",
+      "state": "open_pr"
+    },
+    "ollama:snowflake-arctic-embed": {
+      "provider": "ollama",
+      "source_hash": "2ffd52d7fe4b17e6cb3ed4c6e567a50de943bc62010297c8fc186745a1ba944a",
+      "state": "open_pr"
+    },
+    "ollama:snowflake-arctic-embed2": {
+      "provider": "ollama",
+      "source_hash": "83b1fadecdb9058525c36ae02c09a247bd14788ec2cfca381558d3b29d7b7581",
+      "state": "open_pr"
+    },
+    "ollama:solar": {
+      "provider": "ollama",
+      "source_hash": "2bfbc118abcafe8c53ee6a46b79bed6638ae9eefda8dfd2d7948d02f40481739",
+      "state": "open_pr"
+    },
+    "ollama:solar-pro": {
+      "provider": "ollama",
+      "source_hash": "df756884d54a93bcd9ce2738b2948dcaf6f1b87457be0e7828095720e986d338",
+      "state": "open_pr"
+    },
+    "ollama:sqlcoder": {
+      "provider": "ollama",
+      "source_hash": "4723936b9fe8501f522324d8dc26b525577b8b1dba2e2e907ef89c2dd4cf43be",
+      "state": "open_pr"
+    },
+    "ollama:stable-beluga": {
+      "provider": "ollama",
+      "source_hash": "646f8d5a37320d8e1142b11ae64ee458f800e3f28164ee7bff49392ec8aba650",
+      "state": "open_pr"
+    },
+    "ollama:stable-code": {
+      "provider": "ollama",
+      "source_hash": "ab6f1ad99ec2118795187f38027864edae2634000a878ef6fb1b18a98a6f8a0e",
+      "state": "open_pr"
+    },
+    "ollama:stablelm-zephyr": {
+      "provider": "ollama",
+      "source_hash": "0548d82c836aa9bceedf5e4216cfa6ac0c3170329fc1d3add36952619c21b528",
+      "state": "open_pr"
+    },
+    "ollama:stablelm2": {
+      "provider": "ollama",
+      "source_hash": "166dc5b248744bd80b38d5406fcf6929ba808a9125d8813060018a9cc8b55578",
+      "state": "open_pr"
+    },
+    "ollama:starcoder": {
+      "provider": "ollama",
+      "source_hash": "b46573f3283d5eb9274cb9a227e37a9a00a4b04b73e40700901c1160346cdd96",
+      "state": "open_pr"
+    },
+    "ollama:starcoder2": {
+      "provider": "ollama",
+      "source_hash": "81b397c7cbdc5f56aaba7266f969d243f21a424a9877bcc8eb2c7586d21a70bc",
+      "state": "open_pr"
+    },
+    "ollama:starling-lm": {
+      "provider": "ollama",
+      "source_hash": "d32a14d5ecb273aeb59cf60cbc34d833c46c0f6e15ab3822cbe362b83cb89447",
+      "state": "open_pr"
+    },
+    "ollama:tinydolphin": {
+      "provider": "ollama",
+      "source_hash": "200b5af378c2f559f2c1c17c93551b6a2c2271487623cd9ee2c526a094b5197a",
+      "state": "open_pr"
+    },
+    "ollama:tinyllama": {
+      "provider": "ollama",
+      "source_hash": "82cad9d8c383d729a0e9eeedcabc51316fdb40c9961d75673007439a4d3fc81e",
+      "state": "open_pr"
+    },
+    "ollama:translategemma": {
+      "provider": "ollama",
+      "source_hash": "cb2898244010f6a59bed84e9469362f1aea30cbcf4bc583868471b2317b1ee4a",
+      "state": "open_pr"
+    },
+    "ollama:tulu3": {
+      "provider": "ollama",
+      "source_hash": "891e153b2de11f010581f960724b8226a95b6ea8658052e80b08fa44aa49760b",
+      "state": "open_pr"
+    },
+    "ollama:vicuna": {
+      "provider": "ollama",
+      "source_hash": "e12fe631288e303b91d2fc33e97fed2c4c08234d384ed19a5b3e9c79fc3ac49d",
+      "state": "open_pr"
+    },
+    "ollama:wizard-math": {
+      "provider": "ollama",
+      "source_hash": "0d65675e58f5772c15b30de43c7a1e2051cb4968a9a34a4937e46ba070d59ac0",
+      "state": "open_pr"
+    },
+    "ollama:wizard-vicuna": {
+      "provider": "ollama",
+      "source_hash": "e1f47624601f7bb31f7a0f35240bdd3d1a9ab8030acc69ffbf844e1b679dc165",
+      "state": "open_pr"
+    },
+    "ollama:wizard-vicuna-uncensored": {
+      "provider": "ollama",
+      "source_hash": "c7f93944c2a6c17bc526a0133e11fe8dfeca8b2de1871b31879c66962a76e304",
+      "state": "open_pr"
+    },
+    "ollama:wizardcoder": {
+      "provider": "ollama",
+      "source_hash": "d114d8e7cdf065f516f6ea25399b725e0cc38ad687e309209345b1934acaec41",
+      "state": "open_pr"
+    },
+    "ollama:wizardlm": {
+      "provider": "ollama",
+      "source_hash": "83ec2fcbb884d6a5af3c82fba397bcb399fdd69664f4f0a3291054749d3e7aec",
+      "state": "open_pr"
+    },
+    "ollama:wizardlm-uncensored": {
+      "provider": "ollama",
+      "source_hash": "3bc94c8845d4b8cf802db93350a8294dff824ed7411e81f0828a75bc16f1813f",
+      "state": "open_pr"
+    },
+    "ollama:wizardlm2": {
+      "provider": "ollama",
+      "source_hash": "7730e9d966dfcff78f0e9fcf6898cb05cf833da2f846858ba3ccc0156f32f02d",
+      "state": "open_pr"
+    },
+    "ollama:xwinlm": {
+      "provider": "ollama",
+      "source_hash": "9629173bf6f96d13b939f300a5d2fef4a53b0879ce2b3e72efe5fa060d7bbb86",
+      "state": "open_pr"
+    },
+    "ollama:yarn-llama2": {
+      "provider": "ollama",
+      "source_hash": "7107394addfa71b44ed4e2ef6c73db6f6708c5994030f8a651a5551454369844",
+      "state": "open_pr"
+    },
+    "ollama:yarn-mistral": {
+      "provider": "ollama",
+      "source_hash": "50055f8407c4a8ed5e5aa3beb8b048f5574c2672aec0f7104acfb07a41324fd5",
+      "state": "open_pr"
+    },
+    "ollama:yi": {
+      "provider": "ollama",
+      "source_hash": "a5f5bb0f06efb99aca21bfb3fa34193a0985b4c63e85d150eecea2b514c78019",
+      "state": "open_pr"
+    },
+    "ollama:yi-coder": {
+      "provider": "ollama",
+      "source_hash": "eb1bf6a0ca4774403201b99b07dcdd81142fe27872aad70d7ee0256dc97a1545",
+      "state": "open_pr"
+    },
+    "ollama:zephyr": {
+      "provider": "ollama",
+      "source_hash": "d47c40bea34483aafa4af5bd36af4f6adff17bda66d1cedbaf9c93e9bb9cf387",
+      "state": "open_pr"
+    }
+  }
 }
