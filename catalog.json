@@ -359,7 +359,17 @@
       },
       "benchmarks": {},
       "variant": "unrestricted",
-      "ollama_pull_tag": "huihui_ai/gemma-4-abliterated:31B-q4_K"
+      "ollama_pull_tag": "huihui_ai/gemma-4-abliterated:31B-q4_K",
+      "discovery_evidence": {
+        "source_url": "https://ollama.com/huihui_ai/gemma-4-abliterated/tags",
+        "sources": [
+          {
+            "kind": "provider_model_list",
+            "url": "https://ollama.com/huihui_ai/gemma-4-abliterated/tags",
+            "evidence": "registry manifest returned HTTP 200 for 31B-q4_K"
+          }
+        ]
+      }
     },
     {
       "id": "gemma4:26b",
@@ -624,7 +634,17 @@
       "benchmarks": {},
       "variant_group": "gemma4:4.5b",
       "variant": "unrestricted",
-      "ollama_pull_tag": "huihui_ai/gemma-4-abliterated:e4b-q4_K"
+      "ollama_pull_tag": "huihui_ai/gemma-4-abliterated:e4b-q4_K",
+      "discovery_evidence": {
+        "source_url": "https://ollama.com/huihui_ai/gemma-4-abliterated/tags",
+        "sources": [
+          {
+            "kind": "provider_model_list",
+            "url": "https://ollama.com/huihui_ai/gemma-4-abliterated/tags",
+            "evidence": "registry manifest returned HTTP 200 for e4b-q4_K"
+          }
+        ]
+      }
     },
     {
       "id": "llama3.2-vision:11b",
