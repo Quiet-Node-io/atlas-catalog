@@ -6,6 +6,7 @@
 - **Title:** Model System v2 §2.6: Backend feature inventory in atlas-catalog
 - **Branch:** `codex/ran-364-backend-feature-inventory`
 - **Commit range:** `origin/main..HEAD`
+- **Draft PR:** https://github.com/Quiet-Node-io/atlas-catalog/pull/12
 
 ## Files Changed
 
@@ -66,4 +67,4 @@ The requested Atlas path `docs/dev/current/ran-190-v2/EPIC_ARCHITECTURE.md` did 
 4. Validator rejects models referencing unknown `backend_id` — pass; focused test covers unknown `backend_id`; implementation also supports `backend_ids`.
 5. README documents the collection and how to add a backend — pass.
 6. Atlas runtime unchanged — pass; no Atlas application code changed and existing model rows remain compatible.
-7. Draft PR and human review before publish — pending PR creation after final commit.
+7. Draft PR and human review before publish — pass; draft PR opened at https://github.com/Quiet-Node-io/atlas-catalog/pull/12.

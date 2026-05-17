@@ -62,7 +62,7 @@ Not applicable. No browser, frontend, or UI-facing runtime behavior changed.
 4. Validator rejects models referencing unknown `backend_id` — pass, covered by `test_rejects_model_backend_reference_when_backend_id_is_unknown`.
 5. README documents the new collection and how to add a backend — pass.
 6. Atlas runtime continues unchanged — pass, no Atlas runtime code changed; `backends` is additive.
-7. Draft PR; human catalog review before publish — pending after final commit/push/PR.
+7. Draft PR; human catalog review before publish — pass; draft PR opened at https://github.com/Quiet-Node-io/atlas-catalog/pull/12.
 
 ## Required Review
 
