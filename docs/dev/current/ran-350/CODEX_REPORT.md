@@ -7,6 +7,7 @@
 ## 2. Branch and Commit Range
 - **Branch:** `codex/ran-350-reranker-catalog`
 - **Commit range:** `main..codex/ran-350-reranker-catalog`
+- **Draft PR:** https://github.com/Quiet-Node-io/atlas-catalog/pull/11
 
 ## 3. Files Changed
 - `catalog.json` - Added four RAN-350 reranker entries and updated the catalog date.
@@ -63,4 +64,4 @@
 4. **Pass** - Safety guard passed with explicit base/proposed arguments.
 5. **Pass** - RAN-346 Linear relations include RAN-350 as related work.
 6. **Pass** - Targeted assertion confirmed no Cohere rerank catalog row was added.
-7. **Pending until PR creation** - Draft PR will be opened for human catalog review.
+7. **Pass** - Draft PR opened for human catalog review: https://github.com/Quiet-Node-io/atlas-catalog/pull/11

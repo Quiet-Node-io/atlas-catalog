@@ -7,6 +7,7 @@
 - **Targeted semantic assertions:** pass
 - **Browser/UI validation:** not applicable; catalog data only
 - **Live Atlas smoke:** not applicable; catalog data only
+- **Draft PR:** https://github.com/Quiet-Node-io/atlas-catalog/pull/11
 
 ## Evidence
 
@@ -73,4 +74,4 @@ RAN-350 semantic catalog assertions passed
 4. **Pass** - Catalog safety guard passed.
 5. **Pass** - RAN-346 Linear relation includes RAN-350.
 6. **Pass** - Cohere Rerank-v3 was not added.
-7. **Pending until PR creation** - Draft PR will be opened and linked for review.
+7. **Pass** - Draft PR opened for human catalog review: https://github.com/Quiet-Node-io/atlas-catalog/pull/11
