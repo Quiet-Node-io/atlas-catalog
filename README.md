@@ -16,8 +16,44 @@ The catalog is checked periodically. When a new model is added or a default is c
 
 ```jsonc
 {
-  "catalog_version": 4,        // Bump when schema changes
-  "updated": "2026-05-02",     // Last edit date
+  "catalog_version": 5,        // Bump when schema changes
+  "updated": "2026-05-17",     // Last edit date
+  "backends": [                // Backend feature inventory — additive, ignored by current Atlas runtime
+    {
+      "backend_id": "vllm",
+      "version_range": ">=0.11.0",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": true,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": true,
+        "max_batch_size": null,
+        "supports_kv_cache_control": true,
+        "supported_sampling_params": ["temperature", "top_p", "top_k", "repeat_penalty", "max_tokens", "stop", "seed"],
+        "supports_unload": true,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Human-readable scope and caveats.",
+      "provenance": {
+        "sources": {
+          "vllm_openai_server": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/en/latest/serving/openai_compatible_server/",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": ["vllm_openai_server"]
+          // ... one entry for every feature flag
+        }
+      }
+    }
+  ],
   "task_benchmark_weights": {  // Per-task benchmark portfolios — drives Atlas score composite (RAN-192)
     "vision_input": {
       "mmmu": 0.35, "ai2d": 0.20, "chartqa": 0.20,
@@ -92,6 +128,49 @@ Each task entry maps benchmark names to weights summing to `1.0`. Atlas
 multiplies each model's `benchmarks` value by the task's weight, sums
 present weights only (null-aware), then rounds to a 0-100 display score.
 Update weights here — not in the Atlas codebase — when methodology shifts.
+
+### `backends` collection (RAN-364)
+
+Top-level `backends` publishes backend capability facts separately from model
+rows. The collection is additive: current Atlas runtime consumers ignore it
+until a future coordinated Atlas ticket reads these records.
+
+Each backend entry must include:
+
+- `backend_id`: stable ID used by model rows and backend-aware score records.
+- `version_range`: upstream version, provider API marker, or Atlas adapter
+  scope that the feature declaration applies to.
+- `features`: the complete RAN-335 `BackendFeatureMatrix` shape:
+  `supports_streaming`, `supports_non_streaming`, `supports_embeddings`,
+  `supports_vision`, `supports_json_mode`, `supports_function_calling`,
+  `supports_continuous_batching`, `max_batch_size`,
+  `supports_kv_cache_control`, `supported_sampling_params`,
+  `supports_unload`, `supports_model_survey`, `auth_mode`, and
+  `supports_leases`.
+- `notes`: human-readable maintainer notes and caveats.
+- `provenance`: required for feature flags in this catalog. Use
+  `sources` for cited documents and `feature_flags` to map every feature
+  field to one or more source IDs.
+
+Known sampling params are `temperature`, `top_p`, `top_k`,
+`repeat_penalty`, `max_tokens`, `stop`, and `seed`. Known auth modes are
+`none`, `backend_native`, `api_key`, `proxy_token`, and `mtls`.
+
+When adding a backend:
+
+1. Add a new `backends[]` entry with a unique `backend_id`.
+2. Fill every `features` key, using `null` for `max_batch_size` only when the
+   backend has no single static limit.
+3. Cite public upstream/provider docs or Atlas source for every feature flag.
+4. If model rows or `backend_composite_scores` reference the backend, use the
+   same `backend_id`.
+5. Run `python scripts/validate_catalog.py catalog.json`.
+
+The validator rejects malformed backend entries, unknown feature fields,
+unknown sampling params/auth modes, missing per-feature provenance, duplicate
+backend IDs, model rows whose `backend_id` or `backend_ids` reference unknown
+backends, and backend-aware composite score records whose `backend` is not in
+the top-level backend inventory.
 
 ### `task_stance` authoring rules (RAN-192)
 

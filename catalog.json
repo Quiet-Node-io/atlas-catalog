@@ -1,6 +1,757 @@
 {
-  "catalog_version": 4,
+  "catalog_version": 5,
   "updated": "2026-05-17",
+  "backends": [
+    {
+      "backend_id": "ollama",
+      "version_range": "atlas-ran-335-current",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": true,
+        "supports_vision": true,
+        "supports_json_mode": false,
+        "supports_function_calling": false,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": true,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "top_k",
+          "repeat_penalty"
+        ],
+        "supports_unload": true,
+        "supports_model_survey": true,
+        "auth_mode": "none",
+        "supports_leases": false
+      },
+      "notes": "Atlas local Ollama adapter feature declaration from RAN-335/RAN-336. Ollama upstream currently documents JSON/tool fields, but Atlas keeps those disabled until a scoped runtime ticket enables and validates them.",
+      "provenance": {
+        "sources": {
+          "atlas_ollama_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/ollama.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "ollama_chat_api": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.ollama.com/api/chat",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "ollama_running_models_api": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.ollama.com/api/ps",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_non_streaming": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_embeddings": [
+            "atlas_ollama_adapter"
+          ],
+          "supports_vision": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_json_mode": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_function_calling": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_continuous_batching": [
+            "atlas_ollama_adapter"
+          ],
+          "max_batch_size": [
+            "atlas_ollama_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_ollama_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_ollama_adapter"
+          ],
+          "supports_unload": [
+            "atlas_ollama_adapter",
+            "ollama_chat_api"
+          ],
+          "supports_model_survey": [
+            "atlas_ollama_adapter",
+            "ollama_running_models_api"
+          ],
+          "auth_mode": [
+            "atlas_ollama_adapter"
+          ],
+          "supports_leases": [
+            "atlas_ollama_adapter"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "mlx_lm",
+      "version_range": ">=0.31.3",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": false,
+        "supports_vision": false,
+        "supports_json_mode": false,
+        "supports_function_calling": false,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "top_k",
+          "repeat_penalty",
+          "max_tokens",
+          "stop"
+        ],
+        "supports_unload": false,
+        "supports_model_survey": false,
+        "auth_mode": "none",
+        "supports_leases": false
+      },
+      "notes": "Forward-declared Apple Silicon text-generation backend. Current MLX-LM server docs expose a basic OpenAI-like chat endpoint with streaming and sampling controls, but no documented embeddings, vision, JSON schema, tool calling, batching, model survey, or main-model unload contract.",
+      "provenance": {
+        "sources": {
+          "mlx_lm_server": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://github.com/ml-explore/mlx-lm/blob/main/mlx_lm/SERVER.md",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "mlx_lm_readme": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://github.com/ml-explore/mlx-lm",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "mlx_lm_server"
+          ],
+          "supports_non_streaming": [
+            "mlx_lm_server"
+          ],
+          "supports_embeddings": [
+            "mlx_lm_readme",
+            "mlx_lm_server"
+          ],
+          "supports_vision": [
+            "mlx_lm_readme",
+            "mlx_lm_server"
+          ],
+          "supports_json_mode": [
+            "mlx_lm_server"
+          ],
+          "supports_function_calling": [
+            "mlx_lm_server"
+          ],
+          "supports_continuous_batching": [
+            "mlx_lm_server"
+          ],
+          "max_batch_size": [
+            "mlx_lm_server"
+          ],
+          "supports_kv_cache_control": [
+            "mlx_lm_server"
+          ],
+          "supported_sampling_params": [
+            "mlx_lm_server"
+          ],
+          "supports_unload": [
+            "mlx_lm_server"
+          ],
+          "supports_model_survey": [
+            "mlx_lm_server"
+          ],
+          "auth_mode": [
+            "mlx_lm_server"
+          ],
+          "supports_leases": [
+            "mlx_lm_server"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "llama_cpp_server",
+      "version_range": "atlas-ran-352-rerank-subset",
+      "features": {
+        "supports_streaming": false,
+        "supports_non_streaming": false,
+        "supports_embeddings": false,
+        "supports_vision": false,
+        "supports_json_mode": false,
+        "supports_function_calling": false,
+        "supports_continuous_batching": true,
+        "max_batch_size": 30,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [],
+        "supports_unload": false,
+        "supports_model_survey": true,
+        "auth_mode": "none",
+        "supports_leases": false
+      },
+      "notes": "Atlas currently exposes only the RAN-352 llama.cpp-server rerank subset. Upstream llama-server supports broader generation features, but Atlas does not declare them until a full adapter ticket lands.",
+      "provenance": {
+        "sources": {
+          "atlas_llama_cpp_server_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/llama_cpp_server.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "llama_cpp_server_readme": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_non_streaming": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_embeddings": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_vision": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_json_mode": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_function_calling": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_continuous_batching": [
+            "atlas_llama_cpp_server_adapter",
+            "llama_cpp_server_readme"
+          ],
+          "max_batch_size": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_unload": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_model_survey": [
+            "atlas_llama_cpp_server_adapter",
+            "llama_cpp_server_readme"
+          ],
+          "auth_mode": [
+            "atlas_llama_cpp_server_adapter"
+          ],
+          "supports_leases": [
+            "atlas_llama_cpp_server_adapter"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "vllm",
+      "version_range": ">=0.11.0",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": true,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": true,
+        "max_batch_size": null,
+        "supports_kv_cache_control": true,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "top_k",
+          "repeat_penalty",
+          "max_tokens",
+          "stop",
+          "seed"
+        ],
+        "supports_unload": true,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Forward-declared high-throughput local/cluster serving backend. Batch size is deployment- and scheduler-dependent, so the catalog leaves max_batch_size null until Atlas records runtime profile data.",
+      "provenance": {
+        "sources": {
+          "vllm_overview": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/en/v0.7.3/",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "vllm_openai_server": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/en/latest/serving/openai_compatible_server/",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "vllm_structured_outputs": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/usage/structured_outputs.html",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "vllm_tool_calling": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/en/stable/features/tool_calling/",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "vllm_sleep_mode": {
+            "source_kind": "upstream_docs",
+            "source_url": "https://docs.vllm.ai/en/v0.11.0/features/sleep_mode.html",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "vllm_overview",
+            "vllm_openai_server"
+          ],
+          "supports_non_streaming": [
+            "vllm_openai_server"
+          ],
+          "supports_embeddings": [
+            "vllm_openai_server"
+          ],
+          "supports_vision": [
+            "vllm_overview",
+            "vllm_openai_server"
+          ],
+          "supports_json_mode": [
+            "vllm_structured_outputs",
+            "vllm_openai_server"
+          ],
+          "supports_function_calling": [
+            "vllm_tool_calling",
+            "vllm_openai_server"
+          ],
+          "supports_continuous_batching": [
+            "vllm_overview"
+          ],
+          "max_batch_size": [
+            "vllm_overview"
+          ],
+          "supports_kv_cache_control": [
+            "vllm_overview",
+            "vllm_openai_server"
+          ],
+          "supported_sampling_params": [
+            "vllm_openai_server"
+          ],
+          "supports_unload": [
+            "vllm_sleep_mode"
+          ],
+          "supports_model_survey": [
+            "vllm_openai_server"
+          ],
+          "auth_mode": [
+            "vllm_openai_server"
+          ],
+          "supports_leases": [
+            "vllm_openai_server"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "openai",
+      "version_range": "api-current",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": false,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "max_tokens",
+          "stop",
+          "seed"
+        ],
+        "supports_unload": false,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Atlas cloud OpenAI adapter feature declaration from RAN-345, with provider support for structured outputs/function calling cited separately. Embeddings remain false here because the current Atlas cloud RuntimeBackend declaration does not expose embedding calls.",
+      "provenance": {
+        "sources": {
+          "atlas_cloud_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/cloud.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "openai_structured_outputs": {
+            "source_kind": "provider_docs",
+            "source_url": "https://developers.openai.com/api/docs/guides/structured-outputs",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_cloud_adapter",
+            "openai_structured_outputs"
+          ],
+          "supports_non_streaming": [
+            "atlas_cloud_adapter",
+            "openai_structured_outputs"
+          ],
+          "supports_embeddings": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_vision": [
+            "atlas_cloud_adapter",
+            "openai_structured_outputs"
+          ],
+          "supports_json_mode": [
+            "atlas_cloud_adapter",
+            "openai_structured_outputs"
+          ],
+          "supports_function_calling": [
+            "atlas_cloud_adapter",
+            "openai_structured_outputs"
+          ],
+          "supports_continuous_batching": [
+            "atlas_cloud_adapter"
+          ],
+          "max_batch_size": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_cloud_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_unload": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_model_survey": [
+            "atlas_cloud_adapter"
+          ],
+          "auth_mode": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_leases": [
+            "atlas_cloud_adapter"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "anthropic",
+      "version_range": "api-current",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": false,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "top_k",
+          "max_tokens",
+          "stop"
+        ],
+        "supports_unload": false,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Atlas cloud Anthropic adapter feature declaration from RAN-345. Anthropic has native tool use and streaming; Atlas marks JSON support via its shared cloud adapter contract. Native Anthropic embeddings are not exposed by Claude.",
+      "provenance": {
+        "sources": {
+          "atlas_cloud_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/cloud.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "anthropic_streaming": {
+            "source_kind": "provider_docs",
+            "source_url": "https://platform.claude.com/docs/en/build-with-claude/streaming",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "anthropic_tool_use": {
+            "source_kind": "provider_docs",
+            "source_url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/how-tool-use-works",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "anthropic_embeddings": {
+            "source_kind": "provider_docs",
+            "source_url": "https://platform.claude.com/docs/en/build-with-claude/embeddings",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_cloud_adapter",
+            "anthropic_streaming"
+          ],
+          "supports_non_streaming": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_embeddings": [
+            "atlas_cloud_adapter",
+            "anthropic_embeddings"
+          ],
+          "supports_vision": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_json_mode": [
+            "atlas_cloud_adapter",
+            "anthropic_tool_use"
+          ],
+          "supports_function_calling": [
+            "atlas_cloud_adapter",
+            "anthropic_tool_use",
+            "anthropic_streaming"
+          ],
+          "supports_continuous_batching": [
+            "atlas_cloud_adapter"
+          ],
+          "max_batch_size": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_cloud_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_unload": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_model_survey": [
+            "atlas_cloud_adapter"
+          ],
+          "auth_mode": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_leases": [
+            "atlas_cloud_adapter"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "google",
+      "version_range": "api-current",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": false,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "top_k",
+          "max_tokens",
+          "stop"
+        ],
+        "supports_unload": false,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Atlas cloud Google Gemini adapter feature declaration from RAN-345, with Gemini structured output and function-calling docs as provider provenance. Embeddings remain false because Atlas chat RuntimeBackend does not expose embedding calls here.",
+      "provenance": {
+        "sources": {
+          "atlas_cloud_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/cloud.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "gemini_structured_output": {
+            "source_kind": "provider_docs",
+            "source_url": "https://ai.google.dev/gemini-api/docs/structured-output",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "gemini_function_calling": {
+            "source_kind": "provider_docs",
+            "source_url": "https://ai.google.dev/gemini-api/docs/function-calling",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_non_streaming": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_embeddings": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_vision": [
+            "atlas_cloud_adapter",
+            "gemini_structured_output"
+          ],
+          "supports_json_mode": [
+            "atlas_cloud_adapter",
+            "gemini_structured_output"
+          ],
+          "supports_function_calling": [
+            "atlas_cloud_adapter",
+            "gemini_function_calling"
+          ],
+          "supports_continuous_batching": [
+            "atlas_cloud_adapter"
+          ],
+          "max_batch_size": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_cloud_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_unload": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_model_survey": [
+            "atlas_cloud_adapter"
+          ],
+          "auth_mode": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_leases": [
+            "atlas_cloud_adapter"
+          ]
+        }
+      }
+    },
+    {
+      "backend_id": "xai",
+      "version_range": "api-current",
+      "features": {
+        "supports_streaming": true,
+        "supports_non_streaming": true,
+        "supports_embeddings": false,
+        "supports_vision": true,
+        "supports_json_mode": true,
+        "supports_function_calling": true,
+        "supports_continuous_batching": false,
+        "max_batch_size": 1,
+        "supports_kv_cache_control": false,
+        "supported_sampling_params": [
+          "temperature",
+          "top_p",
+          "max_tokens",
+          "stop",
+          "seed"
+        ],
+        "supports_unload": false,
+        "supports_model_survey": true,
+        "auth_mode": "api_key",
+        "supports_leases": false
+      },
+      "notes": "Atlas cloud xAI adapter feature declaration from RAN-345, with xAI structured-output/function-calling docs as provider provenance. Embeddings remain false because Atlas chat RuntimeBackend does not expose embedding calls here.",
+      "provenance": {
+        "sources": {
+          "atlas_cloud_adapter": {
+            "source_kind": "atlas_source",
+            "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/cloud.py",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "xai_structured_outputs": {
+            "source_kind": "provider_docs",
+            "source_url": "https://docs.x.ai/developers/model-capabilities/text/structured-outputs",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          },
+          "xai_function_calling": {
+            "source_kind": "provider_docs",
+            "source_url": "https://docs.x.ai/docs/guides/function-calling",
+            "retrieved_at": "2026-05-17T00:00:00+00:00"
+          }
+        },
+        "feature_flags": {
+          "supports_streaming": [
+            "atlas_cloud_adapter",
+            "xai_structured_outputs"
+          ],
+          "supports_non_streaming": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_embeddings": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_vision": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_json_mode": [
+            "atlas_cloud_adapter",
+            "xai_structured_outputs"
+          ],
+          "supports_function_calling": [
+            "atlas_cloud_adapter",
+            "xai_function_calling",
+            "xai_structured_outputs"
+          ],
+          "supports_continuous_batching": [
+            "atlas_cloud_adapter"
+          ],
+          "max_batch_size": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_kv_cache_control": [
+            "atlas_cloud_adapter"
+          ],
+          "supported_sampling_params": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_unload": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_model_survey": [
+            "atlas_cloud_adapter"
+          ],
+          "auth_mode": [
+            "atlas_cloud_adapter"
+          ],
+          "supports_leases": [
+            "atlas_cloud_adapter"
+          ]
+        }
+      }
+    }
+  ],
   "task_tables_version": 0,
   "task_benchmark_weights": {
     "vision_input": {
