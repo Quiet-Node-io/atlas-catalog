@@ -16,6 +16,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.catalog_discovery.benchmark_provenance import validate_benchmark_provenance
+from scripts.catalog_discovery.backend_score_schema import validate_backend_composite_scores
 
 KNOWN_QUANT_MARKERS = {
     "Q2_K",
@@ -71,6 +72,11 @@ def validate_catalog(path: Path) -> list[str]:
 
     errors: list[str] = []
     seen_ids: set[str] = set()
+    task_ids = {
+        str(task_id)
+        for task_id, weights in dict(payload.get("task_benchmark_weights", {})).items()
+        if isinstance(weights, dict)
+    }
     for idx, row in enumerate(models):
         if not isinstance(row, dict):
             errors.append(f"models[{idx}] is not an object")
@@ -90,6 +96,7 @@ def validate_catalog(path: Path) -> list[str]:
 
         if "benchmarks_meta" in row:
             errors.extend(validate_benchmark_provenance(row))
+        errors.extend(validate_backend_composite_scores(row, task_ids=task_ids))
 
         if row.get("registry") != "ollama":
             continue

@@ -66,6 +66,9 @@ def _catalog_row(discovery: dict[str, Any], research: dict[str, Any]) -> dict[st
             or [{"kind": "provider_model_list", "url": discovery.get("source_url")}],
         },
     }
+    backend_scores = research.get("backend_composite_scores")
+    if isinstance(backend_scores, list) and backend_scores:
+        row["backend_composite_scores"] = backend_scores
     return row
 
 
@@ -112,6 +115,7 @@ def run_discovery(
         diff_result["added"],
         fixture_root,
         benchmark_keys(catalog),
+        catalog.get("task_benchmark_weights", {}),
     )
     proposed = _proposed_catalog(catalog, diff_result["added"], research_by_id)
     safety_result = evaluate_catalog_publish(
