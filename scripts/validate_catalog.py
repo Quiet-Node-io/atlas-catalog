@@ -13,6 +13,10 @@ import sys
 from pathlib import Path
 from typing import Any
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+
+from scripts.catalog_discovery.benchmark_provenance import validate_benchmark_provenance
+
 KNOWN_QUANT_MARKERS = {
     "Q2_K",
     "Q3_K_S",
@@ -83,6 +87,9 @@ def validate_catalog(path: Path) -> list[str]:
             errors.append(f"{model_id}: variant=unrestricted requires unrestricted=true")
         if row.get("unrestricted") is True and variant != "unrestricted":
             errors.append(f"{model_id}: unrestricted=true requires variant=unrestricted")
+
+        if "benchmarks_meta" in row:
+            errors.extend(validate_benchmark_provenance(row))
 
         if row.get("registry") != "ollama":
             continue

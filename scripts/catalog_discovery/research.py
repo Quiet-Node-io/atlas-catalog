@@ -7,6 +7,13 @@ import re
 from pathlib import Path
 from typing import Any
 
+from .report import utc_now_iso
+from .research_sources import (
+    DEFAULT_SOURCE_KINDS,
+    metric_observations_from_source,
+    source_priority,
+)
+
 MAX_SNIPPET_CHARS = 500
 
 
@@ -24,10 +31,6 @@ def _snippet(text: str | None) -> str:
     return compact[:MAX_SNIPPET_CHARS].rstrip() + "..."
 
 
-def _valid_metric(value: Any) -> bool:
-    return isinstance(value, int | float) and 0 <= float(value) <= 1
-
-
 def collect_research_for_model(
     discovery: dict[str, Any],
     fixture_root: Path,
@@ -35,38 +38,105 @@ def collect_research_for_model(
 ) -> dict[str, Any]:
     path = _research_path(discovery, fixture_root)
     if not path.exists():
-        return {"benchmarks": {}, "sources": []}
+        retrieved_at = utc_now_iso()
+        return {
+            "benchmarks": {
+                metric_key: {"value": None}
+                for metric_key in sorted(allowed_benchmarks)
+            },
+            "benchmarks_meta": {
+                metric_key: {
+                    "source_url": None,
+                    "retrieved_at": retrieved_at,
+                    "missing_reason": "not_publicly_reported",
+                }
+                for metric_key in sorted(allowed_benchmarks)
+            },
+            "sources": [
+                {
+                    "kind": kind,
+                    "url": "",
+                    "retrieved_at": retrieved_at,
+                    "status": "not_configured_for_fixture",
+                }
+                for kind in DEFAULT_SOURCE_KINDS
+            ],
+            "conflicts": {},
+        }
     payload = json.loads(path.read_text(encoding="utf-8"))
     benchmarks: dict[str, dict[str, Any]] = {}
+    benchmarks_meta: dict[str, dict[str, Any]] = {}
     sources: list[dict[str, Any]] = []
+    observations_by_metric: dict[str, list[dict[str, Any]]] = {}
+    retrieved_at = str(payload.get("retrieved_at") or utc_now_iso())
+
     for source in payload.get("sources", []):
         if not isinstance(source, dict):
             continue
-        source_entry = {
-            "kind": str(source.get("kind", "unknown")),
-            "url": str(source.get("url", "")),
-            "snippet": _snippet(source.get("text")),
-        }
-        source_metrics: list[str] = []
-        raw_benchmarks = source.get("benchmarks", {})
-        if isinstance(raw_benchmarks, dict):
-            for key, metric in raw_benchmarks.items():
-                if key not in allowed_benchmarks or not isinstance(metric, dict):
-                    continue
-                source_url = metric.get("source_url") or source.get("url")
-                value = metric.get("value")
-                if not source_url or not _valid_metric(value):
-                    continue
-                benchmarks[str(key)] = {
-                    "value": float(value),
-                    "source_url": str(source_url),
-                    "source_kind": source_entry["kind"],
-                }
-                source_metrics.append(str(key))
-        if source_metrics:
-            source_entry["benchmark_keys"] = sorted(source_metrics)
+        source_entry, observations = metric_observations_from_source(
+            source,
+            allowed_metrics=allowed_benchmarks,
+            fallback_retrieved_at=retrieved_at,
+        )
+        source_entry["snippet"] = _snippet(source.get("text"))
+        for observation in observations:
+            observations_by_metric.setdefault(str(observation["metric"]), []).append(observation)
         sources.append(source_entry)
-    return {"benchmarks": benchmarks, "sources": sources}
+
+    seen_kinds = {str(source.get("kind")) for source in sources}
+    for kind in DEFAULT_SOURCE_KINDS:
+        if kind not in seen_kinds:
+            sources.append(
+                {
+                    "kind": kind,
+                    "url": "",
+                    "retrieved_at": retrieved_at,
+                    "status": "not_configured_for_fixture",
+                }
+            )
+
+    conflicts: dict[str, list[dict[str, Any]]] = {}
+    for metric_key, observations in observations_by_metric.items():
+        ordered = sorted(observations, key=lambda item: source_priority(str(item["source_kind"])))
+        selected = ordered[0]
+        benchmarks[metric_key] = {
+            "value": float(selected["value"]),
+            "source_url": str(selected["source_url"]),
+            "source_kind": str(selected["source_kind"]),
+            "retrieved_at": str(selected["retrieved_at"]),
+        }
+        benchmarks_meta[metric_key] = {
+            "source_url": str(selected["source_url"]),
+            "retrieved_at": str(selected["retrieved_at"]),
+            "source_kind": str(selected["source_kind"]),
+        }
+        if len(ordered) > 1:
+            conflicts[metric_key] = [
+                {
+                    "value": float(item["value"]),
+                    "source_url": str(item["source_url"]),
+                    "source_kind": str(item["source_kind"]),
+                    "retrieved_at": str(item["retrieved_at"]),
+                }
+                for item in ordered[1:]
+            ]
+
+    for metric_key in sorted(allowed_benchmarks):
+        if metric_key in benchmarks:
+            continue
+        benchmarks[metric_key] = {"value": None}
+        benchmarks_meta[metric_key] = {
+            "source_url": None,
+            "retrieved_at": retrieved_at,
+            "missing_reason": "not_publicly_reported",
+        }
+
+    return {
+        "benchmarks": benchmarks,
+        "benchmarks_meta": benchmarks_meta,
+        "sources": sources,
+        "conflicts": conflicts,
+    }
 
 
 def collect_research_for_models(

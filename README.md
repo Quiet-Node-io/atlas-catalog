@@ -163,6 +163,17 @@ the RAN-144 infrastructure track.
 
 Publish safety is enforced by `scripts/catalog_discovery/safety.py`.
 
+Discovery reports separate review candidates from actual proposed catalog
+edits. `removed` in a manifest/report means "catalog rows for scanned providers
+that were not present in this provider scan"; those rows are
+`removed_review_required` candidates for human review. They are not deleted
+unless the generated `proposed-catalog.json` actually omits them.
+
+Offline fixture runs often report large removed counts because the fixtures
+cover only a small slice of the real catalog. For example, `removed: 116` with
+`allowed: true` means the fixture scan did not see 116 catalog rows, but the
+proposed catalog still retained them. It is not a proposal to delete 116 rows.
+
 Default behavior blocks destructive or non-additive changes:
 
 ```bash
@@ -180,10 +191,50 @@ python scripts/catalog_discovery/safety.py \
   --allow-destructive
 ```
 
+The safety guard compares the actual proposed catalog payload against the base
+catalog. It blocks rows present in base but missing from proposed, removed
+`default` flags, active rows changed to hidden/removed/deprecated, newly added
+`superseded_by` links, and newly added rows without discovery evidence. If a
+real discovery run writes removals into `proposed-catalog.json`, the guard
+should fail unless an explicit destructive override is used.
+
 Benchmark and provenance enrichment happens only during discovery / publish.
 The worker records cited public benchmark values when the metric key is already
-known to `task_benchmark_weights`; unknown or uncited values stay out of
-`benchmarks`.
+known to `task_benchmark_weights`; unknown or uncited values are recorded as
+missing instead of invented.
+
+RAN-347 uses the catalog-backward-compatible option B schema:
+
+```jsonc
+{
+  "benchmarks": {
+    "mmlu_pro": 0.82,
+    "gpqa_diamond": null
+  },
+  "benchmarks_meta": {
+    "mmlu_pro": {
+      "source_url": "https://huggingface.co/spaces/example",
+      "retrieved_at": "2026-05-16T00:00:00+00:00",
+      "source_kind": "huggingface_leaderboard"
+    },
+    "gpqa_diamond": {
+      "source_url": null,
+      "retrieved_at": "2026-05-16T00:00:00+00:00",
+      "missing_reason": "not_publicly_reported"
+    }
+  }
+}
+```
+
+`benchmarks` remains the runtime value field and must stay flat numeric/null for
+Atlas compatibility. `benchmarks_meta` carries source URL, retrieval timestamp,
+source kind, and missing-data reason. Existing rows without `benchmarks_meta`
+remain valid until refreshed.
+
+When sources disagree for the same metric, discovery applies this priority:
+HuggingFace leaderboard, then Artificial Analysis, then project README/model
+card, then provider page. Every numeric score must have a public source URL and
+retrieval timestamp. Missing values use `null` plus `missing_reason`.
 
 ## Current Catalog
 
