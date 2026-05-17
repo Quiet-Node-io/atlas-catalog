@@ -1,6 +1,6 @@
 {
   "catalog_version": 4,
-  "updated": "2026-05-02",
+  "updated": "2026-05-17",
   "task_tables_version": 0,
   "task_benchmark_weights": {
     "vision_input": {
@@ -11565,6 +11565,288 @@
       },
       "benchmarks": {},
       "variant": "standard"
+    },
+    {
+      "id": "gpustack/bge-reranker-v2-m3-GGUF:q4_k_m",
+      "name": "BGE-Reranker-v2-m3",
+      "display_name": "BGE-Reranker-v2-m3 Q4_K_M",
+      "description": "Default local reranker for Atlas RAG. Multilingual BGE cross-encoder reranker served through llama.cpp server; reranking only, not a text-generation or embedding model.",
+      "category": "reranker",
+      "model_type": "reranker",
+      "modality": "reranking",
+      "modalities": [
+        "reranking"
+      ],
+      "parameters": "568M",
+      "ram": "1-2 GB",
+      "ram_fit": "Excellent 1-2 GB",
+      "ram_fit_class": "excellent",
+      "disk_size": "~418 MB",
+      "disk_size_gb": 0.41,
+      "capabilities": {
+        "write": 0,
+        "code": 0,
+        "reason": 0,
+        "chat": 0,
+        "speed": 4,
+        "vision": 0
+      },
+      "unrestricted": false,
+      "default": true,
+      "atlas_pick": true,
+      "backend": "llama_cpp_server",
+      "runtime_backend": "llama_cpp_server",
+      "registry": "huggingface",
+      "provider": "HuggingFace",
+      "publisher": "BAAI / GPUStack",
+      "family": "BGE-Reranker-v2-m3",
+      "variant_label": "Q4_K_M",
+      "quantization": "Q4_K_M",
+      "variant_group": "bge-reranker-v2-m3",
+      "hf_repo": "gpustack/bge-reranker-v2-m3-GGUF",
+      "hf_filename": "bge-reranker-v2-m3-Q4_K_M.gguf",
+      "hf_dest_subdir": "rerankers",
+      "source_url": "https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF",
+      "download_url": "https://huggingface.co/gpustack/bge-reranker-v2-m3-GGUF/resolve/main/bge-reranker-v2-m3-Q4_K_M.gguf",
+      "file_size_bytes": 438376864,
+      "sha256": "e186a244ed455b4ab66ec64339ce7427a6ae13f5c0b5e544de96e50f0f8b3673",
+      "hardware_recommended": [
+        "basic",
+        "standard",
+        "performance",
+        "high_performance",
+        "workstation"
+      ],
+      "hardware_minimum": "basic",
+      "use_this_for": "Default reranking for local RAG across all Atlas hardware tiers.",
+      "task_fitness": {},
+      "task_stance": {},
+      "benchmarks": {},
+      "variant": "standard",
+      "catalog_version": 1,
+      "update_policy": "optional",
+      "system_candidate": true,
+      "status": "active",
+      "discovery_evidence": {
+        "sources": [
+          {
+            "source_url": "https://huggingface.co/api/models/gpustack/bge-reranker-v2-m3-GGUF",
+            "source_kind": "huggingface_api",
+            "retrieved_at": "2026-05-17T06:45:47+00:00",
+            "evidence": "HF API lists bge-reranker-v2-m3-Q4_K_M.gguf; resolver headers expose x-linked-size 438376864 and x-linked-etag e186a244ed455b4ab66ec64339ce7427a6ae13f5c0b5e544de96e50f0f8b3673."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mradermacher/bge-reranker-v2-gemma-GGUF:q4_k_m",
+      "name": "BGE-Reranker-v2-Gemma",
+      "display_name": "BGE-Reranker-v2-Gemma Q4_K_M",
+      "description": "Compact Gemma-based BGE cross-encoder reranker for Standard tier and above. Served through llama.cpp server for reranking only.",
+      "category": "reranker",
+      "model_type": "reranker",
+      "modality": "reranking",
+      "modalities": [
+        "reranking"
+      ],
+      "parameters": "2B",
+      "ram": "4-6 GB",
+      "ram_fit": "Good 4-6 GB",
+      "ram_fit_class": "good",
+      "disk_size": "~1.6 GB",
+      "disk_size_gb": 1.52,
+      "capabilities": {
+        "write": 0,
+        "code": 0,
+        "reason": 0,
+        "chat": 0,
+        "speed": 3,
+        "vision": 0
+      },
+      "unrestricted": false,
+      "atlas_pick": false,
+      "backend": "llama_cpp_server",
+      "runtime_backend": "llama_cpp_server",
+      "registry": "huggingface",
+      "provider": "HuggingFace",
+      "publisher": "BAAI / mradermacher",
+      "family": "BGE-Reranker-v2-Gemma",
+      "variant_label": "Q4_K_M",
+      "quantization": "Q4_K_M",
+      "variant_group": "bge-reranker-v2-gemma",
+      "hf_repo": "mradermacher/bge-reranker-v2-gemma-GGUF",
+      "hf_filename": "bge-reranker-v2-gemma.Q4_K_M.gguf",
+      "hf_dest_subdir": "rerankers",
+      "source_url": "https://huggingface.co/mradermacher/bge-reranker-v2-gemma-GGUF",
+      "download_url": "https://huggingface.co/mradermacher/bge-reranker-v2-gemma-GGUF/resolve/main/bge-reranker-v2-gemma.Q4_K_M.gguf",
+      "file_size_bytes": 1630263328,
+      "sha256": "b1735f899bd1e238aa90d27ce24a58680d67ba037ff66ee70fe441050b38c257",
+      "hardware_recommended": [
+        "standard",
+        "performance",
+        "high_performance",
+        "workstation"
+      ],
+      "hardware_minimum": "standard",
+      "use_this_for": "Higher-capacity local reranking when Standard-tier RAM headroom is available.",
+      "task_fitness": {},
+      "task_stance": {},
+      "benchmarks": {},
+      "variant": "standard",
+      "catalog_version": 1,
+      "update_policy": "optional",
+      "system_candidate": true,
+      "status": "active",
+      "discovery_evidence": {
+        "sources": [
+          {
+            "source_url": "https://huggingface.co/api/models/mradermacher/bge-reranker-v2-gemma-GGUF",
+            "source_kind": "huggingface_api",
+            "retrieved_at": "2026-05-17T06:46:50+00:00",
+            "evidence": "HF API lists bge-reranker-v2-gemma.Q4_K_M.gguf; resolver headers expose x-linked-size 1630263328 and x-linked-etag b1735f899bd1e238aa90d27ce24a58680d67ba037ff66ee70fe441050b38c257."
+          }
+        ]
+      }
+    },
+    {
+      "id": "mradermacher/bge-reranker-v2-gemma-GGUF:q8_0",
+      "name": "BGE-Reranker-v2-Gemma",
+      "display_name": "BGE-Reranker-v2-Gemma Q8_0",
+      "description": "Higher-fidelity Gemma-based BGE cross-encoder reranker for Performance tier and above. Served through llama.cpp server for reranking only.",
+      "category": "reranker",
+      "model_type": "reranker",
+      "modality": "reranking",
+      "modalities": [
+        "reranking"
+      ],
+      "parameters": "2B",
+      "ram": "6-8 GB",
+      "ram_fit": "Good 6-8 GB",
+      "ram_fit_class": "good",
+      "disk_size": "~2.7 GB",
+      "disk_size_gb": 2.49,
+      "capabilities": {
+        "write": 0,
+        "code": 0,
+        "reason": 0,
+        "chat": 0,
+        "speed": 2,
+        "vision": 0
+      },
+      "unrestricted": false,
+      "atlas_pick": false,
+      "backend": "llama_cpp_server",
+      "runtime_backend": "llama_cpp_server",
+      "registry": "huggingface",
+      "provider": "HuggingFace",
+      "publisher": "BAAI / mradermacher",
+      "family": "BGE-Reranker-v2-Gemma",
+      "variant_label": "Q8_0",
+      "quantization": "Q8_0",
+      "variant_group": "bge-reranker-v2-gemma",
+      "hf_repo": "mradermacher/bge-reranker-v2-gemma-GGUF",
+      "hf_filename": "bge-reranker-v2-gemma.Q8_0.gguf",
+      "hf_dest_subdir": "rerankers",
+      "source_url": "https://huggingface.co/mradermacher/bge-reranker-v2-gemma-GGUF",
+      "download_url": "https://huggingface.co/mradermacher/bge-reranker-v2-gemma-GGUF/resolve/main/bge-reranker-v2-gemma.Q8_0.gguf",
+      "file_size_bytes": 2669070368,
+      "sha256": "e40e4f2269ec2271c2cf7512f85de7cd7a16ca3e8f689fe2b945cc98fe28b44b",
+      "hardware_recommended": [
+        "performance",
+        "high_performance",
+        "workstation"
+      ],
+      "hardware_minimum": "performance",
+      "use_this_for": "Higher-fidelity local reranking when Performance-tier RAM headroom is available.",
+      "task_fitness": {},
+      "task_stance": {},
+      "benchmarks": {},
+      "variant": "standard",
+      "catalog_version": 1,
+      "update_policy": "optional",
+      "system_candidate": true,
+      "status": "active",
+      "discovery_evidence": {
+        "sources": [
+          {
+            "source_url": "https://huggingface.co/api/models/mradermacher/bge-reranker-v2-gemma-GGUF",
+            "source_kind": "huggingface_api",
+            "retrieved_at": "2026-05-17T06:46:50+00:00",
+            "evidence": "HF API lists bge-reranker-v2-gemma.Q8_0.gguf; resolver headers expose x-linked-size 2669070368 and x-linked-etag e40e4f2269ec2271c2cf7512f85de7cd7a16ca3e8f689fe2b945cc98fe28b44b."
+          }
+        ]
+      }
+    },
+    {
+      "id": "atlas/llm-as-reranker:small-general",
+      "name": "Small General Baseline",
+      "display_name": "Small General Baseline (LLM-as-reranker)",
+      "description": "Virtual reranker option that reuses the currently selected Small General slot at query time. Adds no model download and no extra resident RAM.",
+      "category": "reranker",
+      "model_type": "reranker",
+      "modality": "reranking",
+      "modalities": [
+        "reranking"
+      ],
+      "parameters": "virtual",
+      "ram": "Adds 0 GB",
+      "ram_fit": "No additional RAM",
+      "ram_fit_class": "excellent",
+      "disk_size": "0 GB",
+      "disk_size_gb": 0,
+      "capabilities": {
+        "write": 0,
+        "code": 0,
+        "reason": 0,
+        "chat": 0,
+        "speed": 0,
+        "vision": 0
+      },
+      "unrestricted": false,
+      "atlas_pick": false,
+      "backend": "virtual",
+      "runtime_backend": "virtual",
+      "registry": "virtual",
+      "provider": "Atlas",
+      "publisher": "Atlas",
+      "family": "LLM-as-reranker",
+      "variant_label": "Small General",
+      "quantization": "follows Small General",
+      "variant_group": "atlas/llm-as-reranker",
+      "hf_repo": null,
+      "hf_filename": null,
+      "hf_dest_subdir": "rerankers",
+      "source_url": null,
+      "download_url": null,
+      "file_size_bytes": 0,
+      "sha256": null,
+      "hardware_recommended": [
+        "basic",
+        "standard",
+        "performance",
+        "high_performance",
+        "workstation"
+      ],
+      "hardware_minimum": "basic",
+      "use_this_for": "Fallback reranking through the configured Small General model using the RAN-346 prompt template.",
+      "task_fitness": {},
+      "task_stance": {},
+      "benchmarks": {},
+      "variant": "standard",
+      "catalog_version": 1,
+      "update_policy": "optional",
+      "system_candidate": true,
+      "status": "active",
+      "discovery_evidence": {
+        "sources": [
+          {
+            "source_url": "https://linear.app/randhq/issue/RAN-350/catalog-rows-for-ran-346-reranker-options",
+            "source_kind": "linear_scope",
+            "retrieved_at": "2026-05-17T06:45:01+00:00",
+            "evidence": "RAN-350 defines the virtual Small General LLM-as-reranker row as no-download, no-GGUF, and zero extra RAM."
+          }
+        ]
+      }
     }
   ],
   "task_table_updates": {}
