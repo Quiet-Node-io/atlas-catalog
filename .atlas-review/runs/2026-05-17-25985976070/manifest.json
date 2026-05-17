@@ -1,0 +1,37 @@
+{
+  "create_pr_requested": true,
+  "generated_at": "2026-05-17T08:33:36+00:00",
+  "provider_errors": [
+    {
+      "error": "HTTPError",
+      "provider": "openai",
+      "status": "unavailable"
+    },
+    {
+      "error": "HTTPError",
+      "provider": "anthropic",
+      "status": "unavailable"
+    },
+    {
+      "error": "HTTPError",
+      "provider": "google",
+      "status": "unavailable"
+    },
+    {
+      "error": "HTTPError",
+      "provider": "xai",
+      "status": "unavailable"
+    }
+  ],
+  "run_id": "2026-05-17-25985976070",
+  "safety": {
+    "allowed": true,
+    "issues": [],
+    "override_used": false
+  },
+  "summary": {
+    "added": 328,
+    "changed": 0,
+    "removed": 147
+  }
+}
