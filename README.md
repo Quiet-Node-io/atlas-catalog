@@ -194,6 +194,9 @@ Every row with `"registry": "ollama"` must use structured variant metadata:
   group id; singleton rows use their own `id`.
 - `ollama_pull_tag`: set only when the Atlas catalog id differs from the real
   Ollama registry tag. Omit it when `id` is the pullable tag.
+- `aliases`: optional list of legacy catalog/provider identifiers that now
+  resolve to this row. Use it for dedupes, not for adding separate duplicate
+  rows.
 
 Run `python scripts/validate_catalog.py catalog.json` before opening catalog
 PRs. The GitHub workflow runs the same validator on catalog changes.

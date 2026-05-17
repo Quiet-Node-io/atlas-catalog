@@ -29,6 +29,56 @@ class SafetyGuardTests(unittest.TestCase):
         self.assertTrue(result.allowed)
         self.assertTrue(result.override_used)
 
+    def test_allows_removed_row_when_retained_as_same_artifact_alias(self):
+        base = {
+            "models": [
+                {
+                    "id": "gemma4",
+                    "registry": "ollama",
+                    "category": "general",
+                    "family": "Gemma 4",
+                    "display_name": "Gemma 4 4.5B",
+                    "variant_label": "4.5B",
+                    "quantization": "Q4_K_M",
+                    "variant": "standard",
+                    "unrestricted": False,
+                },
+                {
+                    "id": "gemma4:4.5b",
+                    "registry": "ollama",
+                    "category": "general",
+                    "family": "Gemma 4",
+                    "display_name": "Gemma 4 4.5B",
+                    "variant_label": "4.5B",
+                    "quantization": "Q4_K_M",
+                    "variant": "standard",
+                    "unrestricted": False,
+                },
+            ]
+        }
+        proposed = {
+            "models": [
+                {
+                    "id": "gemma4:4.5b",
+                    "registry": "ollama",
+                    "category": "general",
+                    "family": "Gemma 4",
+                    "display_name": "Gemma 4 4.5B",
+                    "variant_label": "4.5B",
+                    "quantization": "Q4_K_M",
+                    "variant": "standard",
+                    "unrestricted": False,
+                    "aliases": ["gemma4"],
+                }
+            ]
+        }
+
+        result = evaluate_catalog_publish(base, proposed)
+
+        self.assertTrue(result.allowed)
+        self.assertEqual(result.issues, [])
+        self.assertEqual(result.deduped, ["gemma4: deduped into gemma4:4.5b alias"])
+
     def test_requires_evidence_for_added_rows(self):
         base = {"models": []}
         proposed = {"models": [{"id": "openai:gpt-new", "registry": "cloud"}]}

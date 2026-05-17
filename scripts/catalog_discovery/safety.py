@@ -13,12 +13,14 @@ from typing import Any
 class SafetyResult:
     allowed: bool
     issues: list[str]
+    deduped: list[str] | None = None
     override_used: bool = False
 
     def to_dict(self) -> dict[str, Any]:
         return {
             "allowed": self.allowed,
             "issues": self.issues,
+            "deduped": self.deduped or [],
             "override_used": self.override_used,
         }
 
@@ -39,6 +41,39 @@ def _has_evidence(row: dict[str, Any]) -> bool:
     return isinstance(sources, list) and bool(sources)
 
 
+def _aliases(row: dict[str, Any]) -> set[str]:
+    aliases = row.get("aliases")
+    if not isinstance(aliases, list):
+        return set()
+    return {alias.strip() for alias in aliases if isinstance(alias, str) and alias.strip()}
+
+
+def _same_artifact(base_row: dict[str, Any], proposed_row: dict[str, Any]) -> bool:
+    fields = (
+        "registry",
+        "category",
+        "family",
+        "display_name",
+        "variant_label",
+        "quantization",
+        "variant",
+    )
+    if any(base_row.get(field) != proposed_row.get(field) for field in fields):
+        return False
+    return bool(base_row.get("unrestricted")) == bool(proposed_row.get("unrestricted"))
+
+
+def _dedupe_target(
+    removed_id: str,
+    removed_row: dict[str, Any],
+    proposed_rows: dict[str, dict[str, Any]],
+) -> str | None:
+    for proposed_id, proposed_row in proposed_rows.items():
+        if removed_id in _aliases(proposed_row) and _same_artifact(removed_row, proposed_row):
+            return proposed_id
+    return None
+
+
 def evaluate_catalog_publish(
     base: dict[str, Any],
     proposed: dict[str, Any],
@@ -46,11 +81,16 @@ def evaluate_catalog_publish(
     allow_destructive: bool = False,
 ) -> SafetyResult:
     issues: list[str] = []
+    deduped: list[str] = []
     base_rows = _model_map(base)
     proposed_rows = _model_map(proposed)
 
     for model_id, row in base_rows.items():
         if model_id not in proposed_rows:
+            target_id = _dedupe_target(model_id, row, proposed_rows)
+            if target_id:
+                deduped.append(f"{model_id}: deduped into {target_id} alias")
+                continue
             issues.append(f"{model_id}: removed catalog row")
             continue
         next_row = proposed_rows[model_id]
@@ -66,8 +106,13 @@ def evaluate_catalog_publish(
             issues.append(f"{model_id}: missing discovery evidence for added row")
 
     if issues and not allow_destructive:
-        return SafetyResult(False, issues)
-    return SafetyResult(True, issues, override_used=bool(issues and allow_destructive))
+        return SafetyResult(False, issues, deduped=deduped)
+    return SafetyResult(
+        True,
+        issues,
+        deduped=deduped,
+        override_used=bool(issues and allow_destructive),
+    )
 
 
 def _load(path: Path) -> dict[str, Any]:
