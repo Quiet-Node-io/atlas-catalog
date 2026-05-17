@@ -236,6 +236,73 @@ HuggingFace leaderboard, then Artificial Analysis, then project README/model
 card, then provider page. Every numeric score must have a public source URL and
 retrieval timestamp. Missing values use `null` plus `missing_reason`.
 
+### Backend-aware composite scores (RAN-351)
+
+RAN-351 adds optional backend-aware scoring records under
+`backend_composite_scores`. This field is additive: Atlas runtime readers that
+only understand flat `benchmarks` continue to ignore it, and Atlas-side display
+behavior is handled by a future coordinated consumer ticket.
+
+Each composite record stores a structured tuple key instead of a packed string:
+
+```jsonc
+{
+  "model_id": "openai:gpt-new",
+  "backend": "openai",
+  "node_class": "cloud",
+  "hardware_class": "unknown",
+  "quantization": "unknown",
+  "context_tokens": 128000,
+  "modality": "text",
+  "task_id": "research_analysis",
+  "score": 82,
+  "coverage": 0.85,
+  "components": {
+    "benchmark_composite": {
+      "score": 0.82,
+      "weight": 0.6,
+      "provenance": ["benchmarks_meta.mmlu_pro"]
+    },
+    "backend_capability": {
+      "score": 1.0,
+      "weight": 0.25,
+      "features": ["structured_output", "tool_support"],
+      "source_url": "https://example.com/backend-profile",
+      "retrieved_at": "2026-05-16T00:00:00+00:00"
+    },
+    "runtime_profile": {
+      "weight": 0.15,
+      "missing_reason": "runtime_profile_not_reported"
+    }
+  }
+}
+```
+
+The tuple fields are deliberately abstract. `node_class` and `hardware_class`
+must use safe classes such as `local`, `cluster`, `cloud`, `basic`,
+`standard`, `performance`, `high_performance`, `workstation`, or `unknown`.
+Do not store private machine names, hostnames, raw profiler output, local
+paths, tokens, or other operational identifiers in catalog scoring records.
+
+Composite scores are derived only during discovery / publish. Atlas instances
+must not fetch benchmark pages, backend docs, or hardware profiles at runtime.
+Every benchmark-derived component references `benchmarks_meta.<metric>`.
+Backend capability and runtime-profile components either carry a public
+`source_url` plus `retrieved_at`, or carry a `missing_reason`. Missing facts
+reduce `coverage`; they are never guessed.
+
+The current component weights are:
+
+| Component | Weight | Input |
+| --- | ---: | --- |
+| `benchmark_composite` | 0.60 | RAN-347 flat `benchmarks` plus `benchmarks_meta` provenance |
+| `backend_capability` | 0.25 | backend feature facts such as continuous batching, KV cache control, sampling parameters, structured output, and tool support |
+| `runtime_profile` | 0.15 | normalized throughput, TTFT, memory pressure, and context-capability signals |
+
+Backend feature inventory remains a separate catalog extension. RAN-351 only
+defines the scoring envelope and consumes backend facts when discovery fixtures
+or cited research provide them.
+
 ## Current Catalog
 
 241 models across 6 categories, including metadata-only cloud rows:

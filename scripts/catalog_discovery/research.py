@@ -8,6 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from .report import utc_now_iso
+from .backend_scoring import build_backend_composite_scores
 from .research_sources import (
     DEFAULT_SOURCE_KINDS,
     metric_observations_from_source,
@@ -35,6 +36,7 @@ def collect_research_for_model(
     discovery: dict[str, Any],
     fixture_root: Path,
     allowed_benchmarks: set[str],
+    task_benchmark_weights: dict[str, Any] | None = None,
 ) -> dict[str, Any]:
     path = _research_path(discovery, fixture_root)
     if not path.exists():
@@ -131,20 +133,38 @@ def collect_research_for_model(
             "missing_reason": "not_publicly_reported",
         }
 
-    return {
+    result = {
         "benchmarks": benchmarks,
         "benchmarks_meta": benchmarks_meta,
         "sources": sources,
         "conflicts": conflicts,
     }
+    backend_profiles = payload.get("backend_profiles", [])
+    if isinstance(backend_profiles, list) and task_benchmark_weights:
+        backend_scores = build_backend_composite_scores(
+            model_id=str(discovery["id"]),
+            benchmarks=benchmarks,
+            benchmarks_meta=benchmarks_meta,
+            task_benchmark_weights=task_benchmark_weights,
+            backend_profiles=backend_profiles,
+        )
+        if backend_scores:
+            result["backend_composite_scores"] = backend_scores
+    return result
 
 
 def collect_research_for_models(
     discoveries: list[dict[str, Any]],
     fixture_root: Path,
     allowed_benchmarks: set[str],
+    task_benchmark_weights: dict[str, Any] | None = None,
 ) -> dict[str, dict[str, Any]]:
     return {
-        discovery["id"]: collect_research_for_model(discovery, fixture_root, allowed_benchmarks)
+        discovery["id"]: collect_research_for_model(
+            discovery,
+            fixture_root,
+            allowed_benchmarks,
+            task_benchmark_weights,
+        )
         for discovery in discoveries
     }

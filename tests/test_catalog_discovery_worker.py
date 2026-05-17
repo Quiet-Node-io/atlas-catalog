@@ -47,7 +47,23 @@ class WorkerIntegrationTests(unittest.TestCase):
                                     }
                                 },
                             }
-                        ]
+                        ],
+                        "backend_profiles": [
+                            {
+                                "backend": "openai",
+                                "node_class": "cloud",
+                                "hardware_class": "unknown",
+                                "quantization": "unknown",
+                                "context_tokens": 128000,
+                                "modality": "text",
+                                "source_url": "https://example.com/backend-profile",
+                                "retrieved_at": "2026-05-16T00:00:00+00:00",
+                                "features": {
+                                    "structured_output": True,
+                                    "tool_support": True,
+                                },
+                            }
+                        ],
                     }
                 ),
                 encoding="utf-8",
@@ -74,11 +90,20 @@ class WorkerIntegrationTests(unittest.TestCase):
                 by_id["openai:gpt-new"]["benchmarks_meta"]["mmlu_pro"]["retrieved_at"],
                 "2026-05-16T00:00:00+00:00",
             )
+            composite_scores = by_id["openai:gpt-new"]["backend_composite_scores"]
+            self.assertEqual(len(composite_scores), 1)
+            self.assertEqual(composite_scores[0]["backend"], "openai")
+            self.assertEqual(composite_scores[0]["task_id"], "research_analysis")
+            self.assertEqual(
+                composite_scores[0]["components"]["benchmark_composite"]["provenance"],
+                ["benchmarks_meta.mmlu_pro"],
+            )
             self.assertIsNone(by_id["huggingface:org/model-a"]["benchmarks"]["mmlu_pro"])
             self.assertEqual(
                 by_id["huggingface:org/model-a"]["benchmarks_meta"]["mmlu_pro"]["missing_reason"],
                 "not_publicly_reported",
             )
+            self.assertNotIn("backend_composite_scores", by_id["huggingface:org/model-a"])
             self.assertIn("discovery_evidence", by_id["openai:gpt-new"])
             self.assertTrue((output / "catalog-review-report.md").exists())
             self.assertTrue((output / "manifest.json").exists())

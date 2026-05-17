@@ -25,5 +25,26 @@
       "url": "https://example.com/project-readme",
       "text": "Project README evidence for gpt-new."
     }
+  ],
+  "backend_profiles": [
+    {
+      "backend": "openai",
+      "node_class": "cloud",
+      "hardware_class": "unknown",
+      "quantization": "unknown",
+      "context_tokens": 128000,
+      "modality": "text",
+      "source_url": "https://example.com/backend-profile",
+      "retrieved_at": "2026-05-16T00:00:00+00:00",
+      "features": {
+        "structured_output": true,
+        "tool_support": true
+      },
+      "runtime_profile": {
+        "throughput_score": 0.7,
+        "ttft_score": 0.8,
+        "memory_pressure_score": 0.6
+      }
+    }
   ]
 }

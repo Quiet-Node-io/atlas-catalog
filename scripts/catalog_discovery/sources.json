@@ -21,6 +21,25 @@
       "description": "Provider-published benchmark, latency, throughput, and pricing pages."
     }
   ],
+  "backend_composite_scoring": {
+    "field": "backend_composite_scores",
+    "privacy": "ingest_time_only",
+    "tuple_fields": [
+      "model_id",
+      "backend",
+      "node_class",
+      "hardware_class",
+      "quantization",
+      "context_tokens",
+      "modality",
+      "task_id"
+    ],
+    "components": {
+      "benchmark_composite": 0.6,
+      "backend_capability": 0.25,
+      "runtime_profile": 0.15
+    }
+  },
   "providers": [
     {
       "id": "openai",
