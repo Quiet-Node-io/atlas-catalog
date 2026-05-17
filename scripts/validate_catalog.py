@@ -16,6 +16,7 @@ from typing import Any
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
 from scripts.catalog_discovery.benchmark_provenance import validate_benchmark_provenance
+from scripts.catalog_discovery.backend_inventory_schema import validate_backend_inventory
 from scripts.catalog_discovery.backend_score_schema import validate_backend_composite_scores
 
 KNOWN_QUANT_MARKERS = {
@@ -70,7 +71,7 @@ def validate_catalog(path: Path) -> list[str]:
     if not isinstance(models, list):
         return ["catalog.json must contain a top-level models array"]
 
-    errors: list[str] = []
+    backend_ids, errors = validate_backend_inventory(payload)
     seen_ids: set[str] = set()
     task_ids = {
         str(task_id)
@@ -96,7 +97,26 @@ def validate_catalog(path: Path) -> list[str]:
 
         if "benchmarks_meta" in row:
             errors.extend(validate_benchmark_provenance(row))
-        errors.extend(validate_backend_composite_scores(row, task_ids=task_ids))
+        errors.extend(
+            validate_backend_composite_scores(
+                row,
+                known_backends=backend_ids or None,
+                task_ids=task_ids,
+            )
+        )
+
+        backend_id = row.get("backend_id")
+        if backend_id is not None and backend_id not in backend_ids:
+            errors.append(f"{model_id}: backend_id references unknown backend {backend_id}")
+
+        backend_id_list = row.get("backend_ids")
+        if backend_id_list is not None:
+            if not isinstance(backend_id_list, list):
+                errors.append(f"{model_id}: backend_ids must be an array")
+            else:
+                for item in backend_id_list:
+                    if item not in backend_ids:
+                        errors.append(f"{model_id}: backend_ids references unknown backend {item}")
 
         if row.get("registry") != "ollama":
             continue

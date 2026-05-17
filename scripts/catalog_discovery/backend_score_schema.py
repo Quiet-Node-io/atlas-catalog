@@ -128,6 +128,7 @@ def _validate_component(
 def validate_backend_composite_scores(
     row: dict[str, Any],
     *,
+    known_backends: set[str] | None = None,
     task_ids: set[str] | None = None,
 ) -> list[str]:
     """Validate optional backend-aware score records on one catalog row."""
@@ -144,6 +145,7 @@ def validate_backend_composite_scores(
         benchmarks_meta = {}
 
     errors: list[str] = []
+    allowed_backends = known_backends or KNOWN_BACKENDS
     for index, record in enumerate(records):
         prefix = f"{model_id} backend_composite_scores[{index}]"
         if not isinstance(record, dict):
@@ -155,7 +157,7 @@ def validate_backend_composite_scores(
             errors.append(f"{prefix}: model_id must match row id")
 
         backend = record.get("backend")
-        if backend not in KNOWN_BACKENDS:
+        if backend not in allowed_backends:
             errors.append(f"{prefix}: unknown backend {backend}")
 
         node_class = record.get("node_class")
