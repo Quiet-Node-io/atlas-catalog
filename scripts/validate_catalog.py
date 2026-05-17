@@ -78,6 +78,12 @@ def validate_catalog(path: Path) -> list[str]:
         for task_id, weights in dict(payload.get("task_benchmark_weights", {})).items()
         if isinstance(weights, dict)
     }
+    model_ids = {
+        str(row.get("id"))
+        for row in models
+        if isinstance(row, dict) and isinstance(row.get("id"), str) and row.get("id").strip()
+    }
+    seen_aliases: dict[str, str] = {}
     for idx, row in enumerate(models):
         if not isinstance(row, dict):
             errors.append(f"models[{idx}] is not an object")
@@ -94,6 +100,30 @@ def validate_catalog(path: Path) -> list[str]:
             errors.append(f"{model_id}: variant=unrestricted requires unrestricted=true")
         if row.get("unrestricted") is True and variant != "unrestricted":
             errors.append(f"{model_id}: unrestricted=true requires variant=unrestricted")
+
+        aliases = row.get("aliases")
+        if aliases is not None:
+            if not isinstance(aliases, list):
+                errors.append(f"{model_id}: aliases must be an array of strings")
+            else:
+                row_aliases: set[str] = set()
+                for alias in aliases:
+                    if not isinstance(alias, str) or not alias.strip():
+                        errors.append(f"{model_id}: aliases must contain only non-empty strings")
+                        continue
+                    alias = alias.strip()
+                    if alias == model_id:
+                        errors.append(f"{model_id}: aliases must not include the row id")
+                    if alias in model_ids:
+                        errors.append(f"{model_id}: alias {alias} collides with a model id")
+                    if alias in row_aliases:
+                        errors.append(f"{model_id}: duplicate alias {alias}")
+                    if alias in seen_aliases:
+                        errors.append(
+                            f"{model_id}: alias {alias} already belongs to {seen_aliases[alias]}"
+                        )
+                    row_aliases.add(alias)
+                    seen_aliases[alias] = model_id
 
         if "benchmarks_meta" in row:
             errors.extend(validate_benchmark_provenance(row))
