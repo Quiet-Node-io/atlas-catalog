@@ -31,7 +31,7 @@ KNOWN_HARDWARE_CLASSES = {
     "unknown",
 }
 
-KNOWN_MODALITIES = {"audio", "embedding", "image", "multimodal", "text", "vision"}
+KNOWN_MODALITIES = {"audio", "embedding", "image", "multimodal", "reranking", "text", "vision"}
 
 KNOWN_QUANTIZATIONS = {
     "BF16",
