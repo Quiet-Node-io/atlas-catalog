@@ -66,6 +66,41 @@ EXPECTED_TUPLES = {
     },
 }
 
+GEMMA4_VISION_BENCHMARKS = {
+    "gemma4:e2b": {
+        "mmmu": 0.442,
+        "mmmu_pro": 0.442,
+        "math_vision": 0.524,
+        "medxpertqa_mm": 0.235,
+    },
+    "gemma4:4.5b": {
+        "mmmu": 0.526,
+        "mmmu_pro": 0.526,
+        "math_vision": 0.595,
+        "medxpertqa_mm": 0.287,
+    },
+    "gemma4:26b": {
+        "mmmu": 0.738,
+        "mmmu_pro": 0.738,
+        "math_vision": 0.824,
+        "medxpertqa_mm": 0.581,
+    },
+    "gemma4:31b": {
+        "mmmu": 0.769,
+        "mmmu_pro": 0.769,
+        "math_vision": 0.856,
+        "medxpertqa_mm": 0.613,
+    },
+}
+
+GEMMA4_UNMEASURED_VISION_BENCHMARKS = {
+    "ai2d",
+    "docvqa",
+    "chartqa",
+    "mathvista",
+    "omnidocbench_1_5",
+}
+
 
 class RAN395BackendCompositeScoresTest(unittest.TestCase):
     @classmethod
@@ -170,6 +205,53 @@ class RAN395BackendCompositeScoresTest(unittest.TestCase):
         self.assertEqual(0.7106, benchmark_component["score"])
         self.assertEqual(62, record["score"])
         self.assertEqual(0.85, record["coverage"])
+
+    def test_gemma4_family_has_vision_support_and_cited_benchmark_metadata(self):
+        for model_id, expected in GEMMA4_VISION_BENCHMARKS.items():
+            with self.subTest(model_id=model_id):
+                row = self.rows[model_id]
+                self.assertIs(row.get("has_vision"), True)
+                self.assertIs(row.get("supports_vision"), True)
+
+                benchmarks = row.get("benchmarks")
+                meta = row.get("benchmarks_meta")
+                self.assertIsInstance(benchmarks, dict)
+                self.assertIsInstance(meta, dict)
+
+                for metric, value in expected.items():
+                    self.assertEqual(value, benchmarks.get(metric))
+                    self.assertEqual(
+                        "official_model_card",
+                        meta[metric]["source_kind"],
+                    )
+                    self.assertIn(
+                        "ai.google.dev/gemma/docs/core/model_card_4",
+                        meta[metric]["source_url"],
+                    )
+
+                for metric in GEMMA4_UNMEASURED_VISION_BENCHMARKS:
+                    self.assertIsNone(benchmarks.get(metric))
+                    expected_reason = (
+                        "lower_is_better_transform_pending"
+                        if metric == "omnidocbench_1_5"
+                        else "not_publicly_reported"
+                    )
+                    if metric == "mathvista":
+                        expected_reason = "proxy_rejected_not_equivalent_to_math_vision"
+                    self.assertEqual(expected_reason, meta[metric]["missing_reason"])
+
+    def test_gemma4_backend_composite_uses_only_approved_mmmu_proxy(self):
+        for model_id, expected in GEMMA4_VISION_BENCHMARKS.items():
+            with self.subTest(model_id=model_id):
+                row = self.rows[model_id]
+                record = next(
+                    record
+                    for record in row["backend_composite_scores"]
+                    if record["backend"] == "ollama" and record["task_id"] == "vision_input"
+                )
+                component = record["components"]["benchmark_composite"]
+                self.assertEqual(expected["mmmu"], component["score"])
+                self.assertEqual(["benchmarks_meta.mmmu"], component["provenance"])
 
 
 if __name__ == "__main__":
