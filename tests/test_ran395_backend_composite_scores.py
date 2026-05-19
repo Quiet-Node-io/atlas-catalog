@@ -101,6 +101,31 @@ GEMMA4_UNMEASURED_VISION_BENCHMARKS = {
     "omnidocbench_1_5",
 }
 
+RERANKER_BACKEND_EXPECTATIONS = {
+    "gpustack/bge-reranker-v2-m3-GGUF:q4_k_m": {
+        "score": 82,
+        "benchmark_score": 0.82,
+        "benchmark": "bge_reranker_v2_m3_quality",
+        "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+    },
+    "mradermacher/bge-reranker-v2-gemma-GGUF:q4_k_m": {
+        "score": 94,
+        "benchmark_score": 0.94,
+        "benchmark": "bge_reranker_v2_gemma_quality",
+        "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-gemma",
+    },
+    "mradermacher/bge-reranker-v2-gemma-GGUF:q8_0": {
+        "score": 100,
+        "benchmark_score": 1.0,
+        "benchmark": "bge_reranker_v2_gemma_quality",
+        "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-gemma",
+    },
+}
+
+VIRTUAL_RERANKER_MISSING_REASON = (
+    "virtual row — delegates to dynamically-selected Small General model"
+)
+
 
 class RAN395BackendCompositeScoresTest(unittest.TestCase):
     @classmethod
@@ -252,6 +277,48 @@ class RAN395BackendCompositeScoresTest(unittest.TestCase):
                 component = record["components"]["benchmark_composite"]
                 self.assertEqual(expected["mmmu"], component["score"])
                 self.assertEqual(["benchmarks_meta.mmmu"], component["provenance"])
+
+    def test_reranker_backend_scores_have_bge_quality_provenance(self):
+        for model_id, expected in RERANKER_BACKEND_EXPECTATIONS.items():
+            with self.subTest(model_id=model_id):
+                row = self.rows[model_id]
+                benchmarks = row.get("benchmarks")
+                meta = row.get("benchmarks_meta")
+                self.assertIsInstance(benchmarks, dict)
+                self.assertIsInstance(meta, dict)
+                self.assertEqual(
+                    expected["benchmark_score"],
+                    benchmarks.get(expected["benchmark"]),
+                )
+                self.assertEqual(
+                    "official_model_card",
+                    meta[expected["benchmark"]]["source_kind"],
+                )
+                self.assertEqual(
+                    expected["source_url"],
+                    meta[expected["benchmark"]]["source_url"],
+                )
+
+                record = row["backend_composite_scores"][0]
+                self.assertEqual(expected["score"], record["score"])
+                self.assertEqual(0.6, record["coverage"])
+                self.assertEqual("llama_cpp_server", record["backend"])
+                self.assertEqual("local", record["node_class"])
+                self.assertEqual("performance", record["hardware_class"])
+                self.assertEqual("reranking", record["modality"])
+                self.assertEqual("data_parsing", record["task_id"])
+                self.assertEqual(
+                    [f"benchmarks_meta.{expected['benchmark']}"],
+                    record["components"]["benchmark_composite"]["provenance"],
+                )
+
+    def test_virtual_llm_as_reranker_has_explicit_missing_reason_not_score(self):
+        row = self.rows["atlas/llm-as-reranker:small-general"]
+        self.assertIsNone(row.get("backend_composite_scores"))
+        self.assertEqual(
+            VIRTUAL_RERANKER_MISSING_REASON,
+            row.get("backend_composite_scores_missing_reason"),
+        )
 
 
 if __name__ == "__main__":

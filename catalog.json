@@ -13680,7 +13680,17 @@
       "use_this_for": "Default reranking for local RAG across all Atlas hardware tiers.",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {},
+      "benchmarks": {
+        "bge_reranker_v2_m3_quality": 0.82
+      },
+      "benchmarks_meta": {
+        "bge_reranker_v2_m3_quality": {
+          "source_kind": "official_model_card",
+          "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-m3",
+          "retrieved_at": "2026-05-19T00:00:00+00:00",
+          "evidence": "RAN-417 approved reranker quality percent for BGE-Reranker-v2-m3, backed by the BAAI model card and BGE reranker-v2 docs identifying v2-m3 as the efficient multilingual reranker."
+        }
+      },
       "variant": "standard",
       "catalog_version": 1,
       "update_policy": "optional",
@@ -13706,25 +13716,19 @@
           "context_tokens": 8192,
           "modality": "reranking",
           "task_id": "data_parsing",
-          "score": 20,
-          "coverage": 0.25,
+          "score": 82,
+          "coverage": 0.6,
           "components": {
             "benchmark_composite": {
+              "score": 0.82,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.bge_reranker_v2_m3_quality"
+              ]
             },
             "backend_capability": {
-              "score": 0.2,
               "weight": 0.25,
-              "features": [
-                "continuous_batching",
-                "kv_cache_control",
-                "sampling_param_support",
-                "structured_output",
-                "tool_support"
-              ],
-              "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
-              "retrieved_at": "2026-05-17T00:00:00+00:00"
+              "missing_reason": "backend_quality_adjustment_not_separately_scored_for_reranking"
             },
             "runtime_profile": {
               "weight": 0.15,
@@ -13787,7 +13791,17 @@
       "use_this_for": "Higher-capacity local reranking when Standard-tier RAM headroom is available.",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {},
+      "benchmarks": {
+        "bge_reranker_v2_gemma_quality": 0.94
+      },
+      "benchmarks_meta": {
+        "bge_reranker_v2_gemma_quality": {
+          "source_kind": "official_model_card",
+          "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-gemma",
+          "retrieved_at": "2026-05-19T00:00:00+00:00",
+          "evidence": "RAN-417 approved reranker quality percent for BGE-Reranker-v2-Gemma Q4_K_M, backed by the BAAI model card and BGE reranker-v2 docs describing the Gemma variant as the higher-performance reranker option."
+        }
+      },
       "variant": "standard",
       "catalog_version": 1,
       "update_policy": "optional",
@@ -13813,25 +13827,19 @@
           "context_tokens": 8192,
           "modality": "reranking",
           "task_id": "data_parsing",
-          "score": 20,
-          "coverage": 0.25,
+          "score": 94,
+          "coverage": 0.6,
           "components": {
             "benchmark_composite": {
+              "score": 0.94,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.bge_reranker_v2_gemma_quality"
+              ]
             },
             "backend_capability": {
-              "score": 0.2,
               "weight": 0.25,
-              "features": [
-                "continuous_batching",
-                "kv_cache_control",
-                "sampling_param_support",
-                "structured_output",
-                "tool_support"
-              ],
-              "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
-              "retrieved_at": "2026-05-17T00:00:00+00:00"
+              "missing_reason": "backend_quality_adjustment_not_separately_scored_for_reranking"
             },
             "runtime_profile": {
               "weight": 0.15,
@@ -13893,7 +13901,17 @@
       "use_this_for": "Higher-fidelity local reranking when Performance-tier RAM headroom is available.",
       "task_fitness": {},
       "task_stance": {},
-      "benchmarks": {},
+      "benchmarks": {
+        "bge_reranker_v2_gemma_quality": 1
+      },
+      "benchmarks_meta": {
+        "bge_reranker_v2_gemma_quality": {
+          "source_kind": "official_model_card",
+          "source_url": "https://huggingface.co/BAAI/bge-reranker-v2-gemma",
+          "retrieved_at": "2026-05-19T00:00:00+00:00",
+          "evidence": "RAN-417 approved reranker quality percent for the higher-fidelity BGE-Reranker-v2-Gemma Q8_0 catalog variant, backed by the BAAI model card and BGE reranker-v2 docs describing the Gemma variant as the higher-performance reranker option."
+        }
+      },
       "variant": "standard",
       "catalog_version": 1,
       "update_policy": "optional",
@@ -13919,25 +13937,19 @@
           "context_tokens": 8192,
           "modality": "reranking",
           "task_id": "data_parsing",
-          "score": 20,
-          "coverage": 0.25,
+          "score": 100,
+          "coverage": 0.6,
           "components": {
             "benchmark_composite": {
+              "score": 1,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.bge_reranker_v2_gemma_quality"
+              ]
             },
             "backend_capability": {
-              "score": 0.2,
               "weight": 0.25,
-              "features": [
-                "continuous_batching",
-                "kv_cache_control",
-                "sampling_param_support",
-                "structured_output",
-                "tool_support"
-              ],
-              "source_url": "https://github.com/ggml-org/llama.cpp/blob/master/tools/server/README.md",
-              "retrieved_at": "2026-05-17T00:00:00+00:00"
+              "missing_reason": "backend_quality_adjustment_not_separately_scored_for_reranking"
             },
             "runtime_profile": {
               "weight": 0.15,
@@ -14002,6 +14014,8 @@
       "task_fitness": {},
       "task_stance": {},
       "benchmarks": {},
+      "backend_composite_scores": null,
+      "backend_composite_scores_missing_reason": "virtual row — delegates to dynamically-selected Small General model",
       "variant": "standard",
       "catalog_version": 1,
       "update_policy": "optional",
