@@ -979,7 +979,7 @@
         "social_media": 60,
         "summarization": 62,
         "translation": 60,
-        "vision_input": 72
+        "vision_input": 77
       },
       "task_stance": {
         "code_generation": "Pick this when free local coding — Arena AI #3. Solid for Python/JS tasks at zero API cost. Below tier minimum.",
@@ -1004,9 +1004,19 @@
         "social_media": "Pick this when free local social content — solid creative output at 20 tok/s with zero API cost.",
         "summarization": "Pick this when free local summarization — near-cloud accuracy for sensitive documents that can't leave your machine.",
         "translation": "Pick this when free local translation — solid for European languages and Japanese at 20 tok/s, zero API cost.",
-        "vision_input": "Pick this when you need free local vision plus general writing, code, and reasoning in one model. Built-in vision is solid for diagrams and screenshots; Llama 3.2 Vision is more accurate for OCR, and frontier cloud models lead on dense visual reasoning."
+        "vision_input": "Gemma 4 31B (gemma4:31b, Local: Ollama) scores 77 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want the strongest single local model for screenshots, diagrams, and general reasoning. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.769,
+        "mmmu_pro": 0.769,
+        "math_vision": 0.856,
+        "medxpertqa_mm": 0.613,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant": "standard",
       "backend_composite_scores": [
         {
@@ -1018,12 +1028,15 @@
           "context_tokens": 256000,
           "modality": "multimodal",
           "task_id": "vision_input",
-          "score": 40,
-          "coverage": 0.25,
+          "score": 66,
+          "coverage": 0.85,
           "components": {
             "benchmark_composite": {
+              "score": 0.769,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
             },
             "backend_capability": {
               "score": 0.4,
@@ -1079,7 +1092,59 @@
             }
           }
         }
-      ]
+      ],
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.131,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      }
     },
     {
       "id": "huihui_ai/gemma-4-abliterated:31B-q4_K",
@@ -1250,7 +1315,7 @@
         "review_security": 52,
         "review_style": 60,
         "review_user_impact": 50,
-        "vision_input": 58
+        "vision_input": 74
       },
       "task_stance": {
         "cross_mode_classification": "Pick this when mid-tier free local option. Better accuracy than base gemma4 for ambiguous cases.",
@@ -1260,11 +1325,113 @@
         "review_security": "Pick this when mid-tier free local option for basic security checks.",
         "review_style": "Pick this when free mid-tier style reviewer. MoE efficiency makes it fast enough for convention checks.",
         "review_user_impact": "Pick this when mid-tier free local option for basic user impact assessment.",
-        "vision_input": "Pick this when speed matters more than peak vision accuracy. MoE active params keep latency low for live-camera or batch screenshot triage."
+        "vision_input": "Gemma 4 26B MoE (gemma4:26b, Local: Ollama) scores 74 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want strong local image reasoning with lower latency than 31B. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.738,
+        "mmmu_pro": 0.738,
+        "math_vision": 0.824,
+        "medxpertqa_mm": 0.581,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant_group": "gemma4:26b",
-      "variant": "standard"
+      "variant": "standard",
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.149,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      },
+      "backend_composite_scores": [
+        {
+          "model_id": "gemma4:26b",
+          "backend": "ollama",
+          "node_class": "local",
+          "hardware_class": "performance",
+          "quantization": "Q4_K_M",
+          "context_tokens": 256000,
+          "modality": "multimodal",
+          "task_id": "vision_input",
+          "score": 64,
+          "coverage": 0.85,
+          "components": {
+            "benchmark_composite": {
+              "score": 0.738,
+              "weight": 0.6,
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
+            },
+            "backend_capability": {
+              "score": 0.4,
+              "weight": 0.25,
+              "features": [
+                "continuous_batching",
+                "kv_cache_control",
+                "sampling_param_support",
+                "structured_output",
+                "tool_support"
+              ],
+              "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/ollama.py",
+              "retrieved_at": "2026-05-17T00:00:00+00:00"
+            },
+            "runtime_profile": {
+              "weight": 0.15,
+              "missing_reason": "published_runtime_profile_not_reported_for_tuple"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "huihui_ai/gemma-4-abliterated:e4b-q4_K",
@@ -1630,7 +1797,7 @@
               "missing_reason": "benchmark_coverage_not_reported"
             },
             "backend_capability": {
-              "score": 1.0,
+              "score": 1,
               "weight": 0.25,
               "features": [
                 "continuous_batching",
@@ -1861,14 +2028,116 @@
       "system_candidate": false,
       "status": "active",
       "task_fitness": {
-        "vision_input": 36
+        "vision_input": 44
       },
       "task_stance": {
-        "vision_input": "Deprecated — use Gemma 4 4.5B instead. Only listed for users who already have it installed."
+        "vision_input": "Gemma 4 E2B (gemma4:e2b, Local: Ollama) scores 44 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when an already-installed edge model is the only viable RAM fit. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.442,
+        "mmmu_pro": 0.442,
+        "math_vision": 0.524,
+        "medxpertqa_mm": 0.235,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant_group": "gemma4:e2b",
-      "variant": "standard"
+      "variant": "standard",
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.29,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      },
+      "backend_composite_scores": [
+        {
+          "model_id": "gemma4:e2b",
+          "backend": "ollama",
+          "node_class": "local",
+          "hardware_class": "performance",
+          "quantization": "Q8_0",
+          "context_tokens": 128000,
+          "modality": "multimodal",
+          "task_id": "vision_input",
+          "score": 43,
+          "coverage": 0.85,
+          "components": {
+            "benchmark_composite": {
+              "score": 0.442,
+              "weight": 0.6,
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
+            },
+            "backend_capability": {
+              "score": 0.4,
+              "weight": 0.25,
+              "features": [
+                "continuous_batching",
+                "kv_cache_control",
+                "sampling_param_support",
+                "structured_output",
+                "tool_support"
+              ],
+              "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/ollama.py",
+              "retrieved_at": "2026-05-17T00:00:00+00:00"
+            },
+            "runtime_profile": {
+              "weight": 0.15,
+              "missing_reason": "published_runtime_profile_not_reported_for_tuple"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "llama3.3:70b",
@@ -2588,7 +2857,7 @@
               "missing_reason": "benchmark_coverage_not_reported"
             },
             "backend_capability": {
-              "score": 1.0,
+              "score": 1,
               "weight": 0.25,
               "features": [
                 "continuous_batching",
@@ -10761,12 +11030,22 @@
       "publisher": "Google",
       "provider": "Ollama",
       "task_fitness": {
-        "vision_input": 54
+        "vision_input": 53
       },
       "task_stance": {
-        "vision_input": "Pick this for free local vision triage at minimal RAM cost — Atlas's default routing target. Use Llama 3.2 Vision 11B when OCR fidelity matters."
+        "vision_input": "Gemma 4 E4B (gemma4:4.5b, Local: Ollama) scores 53 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want fast, low-RAM local screenshot or image triage. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.526,
+        "mmmu_pro": 0.526,
+        "math_vision": 0.595,
+        "medxpertqa_mm": 0.287,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant": "standard",
       "backend_composite_scores": [
         {
@@ -10776,14 +11055,17 @@
           "hardware_class": "performance",
           "quantization": "Q4_K_M",
           "context_tokens": 256000,
-          "modality": "text",
+          "modality": "multimodal",
           "task_id": "vision_input",
-          "score": 40,
-          "coverage": 0.25,
+          "score": 49,
+          "coverage": 0.85,
           "components": {
             "benchmark_composite": {
+              "score": 0.526,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
             },
             "backend_capability": {
               "score": 0.4,
@@ -10839,7 +11121,59 @@
             }
           }
         }
-      ]
+      ],
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.181,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      }
     },
     {
       "id": "bge-m3:f16",
@@ -10952,12 +11286,22 @@
       "publisher": "Google",
       "provider": "Ollama",
       "task_fitness": {
-        "vision_input": 72
+        "vision_input": 77
       },
       "task_stance": {
-        "vision_input": "Pick this when you want the Q8 fidelity step over Q4 on the same Gemma 4 31B vision capability. Same trade-offs as the Q4 row with extra RAM headroom for clearer image reasoning."
+        "vision_input": "Gemma 4 31B (gemma4:31b-it-q8_0, Local: Ollama) scores 77 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want the strongest single local model for screenshots, diagrams, and general reasoning. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.769,
+        "mmmu_pro": 0.769,
+        "math_vision": 0.856,
+        "medxpertqa_mm": 0.613,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant": "standard",
       "backend_composite_scores": [
         {
@@ -10969,12 +11313,15 @@
           "context_tokens": 256000,
           "modality": "multimodal",
           "task_id": "vision_input",
-          "score": 40,
-          "coverage": 0.25,
+          "score": 66,
+          "coverage": 0.85,
           "components": {
             "benchmark_composite": {
+              "score": 0.769,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
             },
             "backend_capability": {
               "score": 0.4,
@@ -11030,7 +11377,59 @@
             }
           }
         }
-      ]
+      ],
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.131,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      }
     },
     {
       "id": "gemma4:31b-it-bf16",
@@ -11068,13 +11467,115 @@
       "publisher": "Google",
       "provider": "Ollama",
       "task_fitness": {
-        "vision_input": 72
+        "vision_input": 77
       },
       "task_stance": {
-        "vision_input": "Pick this only on 128 GB+ hardware when you need reference-quality vision output and won't accept any quantization loss. Manual selection — Auto caps at Q8."
+        "vision_input": "Gemma 4 31B (gemma4:31b-it-bf16, Local: Ollama) scores 77 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want the strongest single local model for screenshots, diagrams, and general reasoning. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
-      "variant": "standard"
+      "benchmarks": {
+        "mmmu": 0.769,
+        "mmmu_pro": 0.769,
+        "math_vision": 0.856,
+        "medxpertqa_mm": 0.613,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
+      "variant": "standard",
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.131,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      },
+      "backend_composite_scores": [
+        {
+          "model_id": "gemma4:31b-it-bf16",
+          "backend": "ollama",
+          "node_class": "local",
+          "hardware_class": "performance",
+          "quantization": "Q4_K_M",
+          "context_tokens": 256000,
+          "modality": "multimodal",
+          "task_id": "vision_input",
+          "score": 66,
+          "coverage": 0.85,
+          "components": {
+            "benchmark_composite": {
+              "score": 0.769,
+              "weight": 0.6,
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
+            },
+            "backend_capability": {
+              "score": 0.4,
+              "weight": 0.25,
+              "features": [
+                "continuous_batching",
+                "kv_cache_control",
+                "sampling_param_support",
+                "structured_output",
+                "tool_support"
+              ],
+              "source_url": "https://github.com/Quiet-Node-io/atlas/blob/main/src/inference/backends/ollama.py",
+              "retrieved_at": "2026-05-17T00:00:00+00:00"
+            },
+            "runtime_profile": {
+              "weight": 0.15,
+              "missing_reason": "published_runtime_profile_not_reported_for_tuple"
+            }
+          }
+        }
+      ]
     },
     {
       "id": "gemma4:e4b-it-q8_0",
@@ -11111,12 +11612,22 @@
       "publisher": "Google",
       "provider": "Ollama",
       "task_fitness": {
-        "vision_input": 54
+        "vision_input": 53
       },
       "task_stance": {
-        "vision_input": "Pick this when the 4.5B triage baseline needs Q8 fidelity and your hardware has the RAM headroom."
+        "vision_input": "Gemma 4 E4B (gemma4:e4b-it-q8_0, Local: Ollama) scores 53 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want fast, low-RAM local screenshot or image triage. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.526,
+        "mmmu_pro": 0.526,
+        "math_vision": 0.595,
+        "medxpertqa_mm": 0.287,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant": "standard",
       "backend_composite_scores": [
         {
@@ -11126,14 +11637,17 @@
           "hardware_class": "performance",
           "quantization": "Q8_0",
           "context_tokens": 256000,
-          "modality": "text",
+          "modality": "multimodal",
           "task_id": "vision_input",
-          "score": 40,
-          "coverage": 0.25,
+          "score": 49,
+          "coverage": 0.85,
           "components": {
             "benchmark_composite": {
+              "score": 0.526,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
             },
             "backend_capability": {
               "score": 0.4,
@@ -11189,7 +11703,59 @@
             }
           }
         }
-      ]
+      ],
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.181,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      }
     },
     {
       "id": "gemma4:e4b-it-bf16",
@@ -11226,12 +11792,22 @@
       "publisher": "Google",
       "provider": "Ollama",
       "task_fitness": {
-        "vision_input": 54
+        "vision_input": 53
       },
       "task_stance": {
-        "vision_input": "Pick this on 128 GB+ hardware for reference-quality 4.5B vision triage. Manual selection — Auto caps at Q8."
+        "vision_input": "Gemma 4 E4B (gemma4:e4b-it-bf16, Local: Ollama) scores 53 for Vision Input from Google MMMU Pro -> Atlas MMMU proxy; recommended when you want fast, low-RAM local screenshot or image triage. AI2D, DocVQA, ChartQA unmeasured; OmniDocBench tracked in RAN-476."
       },
-      "benchmarks": {},
+      "benchmarks": {
+        "mmmu": 0.526,
+        "mmmu_pro": 0.526,
+        "math_vision": 0.595,
+        "medxpertqa_mm": 0.287,
+        "ai2d": null,
+        "docvqa": null,
+        "chartqa": null,
+        "mathvista": null,
+        "omnidocbench_1_5": null
+      },
       "variant": "standard",
       "backend_composite_scores": [
         {
@@ -11241,14 +11817,17 @@
           "hardware_class": "performance",
           "quantization": "BF16",
           "context_tokens": 256000,
-          "modality": "text",
+          "modality": "multimodal",
           "task_id": "vision_input",
-          "score": 40,
-          "coverage": 0.25,
+          "score": 49,
+          "coverage": 0.85,
           "components": {
             "benchmark_composite": {
+              "score": 0.526,
               "weight": 0.6,
-              "missing_reason": "benchmark_coverage_not_reported"
+              "provenance": [
+                "benchmarks_meta.mmmu"
+              ]
             },
             "backend_capability": {
               "score": 0.4,
@@ -11304,7 +11883,59 @@
             }
           }
         }
-      ]
+      ],
+      "supports_vision": true,
+      "benchmarks_meta": {
+        "mmmu": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "RAN-471 approved proxy: Google reports MMMU Pro; Atlas maps this stricter same-family metric to the existing vision_input mmmu weight."
+        },
+        "mmmu_pro": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Original published Google Gemma 4 MMMU Pro value."
+        },
+        "math_vision": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only for RAN-471: Goose/Claude rejected using MATH-Vision as a MathVista proxy."
+        },
+        "medxpertqa_mm": {
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "note": "Metadata-only published multimodal medical QA metric; not part of the current vision_input weight portfolio."
+        },
+        "ai2d": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "docvqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "chartqa": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "not_publicly_reported"
+        },
+        "mathvista": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "proxy_rejected_not_equivalent_to_math_vision"
+        },
+        "omnidocbench_1_5": {
+          "retrieved_at": "2026-05-18T00:00:00+00:00",
+          "missing_reason": "lower_is_better_transform_pending",
+          "reported_value": 0.181,
+          "source_kind": "official_model_card",
+          "source_url": "https://ai.google.dev/gemma/docs/core/model_card_4",
+          "follow_up": "https://linear.app/randhq/issue/RAN-476/define-lower-is-better-benchmark-transform-in-model-scoring",
+          "note": "Metadata-only for RAN-471. Google reports OmniDocBench 1.5 average edit distance where lower is better; Atlas methodology needs RAN-476 before this can contribute to scoring."
+        }
+      }
     },
     {
       "id": "claude-opus-4-6",
