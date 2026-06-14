@@ -1,0 +1,299 @@
+# 2026-06-14-27495274553 Catalog Discovery Review
+
+- Added discoveries: 236
+- Removed/superseded review candidates: 38
+- Changed discoveries: 0
+- Provider errors: 5
+- Safety allowed: True
+
+## Added Discoveries
+
+- `ollama:alfred` from `ollama` (https://ollama.com/library)
+- `ollama:all-minilm` from `ollama` (https://ollama.com/library)
+- `ollama:athene-v2` from `ollama` (https://ollama.com/library)
+- `ollama:aya` from `ollama` (https://ollama.com/library)
+- `ollama:aya-expanse` from `ollama` (https://ollama.com/library)
+- `ollama:bakllava` from `ollama` (https://ollama.com/library)
+- `ollama:bespoke-minicheck` from `ollama` (https://ollama.com/library)
+- `ollama:bge-large` from `ollama` (https://ollama.com/library)
+- `ollama:bge-m3` from `ollama` (https://ollama.com/library)
+- `ollama:codebooga` from `ollama` (https://ollama.com/library)
+- `ollama:codegeex4` from `ollama` (https://ollama.com/library)
+- `ollama:codegemma` from `ollama` (https://ollama.com/library)
+- `ollama:codellama` from `ollama` (https://ollama.com/library)
+- `ollama:codeqwen` from `ollama` (https://ollama.com/library)
+- `ollama:codestral` from `ollama` (https://ollama.com/library)
+- `ollama:codeup` from `ollama` (https://ollama.com/library)
+- `ollama:cogito` from `ollama` (https://ollama.com/library)
+- `ollama:cogito-2.1` from `ollama` (https://ollama.com/library)
+- `ollama:command-a` from `ollama` (https://ollama.com/library)
+- `ollama:command-r` from `ollama` (https://ollama.com/library)
+- `ollama:command-r-plus` from `ollama` (https://ollama.com/library)
+- `ollama:command-r7b` from `ollama` (https://ollama.com/library)
+- `ollama:command-r7b-arabic` from `ollama` (https://ollama.com/library)
+- `ollama:dbrx` from `ollama` (https://ollama.com/library)
+- `ollama:deepcoder` from `ollama` (https://ollama.com/library)
+- `ollama:deepscaler` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-coder` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-coder-v2` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-llm` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-ocr` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-r1` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v2` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v2.5` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v3` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v3.1` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v3.2` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v4-flash` from `ollama` (https://ollama.com/library)
+- `ollama:deepseek-v4-pro` from `ollama` (https://ollama.com/library)
+- `ollama:devstral` from `ollama` (https://ollama.com/library)
+- `ollama:devstral-2` from `ollama` (https://ollama.com/library)
+- `ollama:devstral-small-2` from `ollama` (https://ollama.com/library)
+- `ollama:dolphin-llama3` from `ollama` (https://ollama.com/library)
+- `ollama:dolphin-mistral` from `ollama` (https://ollama.com/library)
+- `ollama:dolphin-mixtral` from `ollama` (https://ollama.com/library)
+- `ollama:dolphin-phi` from `ollama` (https://ollama.com/library)
+- `ollama:dolphin3` from `ollama` (https://ollama.com/library)
+- `ollama:dolphincoder` from `ollama` (https://ollama.com/library)
+- `ollama:duckdb-nsql` from `ollama` (https://ollama.com/library)
+- `ollama:embeddinggemma` from `ollama` (https://ollama.com/library)
+- `ollama:everythinglm` from `ollama` (https://ollama.com/library)
+- `ollama:exaone-deep` from `ollama` (https://ollama.com/library)
+- `ollama:exaone3.5` from `ollama` (https://ollama.com/library)
+- `ollama:falcon` from `ollama` (https://ollama.com/library)
+- `ollama:falcon2` from `ollama` (https://ollama.com/library)
+- `ollama:falcon3` from `ollama` (https://ollama.com/library)
+- `ollama:firefunction-v2` from `ollama` (https://ollama.com/library)
+- `ollama:functiongemma` from `ollama` (https://ollama.com/library)
+- `ollama:gemini-3-flash-preview` from `ollama` (https://ollama.com/library)
+- `ollama:gemma` from `ollama` (https://ollama.com/library)
+- `ollama:gemma2` from `ollama` (https://ollama.com/library)
+- `ollama:gemma3` from `ollama` (https://ollama.com/library)
+- `ollama:gemma3n` from `ollama` (https://ollama.com/library)
+- `ollama:gemma4` from `ollama` (https://ollama.com/library)
+- `ollama:glm-4.6` from `ollama` (https://ollama.com/library)
+- `ollama:glm-4.7` from `ollama` (https://ollama.com/library)
+- `ollama:glm-4.7-flash` from `ollama` (https://ollama.com/library)
+- `ollama:glm-5` from `ollama` (https://ollama.com/library)
+- `ollama:glm-5.1` from `ollama` (https://ollama.com/library)
+- `ollama:glm-ocr` from `ollama` (https://ollama.com/library)
+- `ollama:glm4` from `ollama` (https://ollama.com/library)
+- `ollama:goliath` from `ollama` (https://ollama.com/library)
+- `ollama:gpt-oss` from `ollama` (https://ollama.com/library)
+- `ollama:gpt-oss-safeguard` from `ollama` (https://ollama.com/library)
+- `ollama:granite-code` from `ollama` (https://ollama.com/library)
+- `ollama:granite-embedding` from `ollama` (https://ollama.com/library)
+- `ollama:granite3-dense` from `ollama` (https://ollama.com/library)
+- `ollama:granite3-guardian` from `ollama` (https://ollama.com/library)
+- `ollama:granite3-moe` from `ollama` (https://ollama.com/library)
+- `ollama:granite3.1-dense` from `ollama` (https://ollama.com/library)
+- `ollama:granite3.1-moe` from `ollama` (https://ollama.com/library)
+- `ollama:granite3.2` from `ollama` (https://ollama.com/library)
+- `ollama:granite3.2-vision` from `ollama` (https://ollama.com/library)
+- `ollama:granite3.3` from `ollama` (https://ollama.com/library)
+- `ollama:granite4` from `ollama` (https://ollama.com/library)
+- `ollama:granite4.1` from `ollama` (https://ollama.com/library)
+- `ollama:granite4.1-guardian` from `ollama` (https://ollama.com/library)
+- `ollama:hermes3` from `ollama` (https://ollama.com/library)
+- `ollama:internlm2` from `ollama` (https://ollama.com/library)
+- `ollama:kimi-k2` from `ollama` (https://ollama.com/library)
+- `ollama:kimi-k2-thinking` from `ollama` (https://ollama.com/library)
+- `ollama:kimi-k2.5` from `ollama` (https://ollama.com/library)
+- `ollama:kimi-k2.6` from `ollama` (https://ollama.com/library)
+- `ollama:kimi-k2.7-code` from `ollama` (https://ollama.com/library)
+- `ollama:laguna-xs.2` from `ollama` (https://ollama.com/library)
+- `ollama:lfm2` from `ollama` (https://ollama.com/library)
+- `ollama:lfm2.5` from `ollama` (https://ollama.com/library)
+- `ollama:lfm2.5-thinking` from `ollama` (https://ollama.com/library)
+- `ollama:llama-guard3` from `ollama` (https://ollama.com/library)
+- `ollama:llama-pro` from `ollama` (https://ollama.com/library)
+- `ollama:llama2` from `ollama` (https://ollama.com/library)
+- `ollama:llama2-chinese` from `ollama` (https://ollama.com/library)
+- `ollama:llama2-uncensored` from `ollama` (https://ollama.com/library)
+- `ollama:llama3` from `ollama` (https://ollama.com/library)
+- `ollama:llama3-chatqa` from `ollama` (https://ollama.com/library)
+- `ollama:llama3-gradient` from `ollama` (https://ollama.com/library)
+- `ollama:llama3-groq-tool-use` from `ollama` (https://ollama.com/library)
+- `ollama:llama3.1` from `ollama` (https://ollama.com/library)
+- `ollama:llama3.2` from `ollama` (https://ollama.com/library)
+- `ollama:llama3.2-vision` from `ollama` (https://ollama.com/library)
+- `ollama:llama3.3` from `ollama` (https://ollama.com/library)
+- `ollama:llama4` from `ollama` (https://ollama.com/library)
+- `ollama:llava` from `ollama` (https://ollama.com/library)
+- `ollama:llava-llama3` from `ollama` (https://ollama.com/library)
+- `ollama:llava-phi3` from `ollama` (https://ollama.com/library)
+- `ollama:magicoder` from `ollama` (https://ollama.com/library)
+- `ollama:magistral` from `ollama` (https://ollama.com/library)
+- `ollama:marco-o1` from `ollama` (https://ollama.com/library)
+- `ollama:mathstral` from `ollama` (https://ollama.com/library)
+- `ollama:medgemma` from `ollama` (https://ollama.com/library)
+- `ollama:medgemma1.5` from `ollama` (https://ollama.com/library)
+- `ollama:meditron` from `ollama` (https://ollama.com/library)
+- `ollama:medllama2` from `ollama` (https://ollama.com/library)
+- `ollama:megadolphin` from `ollama` (https://ollama.com/library)
+- `ollama:minicpm-v` from `ollama` (https://ollama.com/library)
+- `ollama:minicpm-v4.5` from `ollama` (https://ollama.com/library)
+- `ollama:minicpm-v4.6` from `ollama` (https://ollama.com/library)
+- `ollama:minimax-m2` from `ollama` (https://ollama.com/library)
+- `ollama:minimax-m2.1` from `ollama` (https://ollama.com/library)
+- `ollama:minimax-m2.5` from `ollama` (https://ollama.com/library)
+- `ollama:minimax-m2.7` from `ollama` (https://ollama.com/library)
+- `ollama:minimax-m3` from `ollama` (https://ollama.com/library)
+- `ollama:ministral-3` from `ollama` (https://ollama.com/library)
+- `ollama:mistral` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-large` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-large-3` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-medium-3.5` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-nemo` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-openorca` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-small` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-small3.1` from `ollama` (https://ollama.com/library)
+- `ollama:mistral-small3.2` from `ollama` (https://ollama.com/library)
+- `ollama:mistrallite` from `ollama` (https://ollama.com/library)
+- `ollama:mixtral` from `ollama` (https://ollama.com/library)
+- `ollama:moondream` from `ollama` (https://ollama.com/library)
+- `ollama:mxbai-embed-large` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron-3-nano` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron-3-super` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron-3-ultra` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron-cascade-2` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron-mini` from `ollama` (https://ollama.com/library)
+- `ollama:nemotron3` from `ollama` (https://ollama.com/library)
+- `ollama:neural-chat` from `ollama` (https://ollama.com/library)
+- `ollama:nexusraven` from `ollama` (https://ollama.com/library)
+- `ollama:nomic-embed-text` from `ollama` (https://ollama.com/library)
+- `ollama:nomic-embed-text-v2-moe` from `ollama` (https://ollama.com/library)
+- `ollama:notus` from `ollama` (https://ollama.com/library)
+- `ollama:notux` from `ollama` (https://ollama.com/library)
+- `ollama:nous-hermes` from `ollama` (https://ollama.com/library)
+- `ollama:nous-hermes2` from `ollama` (https://ollama.com/library)
+- `ollama:nous-hermes2-mixtral` from `ollama` (https://ollama.com/library)
+- `ollama:nuextract` from `ollama` (https://ollama.com/library)
+- `ollama:olmo-3` from `ollama` (https://ollama.com/library)
+- `ollama:olmo-3.1` from `ollama` (https://ollama.com/library)
+- `ollama:olmo2` from `ollama` (https://ollama.com/library)
+- `ollama:open-orca-platypus2` from `ollama` (https://ollama.com/library)
+- `ollama:openchat` from `ollama` (https://ollama.com/library)
+- `ollama:opencoder` from `ollama` (https://ollama.com/library)
+- `ollama:openhermes` from `ollama` (https://ollama.com/library)
+- `ollama:openthinker` from `ollama` (https://ollama.com/library)
+- `ollama:orca-mini` from `ollama` (https://ollama.com/library)
+- `ollama:orca2` from `ollama` (https://ollama.com/library)
+- `ollama:paraphrase-multilingual` from `ollama` (https://ollama.com/library)
+- `ollama:phi` from `ollama` (https://ollama.com/library)
+- `ollama:phi3` from `ollama` (https://ollama.com/library)
+- `ollama:phi3.5` from `ollama` (https://ollama.com/library)
+- `ollama:phi4` from `ollama` (https://ollama.com/library)
+- `ollama:phi4-mini` from `ollama` (https://ollama.com/library)
+- `ollama:phi4-mini-reasoning` from `ollama` (https://ollama.com/library)
+- `ollama:phi4-reasoning` from `ollama` (https://ollama.com/library)
+- `ollama:phind-codellama` from `ollama` (https://ollama.com/library)
+- `ollama:qwen` from `ollama` (https://ollama.com/library)
+- `ollama:qwen2` from `ollama` (https://ollama.com/library)
+- `ollama:qwen2-math` from `ollama` (https://ollama.com/library)
+- `ollama:qwen2.5` from `ollama` (https://ollama.com/library)
+- `ollama:qwen2.5-coder` from `ollama` (https://ollama.com/library)
+- `ollama:qwen2.5vl` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3-coder` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3-coder-next` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3-embedding` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3-next` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3-vl` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3.5` from `ollama` (https://ollama.com/library)
+- `ollama:qwen3.6` from `ollama` (https://ollama.com/library)
+- `ollama:qwq` from `ollama` (https://ollama.com/library)
+- `ollama:r1-1776` from `ollama` (https://ollama.com/library)
+- `ollama:reader-lm` from `ollama` (https://ollama.com/library)
+- `ollama:reflection` from `ollama` (https://ollama.com/library)
+- `ollama:rnj-1` from `ollama` (https://ollama.com/library)
+- `ollama:sailor2` from `ollama` (https://ollama.com/library)
+- `ollama:samantha-mistral` from `ollama` (https://ollama.com/library)
+- `ollama:shieldgemma` from `ollama` (https://ollama.com/library)
+- `ollama:smallthinker` from `ollama` (https://ollama.com/library)
+- `ollama:smollm` from `ollama` (https://ollama.com/library)
+- `ollama:smollm2` from `ollama` (https://ollama.com/library)
+- `ollama:snowflake-arctic-embed` from `ollama` (https://ollama.com/library)
+- `ollama:snowflake-arctic-embed2` from `ollama` (https://ollama.com/library)
+- `ollama:solar` from `ollama` (https://ollama.com/library)
+- `ollama:solar-pro` from `ollama` (https://ollama.com/library)
+- `ollama:sqlcoder` from `ollama` (https://ollama.com/library)
+- `ollama:stable-beluga` from `ollama` (https://ollama.com/library)
+- `ollama:stable-code` from `ollama` (https://ollama.com/library)
+- `ollama:stablelm-zephyr` from `ollama` (https://ollama.com/library)
+- `ollama:stablelm2` from `ollama` (https://ollama.com/library)
+- `ollama:starcoder` from `ollama` (https://ollama.com/library)
+- `ollama:starcoder2` from `ollama` (https://ollama.com/library)
+- `ollama:starling-lm` from `ollama` (https://ollama.com/library)
+- `ollama:tinydolphin` from `ollama` (https://ollama.com/library)
+- `ollama:tinyllama` from `ollama` (https://ollama.com/library)
+- `ollama:translategemma` from `ollama` (https://ollama.com/library)
+- `ollama:tulu3` from `ollama` (https://ollama.com/library)
+- `ollama:vicuna` from `ollama` (https://ollama.com/library)
+- `ollama:wizard-math` from `ollama` (https://ollama.com/library)
+- `ollama:wizard-vicuna` from `ollama` (https://ollama.com/library)
+- `ollama:wizard-vicuna-uncensored` from `ollama` (https://ollama.com/library)
+- `ollama:wizardcoder` from `ollama` (https://ollama.com/library)
+- `ollama:wizardlm` from `ollama` (https://ollama.com/library)
+- `ollama:wizardlm-uncensored` from `ollama` (https://ollama.com/library)
+- `ollama:wizardlm2` from `ollama` (https://ollama.com/library)
+- `ollama:xwinlm` from `ollama` (https://ollama.com/library)
+- `ollama:yarn-llama2` from `ollama` (https://ollama.com/library)
+- `ollama:yarn-mistral` from `ollama` (https://ollama.com/library)
+- `ollama:yi` from `ollama` (https://ollama.com/library)
+- `ollama:yi-coder` from `ollama` (https://ollama.com/library)
+- `ollama:zephyr` from `ollama` (https://ollama.com/library)
+
+## Removed / Superseded Review
+
+- `gemma4:31b`: Catalog row was not present in this provider scan.
+- `huihui_ai/gemma-4-abliterated:31B-q4_K`: Catalog row was not present in this provider scan.
+- `gemma4:26b`: Catalog row was not present in this provider scan.
+- `huihui_ai/gemma-4-abliterated:e4b-q4_K`: Catalog row was not present in this provider scan.
+- `llama3.2-vision:11b`: Catalog row was not present in this provider scan.
+- `deepseek-r1:70b`: Catalog row was not present in this provider scan.
+- `dolphin3:8b`: Catalog row was not present in this provider scan.
+- `mistral-nemo:12b`: Catalog row was not present in this provider scan.
+- `nollama/mythomax-l2-13b:Q4_K_M`: Catalog row was not present in this provider scan.
+- `gemma4:e2b`: Catalog row was not present in this provider scan.
+- `llama3.3:70b`: Catalog row was not present in this provider scan.
+- `llama3.3:8b`: Catalog row was not present in this provider scan.
+- `qwen2.5:72b`: Catalog row was not present in this provider scan.
+- `qwen2.5:32b`: Catalog row was not present in this provider scan.
+- `qwen2.5:7b`: Catalog row was not present in this provider scan.
+- `dolphin3:70b`: Catalog row was not present in this provider scan.
+- `phi4:14b`: Catalog row was not present in this provider scan.
+- `dolphin-mistral:7b`: Catalog row was not present in this provider scan.
+- `llama-maverick:400b`: Catalog row was not present in this provider scan.
+- `qwen3.5:397b`: Catalog row was not present in this provider scan.
+- `qwen2.5-coder:32b`: Catalog row was not present in this provider scan.
+- `qwen2.5-coder:7b`: Catalog row was not present in this provider scan.
+- `codestral:22b`: Catalog row was not present in this provider scan.
+- `deepseek-coder-v2:16b`: Catalog row was not present in this provider scan.
+- `deepseek-r1:32b`: Catalog row was not present in this provider scan.
+- `qwq:32b`: Catalog row was not present in this provider scan.
+- `deepseek-r1:671b`: Catalog row was not present in this provider scan.
+- `moondream:1.8b`: Catalog row was not present in this provider scan.
+- `llama3.2-vision:90b`: Catalog row was not present in this provider scan.
+- `minicpm-v:8b`: Catalog row was not present in this provider scan.
+- `llava:13b`: Catalog row was not present in this provider scan.
+- `llava:34b`: Catalog row was not present in this provider scan.
+- `gemma4:4.5b`: Catalog row was not present in this provider scan.
+- `bge-m3:f16`: Catalog row was not present in this provider scan.
+- `gemma4:31b-it-q8_0`: Catalog row was not present in this provider scan.
+- `gemma4:31b-it-bf16`: Catalog row was not present in this provider scan.
+- `gemma4:e4b-it-q8_0`: Catalog row was not present in this provider scan.
+- `gemma4:e4b-it-bf16`: Catalog row was not present in this provider scan.
+
+## Safety
+
+- No blocking safety issues.
+
+## Provider Errors
+
+- `openai`: HTTPError
+- `anthropic`: HTTPError
+- `google`: HTTPError
+- `xai`: HTTPError
+- `huggingface`: HTTPError
