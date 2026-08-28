@@ -1,0 +1,4457 @@
+[
+  {
+    "id": "huggingface:sentence-transformers/all-MiniLM-L6-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 241173345,
+      "library_name": "sentence-transformers",
+      "likes": 5268,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "sentence-transformers/all-MiniLM-L6-v2",
+    "provider": "huggingface",
+    "provider_model_id": "sentence-transformers/all-MiniLM-L6-v2",
+    "source_hash": "c6084b7d5c27234717349113692852e5502fe0bc3a6d2851e9c098c533a91474",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:cross-encoder/ms-marco-MiniLM-L6-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 82504284,
+      "library_name": "sentence-transformers",
+      "likes": 305,
+      "pipeline_tag": "text-ranking"
+    },
+    "name": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "provider": "huggingface",
+    "provider_model_id": "cross-encoder/ms-marco-MiniLM-L6-v2",
+    "source_hash": "9f71643c122aa6fa0629b396b59226bdfd2265ad9d81135520d5cafd1d2cd0e6",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google-bert/bert-base-uncased",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 81222399,
+      "library_name": "transformers",
+      "likes": 2744,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "google-bert/bert-base-uncased",
+    "provider": "huggingface",
+    "provider_model_id": "google-bert/bert-base-uncased",
+    "source_hash": "ce9e0c67e285b8d27ad6a5b402e34a733b66b585699841bbec0cb9d53ec04697",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-small-en-v1.5",
+    "metadata": {
+      "createdAt": "2023-09-12T05:20:55.000Z",
+      "downloads": 66356634,
+      "library_name": "sentence-transformers",
+      "likes": 539,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "BAAI/bge-small-en-v1.5",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-small-en-v1.5",
+    "source_hash": "02c0916addb4a78b305d9088f3ca7fff0439468df892bcba7994612faec9c53e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google/electra-base-discriminator",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 49728662,
+      "library_name": "transformers",
+      "likes": 155
+    },
+    "name": "google/electra-base-discriminator",
+    "provider": "huggingface",
+    "provider_model_id": "google/electra-base-discriminator",
+    "source_hash": "edc56c745ffe14ccf22b5a5b8c029402ea02c22f8bea908f1012f28c2b29a3a0",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 48426657,
+      "library_name": "sentence-transformers",
+      "likes": 1358,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "provider": "huggingface",
+    "provider_model_id": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "source_hash": "7d8d4455c6e15bead5755eab25c5c75ac838f7ac851198c12244bc128edde949",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-m3",
+    "metadata": {
+      "createdAt": "2024-01-27T17:07:29.000Z",
+      "downloads": 34924513,
+      "library_name": "sentence-transformers",
+      "likes": 3443,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "BAAI/bge-m3",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-m3",
+    "source_hash": "eaf749da38a07c30b19a13449327aa3614d0ef8592e510cf354b9bdcc20ddd79",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:amazon/chronos-2",
+    "metadata": {
+      "createdAt": "2025-10-30T14:54:39.000Z",
+      "downloads": 29922603,
+      "library_name": "chronos-forecasting",
+      "likes": 412,
+      "pipeline_tag": "time-series-forecasting"
+    },
+    "name": "amazon/chronos-2",
+    "provider": "huggingface",
+    "provider_model_id": "amazon/chronos-2",
+    "source_hash": "5bb2881eda0002d455c25ac7cab3f6bbf083c5751188d8b98ff1d7a93f340505",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:sentence-transformers/all-mpnet-base-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 23417913,
+      "library_name": "sentence-transformers",
+      "likes": 1345,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "sentence-transformers/all-mpnet-base-v2",
+    "provider": "huggingface",
+    "provider_model_id": "sentence-transformers/all-mpnet-base-v2",
+    "source_hash": "e0007c96bf5f4e00fbe094c8a77dffa2a2da6d267e38a478478dbbf6c671590f",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-0.6B",
+    "metadata": {
+      "createdAt": "2025-04-27T03:40:08.000Z",
+      "downloads": 22063625,
+      "library_name": "transformers",
+      "likes": 1549,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen3-0.6B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-0.6B",
+    "source_hash": "9c719bd2def747a64f0e0110f0bcea8098999c4b992bf2acc618671962456533",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google-t5/t5-small",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 21527533,
+      "library_name": "transformers",
+      "likes": 594,
+      "pipeline_tag": "translation"
+    },
+    "name": "google-t5/t5-small",
+    "provider": "huggingface",
+    "provider_model_id": "google-t5/t5-small",
+    "source_hash": "faea9a1421b82f24b1c7cd0f6145dc4e9977bd92c8fc3d1ba83c0c2d42fae3be",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:lpiccinelli/unidepth-v2-vitl14",
+    "metadata": {
+      "createdAt": "2024-06-12T12:39:28.000Z",
+      "downloads": 20037374,
+      "library_name": "UniDepth",
+      "likes": 50
+    },
+    "name": "lpiccinelli/unidepth-v2-vitl14",
+    "provider": "huggingface",
+    "provider_model_id": "lpiccinelli/unidepth-v2-vitl14",
+    "source_hash": "e74f787c46e63ac7f40051c19442403ca539b6d4a8d5e923fdeb922c64802b83",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/clip-vit-base-patch32",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 19215875,
+      "library_name": "transformers",
+      "likes": 1007,
+      "pipeline_tag": "zero-shot-image-classification"
+    },
+    "name": "openai/clip-vit-base-patch32",
+    "provider": "huggingface",
+    "provider_model_id": "openai/clip-vit-base-patch32",
+    "source_hash": "ce9cbbc8e7cf425b84f858634cdb54570011cce501cca6a3c6a2a3a2109ad84e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Comfy-Org/MiniMax-H3",
+    "metadata": {
+      "createdAt": "2026-07-30T22:36:12.000Z",
+      "downloads": 19058789,
+      "library_name": "diffusion-single-file",
+      "likes": 1581
+    },
+    "name": "Comfy-Org/MiniMax-H3",
+    "provider": "huggingface",
+    "provider_model_id": "Comfy-Org/MiniMax-H3",
+    "source_hash": "b05d32c7f1037cddf173e2d26c28a94aaaaaf5eced49b93eb01f3117746e20e4",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:FacebookAI/xlm-roberta-base",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 18467045,
+      "library_name": "transformers",
+      "likes": 888,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "FacebookAI/xlm-roberta-base",
+    "provider": "huggingface",
+    "provider_model_id": "FacebookAI/xlm-roberta-base",
+    "source_hash": "b4dedaa0d57d6cbd0c22039435a17f2482a35306c83b87b8c0e7dcbf211c7dd0",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:timm/mobilenetv3_small_100.lamb_in1k",
+    "metadata": {
+      "createdAt": "2022-12-16T05:38:36.000Z",
+      "downloads": 17830802,
+      "library_name": "timm",
+      "likes": 102,
+      "pipeline_tag": "image-classification"
+    },
+    "name": "timm/mobilenetv3_small_100.lamb_in1k",
+    "provider": "huggingface",
+    "provider_model_id": "timm/mobilenetv3_small_100.lamb_in1k",
+    "source_hash": "6fe9ebc3a0c6cf7fee3ee3aa0e49f936418dbfa0017d5b4abee3a4f6313cb41c",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-reranker-v2-m3",
+    "metadata": {
+      "createdAt": "2024-03-15T13:32:18.000Z",
+      "downloads": 17377234,
+      "library_name": "sentence-transformers",
+      "likes": 1147,
+      "pipeline_tag": "text-classification"
+    },
+    "name": "BAAI/bge-reranker-v2-m3",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-reranker-v2-m3",
+    "source_hash": "e39c825f28f1179f1e58979a111db7bc60b9a69e10d575c39443087230c541eb",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+    "metadata": {
+      "createdAt": "2024-11-25T15:06:15.000Z",
+      "downloads": 15788921,
+      "library_name": "transformers",
+      "likes": 20,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+    "provider": "huggingface",
+    "provider_model_id": "trl-internal-testing/tiny-Qwen2ForCausalLM-2.5",
+    "source_hash": "c316592110cadc62b51d9d00e7a0c114fe7d2c12f2ac494f4a1ac1b67abbfcb5",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:nomic-ai/nomic-embed-text-v1.5",
+    "metadata": {
+      "createdAt": "2024-02-10T06:32:35.000Z",
+      "downloads": 15691952,
+      "library_name": "sentence-transformers",
+      "likes": 894,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "nomic-ai/nomic-embed-text-v1.5",
+    "provider": "huggingface",
+    "provider_model_id": "nomic-ai/nomic-embed-text-v1.5",
+    "source_hash": "b30f5da7963ae8b60a5422114286e19205585b97fe17ec9f62b4a3c4d84fa2d8",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai-community/gpt2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 13690160,
+      "library_name": "transformers",
+      "likes": 3421,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "openai-community/gpt2",
+    "provider": "huggingface",
+    "provider_model_id": "openai-community/gpt2",
+    "source_hash": "a57827174fb5fb5035a6a89b7286c7904573c089bf58f3daef188eb221ac2003",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-8B",
+    "metadata": {
+      "createdAt": "2025-04-27T03:42:21.000Z",
+      "downloads": 13657894,
+      "library_name": "transformers",
+      "likes": 1327,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen3-8B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-8B",
+    "source_hash": "088f61124ae2811de7d154490bb77d52263a3e0c758effa762a06bb5c3c345ee",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-large-en-v1.5",
+    "metadata": {
+      "createdAt": "2023-09-12T05:20:08.000Z",
+      "downloads": 13001785,
+      "library_name": "sentence-transformers",
+      "likes": 717,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "BAAI/bge-large-en-v1.5",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-large-en-v1.5",
+    "source_hash": "fea0fe9d0a5beaa77d21b604629a74be7ed6f67275a621eea94d2f11fc624fc3",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.6-35B-A3B-FP8",
+    "metadata": {
+      "createdAt": "2026-04-15T06:05:13.000Z",
+      "downloads": 12756124,
+      "library_name": "transformers",
+      "likes": 359,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.6-35B-A3B-FP8",
+    "source_hash": "369cac4865b92d2db62fedec173d6d74c02544debbd326ae4c0a975c5736ced7",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.5-9B",
+    "metadata": {
+      "createdAt": "2026-02-27T12:58:26.000Z",
+      "downloads": 12473105,
+      "library_name": "transformers",
+      "likes": 1871,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.5-9B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.5-9B",
+    "source_hash": "946e1a2b69b3cd784d8e0a303913241747c022eeb2c6b14c7b87a94437692484",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:facebook/opt-125m",
+    "metadata": {
+      "createdAt": "2022-05-11T08:25:17.000Z",
+      "downloads": 12471187,
+      "library_name": "transformers",
+      "likes": 294,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "facebook/opt-125m",
+    "provider": "huggingface",
+    "provider_model_id": "facebook/opt-125m",
+    "source_hash": "07cac1542a819bec4d47e1c9aaa3515d617c95083ec47d76434d21a17d5223ba",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "metadata": {
+      "createdAt": "2025-07-31T10:27:38.000Z",
+      "downloads": 12078219,
+      "library_name": "transformers",
+      "likes": 929,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "provider": "huggingface",
+    "provider_model_id": "unsloth/Qwen3-Coder-30B-A3B-Instruct-GGUF",
+    "source_hash": "3e185726965c8341261aad0ca115ed817599221e28a5d25bb63e00d2d5ceba71",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:intfloat/multilingual-e5-small",
+    "metadata": {
+      "createdAt": "2023-06-30T07:31:03.000Z",
+      "downloads": 11599057,
+      "library_name": "sentence-transformers",
+      "likes": 393,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "intfloat/multilingual-e5-small",
+    "provider": "huggingface",
+    "provider_model_id": "intfloat/multilingual-e5-small",
+    "source_hash": "ccc1b8a9c225ebfa850de35c40055ff3c47d97f248aa9ed0e8bfa679a35e8be3",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-base-en-v1.5",
+    "metadata": {
+      "createdAt": "2023-09-11T15:04:22.000Z",
+      "downloads": 11538125,
+      "library_name": "sentence-transformers",
+      "likes": 466,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "BAAI/bge-base-en-v1.5",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-base-en-v1.5",
+    "source_hash": "b8ec48548c39c3e3093a4b27547fcfb1f65233300f4601169e3bad6fb229d13e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:hexgrad/Kokoro-82M",
+    "metadata": {
+      "createdAt": "2024-12-26T00:20:08.000Z",
+      "downloads": 11273585,
+      "likes": 6764,
+      "pipeline_tag": "text-to-speech"
+    },
+    "name": "hexgrad/Kokoro-82M",
+    "provider": "huggingface",
+    "provider_model_id": "hexgrad/Kokoro-82M",
+    "source_hash": "ee07013aa8dce4ba0bb7e530638d6da18f128cb758132506fe82fcedfd9080d6",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "metadata": {
+      "createdAt": "2026-05-27T18:09:46.000Z",
+      "downloads": 11211376,
+      "library_name": "Model Optimizer",
+      "likes": 572,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "provider": "huggingface",
+    "provider_model_id": "nvidia/Qwen3.6-35B-A3B-NVFP4",
+    "source_hash": "a4ce9830e27584b2c299a6f29e35d583989c0369d19407a11c22dfc0b54b6998",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Comfy-Org/stable-diffusion-v1-5-archive",
+    "metadata": {
+      "createdAt": "2024-08-29T20:40:43.000Z",
+      "downloads": 11210868,
+      "library_name": "diffusion-single-file",
+      "likes": 119
+    },
+    "name": "Comfy-Org/stable-diffusion-v1-5-archive",
+    "provider": "huggingface",
+    "provider_model_id": "Comfy-Org/stable-diffusion-v1-5-archive",
+    "source_hash": "0175ac7f50e269cf1cdbc18339d8bdd2fc0f207df72b53724fd8dcbc7563d30c",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:argmaxinc/whisperkit-coreml",
+    "metadata": {
+      "createdAt": "2024-02-28T08:05:21.000Z",
+      "downloads": 10929995,
+      "library_name": "whisperkit",
+      "likes": 202,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "argmaxinc/whisperkit-coreml",
+    "provider": "huggingface",
+    "provider_model_id": "argmaxinc/whisperkit-coreml",
+    "source_hash": "e3f467ba9d7ecd6fa1ad75e21393151ad95d25af1ae5894af021f54b5be707f4",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:timm/efficientnet_b3.ra2_in1k",
+    "metadata": {
+      "createdAt": "2022-12-12T23:56:39.000Z",
+      "downloads": 10414001,
+      "library_name": "timm",
+      "likes": 5,
+      "pipeline_tag": "image-classification"
+    },
+    "name": "timm/efficientnet_b3.ra2_in1k",
+    "provider": "huggingface",
+    "provider_model_id": "timm/efficientnet_b3.ra2_in1k",
+    "source_hash": "5f10b4ed0c132fbe09e7f4abcdd9197c5af6d70745f3f3da6920748090da0579",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-7B-Instruct",
+    "metadata": {
+      "createdAt": "2024-09-16T11:55:40.000Z",
+      "downloads": 10358924,
+      "library_name": "transformers",
+      "likes": 1564,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen2.5-7B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-7B-Instruct",
+    "source_hash": "a1379bdd64c2879a1d32d80b1a205203a4fa4da76b0760ad611c77dba8efab79",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 10174876,
+      "library_name": "transformers",
+      "likes": 62,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "provider": "huggingface",
+    "provider_model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-japanese",
+    "source_hash": "2aca97a4ad9fc49c05b413cf95a19d0c0077088cbb078483dcc0f2028d857d39",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 9785245,
+      "library_name": "sentence-transformers",
+      "likes": 490,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "provider": "huggingface",
+    "provider_model_id": "sentence-transformers/paraphrase-multilingual-mpnet-base-v2",
+    "source_hash": "b5e36d97241768867378991f08409c2c42805e074123e6f04cd8cb60aed52616",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:FacebookAI/roberta-base",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 9768293,
+      "library_name": "transformers",
+      "likes": 638,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "FacebookAI/roberta-base",
+    "provider": "huggingface",
+    "provider_model_id": "FacebookAI/roberta-base",
+    "source_hash": "eac72afabb0106b16bcd829bc979ed659e5491d38e871a9076b8aeb1065aaf9d",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Bingsu/adetailer",
+    "metadata": {
+      "createdAt": "2023-04-26T00:58:45.000Z",
+      "downloads": 9459612,
+      "library_name": "ultralytics",
+      "likes": 763
+    },
+    "name": "Bingsu/adetailer",
+    "provider": "huggingface",
+    "provider_model_id": "Bingsu/adetailer",
+    "source_hash": "a5c074ccd4da536fdbcd370cfee8ff986210f67d84c82ea326d9a8b9ec4f370a",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/speaker-diarization-3.1",
+    "metadata": {
+      "createdAt": "2023-11-16T08:19:01.000Z",
+      "downloads": 9427064,
+      "library_name": "pyannote-audio",
+      "likes": 3208,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "pyannote/speaker-diarization-3.1",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/speaker-diarization-3.1",
+    "source_hash": "8e575787c2c8a7b83d29ee6c50412e4e844c0119de4bb2a858911f9676669176",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.6-27B-FP8",
+    "metadata": {
+      "createdAt": "2026-04-21T07:51:33.000Z",
+      "downloads": 8345620,
+      "library_name": "transformers",
+      "likes": 349,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.6-27B-FP8",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.6-27B-FP8",
+    "source_hash": "fa15eccc9b9189213d35510f2056583554d82652a88c651fa3f93bb68179ce68",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:FacebookAI/roberta-large",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 8312291,
+      "library_name": "transformers",
+      "likes": 319,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "FacebookAI/roberta-large",
+    "provider": "huggingface",
+    "provider_model_id": "FacebookAI/roberta-large",
+    "source_hash": "cc655444590f2d4cca9d62c1fa82736fa9520a9ee8e4b9855fd07d86ed7e1dd7",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google/gemma-4-31B-it",
+    "metadata": {
+      "createdAt": "2026-03-11T18:22:36.000Z",
+      "downloads": 8128376,
+      "library_name": "transformers",
+      "likes": 3655,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "google/gemma-4-31B-it",
+    "provider": "huggingface",
+    "provider_model_id": "google/gemma-4-31B-it",
+    "source_hash": "01e37bccc6f43151bdb71580f586d4293c3ffe02f0e746c6c0a188083d22210d",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:laion/clap-htsat-fused",
+    "metadata": {
+      "createdAt": "2023-02-16T20:45:11.000Z",
+      "downloads": 8069152,
+      "library_name": "transformers",
+      "likes": 126,
+      "pipeline_tag": "audio-classification"
+    },
+    "name": "laion/clap-htsat-fused",
+    "provider": "huggingface",
+    "provider_model_id": "laion/clap-htsat-fused",
+    "source_hash": "eb92387f029cf0abf1dfa5076ac61df1f8a7260741a3d91ba77eeca9a705aa85",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-VL-7B-Instruct",
+    "metadata": {
+      "createdAt": "2025-01-26T09:26:37.000Z",
+      "downloads": 8028333,
+      "library_name": "transformers",
+      "likes": 1688,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-VL-7B-Instruct",
+    "source_hash": "6a6b53f21263a1ca9552987744b1340320020e64a3b1faa2e55ba798a0409a27",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google/gemma-4-26B-A4B-it",
+    "metadata": {
+      "createdAt": "2026-03-11T21:25:57.000Z",
+      "downloads": 7961972,
+      "library_name": "transformers",
+      "likes": 1450,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "google/gemma-4-26B-A4B-it",
+    "provider": "huggingface",
+    "provider_model_id": "google/gemma-4-26B-A4B-it",
+    "source_hash": "6f93aac73b24e45628d5209ebefadff0f92b46c39604e38ea3fd0550ae9c107e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:unsloth/Qwen3.8-27B-GGUF",
+    "metadata": {
+      "createdAt": "2026-08-13T08:28:40.000Z",
+      "downloads": 7758790,
+      "likes": 3123
+    },
+    "name": "unsloth/Qwen3.8-27B-GGUF",
+    "provider": "huggingface",
+    "provider_model_id": "unsloth/Qwen3.8-27B-GGUF",
+    "source_hash": "0816c186051b1523df059debe60be46a34e85ddc54452da87b6bbb32bd329668",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:coqui/XTTS-v2",
+    "metadata": {
+      "createdAt": "2023-10-31T10:11:33.000Z",
+      "downloads": 7620695,
+      "library_name": "coqui",
+      "likes": 3748,
+      "pipeline_tag": "text-to-speech"
+    },
+    "name": "coqui/XTTS-v2",
+    "provider": "huggingface",
+    "provider_model_id": "coqui/XTTS-v2",
+    "source_hash": "df78020363371fce0030b64bfa651dd645e5c1df66666c10113893da5c1d63d0",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:facebook/contriever",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 7586875,
+      "library_name": "transformers",
+      "likes": 96
+    },
+    "name": "facebook/contriever",
+    "provider": "huggingface",
+    "provider_model_id": "facebook/contriever",
+    "source_hash": "452aa322104cbc552d6c3aa67197f8fccac5e5faf673cdff62fff376e30d67e1",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-1.5B-Instruct",
+    "metadata": {
+      "createdAt": "2024-09-17T14:10:29.000Z",
+      "downloads": 7511853,
+      "library_name": "transformers",
+      "likes": 811,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen2.5-1.5B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-1.5B-Instruct",
+    "source_hash": "827c688ec5b70d2733382e8bbcf82729fa81998431f739bb9f1cefec74161844",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.5-4B",
+    "metadata": {
+      "createdAt": "2026-02-27T14:45:03.000Z",
+      "downloads": 7268750,
+      "library_name": "transformers",
+      "likes": 859,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.5-4B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.5-4B",
+    "source_hash": "1d55eb88f46dbc6c902a266b738842c9763ec0d4240a108378b6b048c17cd67a",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-3B-Instruct",
+    "metadata": {
+      "createdAt": "2024-09-17T14:08:52.000Z",
+      "downloads": 7042782,
+      "library_name": "transformers",
+      "likes": 554,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen2.5-3B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-3B-Instruct",
+    "source_hash": "aca5c9f43fc69b6e6c079c44535525470e7cf63db046a4b281cdea82c5631c08",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/whisper-large-v3-turbo",
+    "metadata": {
+      "createdAt": "2024-10-01T07:39:28.000Z",
+      "downloads": 7036645,
+      "library_name": "transformers",
+      "likes": 3270,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "openai/whisper-large-v3-turbo",
+    "provider": "huggingface",
+    "provider_model_id": "openai/whisper-large-v3-turbo",
+    "source_hash": "b8cc647a6da67d2c09eeeec171764eda3dc8e9bc9555a1a7331a9c90dd7356e3",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:intfloat/multilingual-e5-large",
+    "metadata": {
+      "createdAt": "2023-06-30T07:38:19.000Z",
+      "downloads": 6947561,
+      "library_name": "sentence-transformers",
+      "likes": 1243,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "intfloat/multilingual-e5-large",
+    "provider": "huggingface",
+    "provider_model_id": "intfloat/multilingual-e5-large",
+    "source_hash": "2069b0b2fb72a57dc94ea2db01d877f2ca919626dc46690392a513a4a0ca147d",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:cross-encoder/ms-marco-MiniLM-L4-v2",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 6747413,
+      "library_name": "sentence-transformers",
+      "likes": 28,
+      "pipeline_tag": "text-ranking"
+    },
+    "name": "cross-encoder/ms-marco-MiniLM-L4-v2",
+    "provider": "huggingface",
+    "provider_model_id": "cross-encoder/ms-marco-MiniLM-L4-v2",
+    "source_hash": "5f3dd800e598236b2d05c8a45b0fad916ab1fe75aa453005bbfeb0e3024a4c4c",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:meta-llama/Llama-3.2-1B-Instruct",
+    "metadata": {
+      "createdAt": "2024-09-18T15:12:47.000Z",
+      "downloads": 6728503,
+      "library_name": "transformers",
+      "likes": 1587,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "meta-llama/Llama-3.2-1B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "meta-llama/Llama-3.2-1B-Instruct",
+    "source_hash": "4f8d783acff13d457d8deab7c1dbca916eeb67d98b71c730fe2ef668d5a89951",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-Embedding-0.6B",
+    "metadata": {
+      "createdAt": "2025-06-03T14:25:32.000Z",
+      "downloads": 6616598,
+      "library_name": "sentence-transformers",
+      "likes": 1172,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "Qwen/Qwen3-Embedding-0.6B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-Embedding-0.6B",
+    "source_hash": "f10cf0fd5e999890d95feb37f6321ef549eca44bc013fd7107e4a07d882c6d92",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:autogluon/chronos-bolt-small",
+    "metadata": {
+      "createdAt": "2024-11-13T13:28:57.000Z",
+      "downloads": 6582979,
+      "likes": 61,
+      "pipeline_tag": "time-series-forecasting"
+    },
+    "name": "autogluon/chronos-bolt-small",
+    "provider": "huggingface",
+    "provider_model_id": "autogluon/chronos-bolt-small",
+    "source_hash": "41c988a6251ffa709d63c24d11ef6dd25ab6894c3e3428318132f3fdac5bcace",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-VL-8B-Instruct",
+    "metadata": {
+      "createdAt": "2025-10-11T07:23:39.000Z",
+      "downloads": 6560952,
+      "library_name": "transformers",
+      "likes": 1068,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3-VL-8B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-VL-8B-Instruct",
+    "source_hash": "c603efaf51e1c7a7ada271604efa2a9d1d006f94bc6fc018a001485736e73629",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:distilbert/distilbert-base-uncased",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 6536308,
+      "library_name": "transformers",
+      "likes": 937,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "distilbert/distilbert-base-uncased",
+    "provider": "huggingface",
+    "provider_model_id": "distilbert/distilbert-base-uncased",
+    "source_hash": "3db5014065f64ef882c86550e5010659af8082711c88f16c6f2f236741be3e7c",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Comfy-Org/z_image_turbo",
+    "metadata": {
+      "createdAt": "2025-11-26T01:00:52.000Z",
+      "downloads": 6517084,
+      "library_name": "diffusion-single-file",
+      "likes": 844
+    },
+    "name": "Comfy-Org/z_image_turbo",
+    "provider": "huggingface",
+    "provider_model_id": "Comfy-Org/z_image_turbo",
+    "source_hash": "1cf358844958aafb86d5b5dee80591cdbfa4ed5dde0b9ae69ea313891a1a6f8c",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "metadata": {
+      "createdAt": "2026-07-23T11:27:39.000Z",
+      "downloads": 6466761,
+      "library_name": "transformers",
+      "likes": 14,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "provider": "huggingface",
+    "provider_model_id": "farbodtavakkoli/OTel-2.0-LLM-31B-IT",
+    "source_hash": "6fbd7f1b7ba830bc8e67a64e77c0a5bbe1ce61a106b82eeabe6c6ad0117d0526",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/gpt-oss-20b",
+    "metadata": {
+      "createdAt": "2025-08-04T22:33:29.000Z",
+      "downloads": 6346634,
+      "library_name": "transformers",
+      "likes": 4963,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "openai/gpt-oss-20b",
+    "provider": "huggingface",
+    "provider_model_id": "openai/gpt-oss-20b",
+    "source_hash": "d43f236a833775e3c517518e9df114a2bb51a3ba75f03e161db95f3f68f284a3",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-0.5B-Instruct",
+    "metadata": {
+      "createdAt": "2024-09-16T11:52:46.000Z",
+      "downloads": 6239416,
+      "library_name": "transformers",
+      "likes": 600,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen2.5-0.5B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-0.5B-Instruct",
+    "source_hash": "b3fba77bdfe6881e10e6562a716df125a7186d88f655d7fdda845bb37ce1cbe2",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/wespeaker-voxceleb-resnet34-LM",
+    "metadata": {
+      "createdAt": "2023-11-13T15:32:31.000Z",
+      "downloads": 6113511,
+      "library_name": "pyannote-audio",
+      "likes": 162
+    },
+    "name": "pyannote/wespeaker-voxceleb-resnet34-LM",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/wespeaker-voxceleb-resnet34-LM",
+    "source_hash": "dee21a5c6e243f905a2a99e9dafd521f3c0642c6cb21195d73aec52bb6ca3550",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:amazon/chronos-bolt-small",
+    "metadata": {
+      "createdAt": "2024-11-25T09:46:10.000Z",
+      "downloads": 6088865,
+      "library_name": "chronos-forecasting",
+      "likes": 20,
+      "pipeline_tag": "time-series-forecasting"
+    },
+    "name": "amazon/chronos-bolt-small",
+    "provider": "huggingface",
+    "provider_model_id": "amazon/chronos-bolt-small",
+    "source_hash": "0b4553c8b9999a06d117845a0b7c7263b461ba61be3d7eae0f79ef9458503dc0",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:intfloat/multilingual-e5-base",
+    "metadata": {
+      "createdAt": "2023-05-19T10:26:40.000Z",
+      "downloads": 6068792,
+      "library_name": "sentence-transformers",
+      "likes": 383,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "intfloat/multilingual-e5-base",
+    "provider": "huggingface",
+    "provider_model_id": "intfloat/multilingual-e5-base",
+    "source_hash": "6c97affdf7259ea3445f627524b341d54ac8fc6ff86c8a09a4766d8660fa6e71",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:meta-llama/Llama-3.1-8B-Instruct",
+    "metadata": {
+      "createdAt": "2024-07-18T08:56:00.000Z",
+      "downloads": 5869115,
+      "library_name": "transformers",
+      "likes": 6687,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "meta-llama/Llama-3.1-8B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "meta-llama/Llama-3.1-8B-Instruct",
+    "source_hash": "f54167432247a86f383230e6251be9b93eece38f85cf6433ea2007bf7ebed5ff",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/clip-vit-large-patch14",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 5828341,
+      "library_name": "transformers",
+      "likes": 2072,
+      "pipeline_tag": "zero-shot-image-classification"
+    },
+    "name": "openai/clip-vit-large-patch14",
+    "provider": "huggingface",
+    "provider_model_id": "openai/clip-vit-large-patch14",
+    "source_hash": "4bfdee617f1228f2fc5d49e9dfd061f00897233cec87a2a1d70d59406552691a",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.6-27B",
+    "metadata": {
+      "createdAt": "2026-04-21T07:50:43.000Z",
+      "downloads": 5699905,
+      "library_name": "transformers",
+      "likes": 2279,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.6-27B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.6-27B",
+    "source_hash": "f9f096d33e9edf0821a4fe78d25e4aeba656a0e9577656c3300256e38e4ef0cc",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/segmentation-3.0",
+    "metadata": {
+      "createdAt": "2023-09-22T12:03:10.000Z",
+      "downloads": 5690448,
+      "library_name": "pyannote-audio",
+      "likes": 1568,
+      "pipeline_tag": "voice-activity-detection"
+    },
+    "name": "pyannote/segmentation-3.0",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/segmentation-3.0",
+    "source_hash": "5124339bbb9ab162e79afda531339041c6fc9ae3ee3f5bfc93f821d19e9c7beb",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:ibm-granite/granite-embedding-small-english-r2",
+    "metadata": {
+      "createdAt": "2025-07-17T20:41:53.000Z",
+      "downloads": 5050346,
+      "library_name": "sentence-transformers",
+      "likes": 78,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "ibm-granite/granite-embedding-small-english-r2",
+    "provider": "huggingface",
+    "provider_model_id": "ibm-granite/granite-embedding-small-english-r2",
+    "source_hash": "55e147412cbeba6522ef6751c2ecbf1ed79ccebfe21f8f7d43c6e98ba0210bcd",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/gpt-oss-120b",
+    "metadata": {
+      "createdAt": "2025-08-04T22:33:06.000Z",
+      "downloads": 5023485,
+      "library_name": "transformers",
+      "likes": 5130,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "openai/gpt-oss-120b",
+    "provider": "huggingface",
+    "provider_model_id": "openai/gpt-oss-120b",
+    "source_hash": "42c27b96819a1fc5801c824c759f9b406eae8e2b39111f257277f43b35c188d3",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.6-35B-A3B",
+    "metadata": {
+      "createdAt": "2026-04-15T05:59:19.000Z",
+      "downloads": 5014552,
+      "library_name": "transformers",
+      "likes": 2746,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.6-35B-A3B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.6-35B-A3B",
+    "source_hash": "5e90d935f8527821697c866a6753d9d43f90d95c6a48b5bc0f7b215f36fe55ce",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/speaker-diarization-community-1",
+    "metadata": {
+      "createdAt": "2025-04-15T21:31:35.000Z",
+      "downloads": 4930127,
+      "library_name": "pyannote-audio",
+      "likes": 1175,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "pyannote/speaker-diarization-community-1",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/speaker-diarization-community-1",
+    "source_hash": "15eed9e0d958071dd1598ca41baa169bc34ba251828937862a4d0cc8a1bafdd8",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:answerdotai/ModernBERT-base",
+    "metadata": {
+      "createdAt": "2024-12-11T11:38:06.000Z",
+      "downloads": 4855287,
+      "library_name": "transformers",
+      "likes": 1088,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "answerdotai/ModernBERT-base",
+    "provider": "huggingface",
+    "provider_model_id": "answerdotai/ModernBERT-base",
+    "source_hash": "b3086e4139f21cc7314080a0913eeade3b77efd78aee26d8b6e925021ca120fb",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:MiniMaxAI/MiniMax-H3",
+    "metadata": {
+      "createdAt": "2026-07-28T10:45:18.000Z",
+      "downloads": 4848404,
+      "library_name": "minimax-h3",
+      "likes": 4565,
+      "pipeline_tag": "image-text-to-video"
+    },
+    "name": "MiniMaxAI/MiniMax-H3",
+    "provider": "huggingface",
+    "provider_model_id": "MiniMaxAI/MiniMax-H3",
+    "source_hash": "b66c35da2fe58305792d0ccaacc405c6b428129cac7984a7331855e481bc90b7",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google/gemma-4-E4B-it",
+    "metadata": {
+      "createdAt": "2026-03-02T19:57:40.000Z",
+      "downloads": 4807737,
+      "library_name": "transformers",
+      "likes": 1512,
+      "pipeline_tag": "any-to-any"
+    },
+    "name": "google/gemma-4-E4B-it",
+    "provider": "huggingface",
+    "provider_model_id": "google/gemma-4-E4B-it",
+    "source_hash": "26b56e303975e2246a4b4f8582e1bede717b218cb743c0a1ff82bd1a7ddc546e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen2.5-VL-3B-Instruct",
+    "metadata": {
+      "createdAt": "2025-01-26T09:25:35.000Z",
+      "downloads": 4670044,
+      "library_name": "transformers",
+      "likes": 689,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen2.5-VL-3B-Instruct",
+    "source_hash": "7eeaf836e527645657a3f2c82bd36a370e21d325be1b42f5a3232535cd835b79",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+    "metadata": {
+      "createdAt": "2025-07-27T06:56:12.000Z",
+      "downloads": 4668294,
+      "library_name": "diffusion-single-file",
+      "likes": 849,
+      "pipeline_tag": "image-to-video"
+    },
+    "name": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+    "provider": "huggingface",
+    "provider_model_id": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+    "source_hash": "e07d97d03e9a90424c32234f0d98ee7c3a685417ef6cd100d0f9c728e23abbfd",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:ProsusAI/finbert",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 4641244,
+      "library_name": "transformers",
+      "likes": 1227,
+      "pipeline_tag": "text-classification"
+    },
+    "name": "ProsusAI/finbert",
+    "provider": "huggingface",
+    "provider_model_id": "ProsusAI/finbert",
+    "source_hash": "932aef2193ab487c5b27d2cebfa8960a05ea88210437c15314ff8ac19a14d7aa",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/segmentation",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 4622093,
+      "library_name": "pyannote-audio",
+      "likes": 692,
+      "pipeline_tag": "voice-activity-detection"
+    },
+    "name": "pyannote/segmentation",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/segmentation",
+    "source_hash": "0dbbb4ae54dcf692492f841fc3a3873faa1d2a841656ad7986d92dca1a48a1cc",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 4566944,
+      "library_name": "transformers",
+      "likes": 55,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "provider": "huggingface",
+    "provider_model_id": "jonatasgrosman/wav2vec2-large-xlsr-53-portuguese",
+    "source_hash": "398d59cccbe3a3afb6084b51d8fa6c940cc487fb9f35658191aa6014dfd1f6df",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-4B",
+    "metadata": {
+      "createdAt": "2025-04-27T03:41:29.000Z",
+      "downloads": 4561556,
+      "library_name": "transformers",
+      "likes": 685,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen3-4B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-4B",
+    "source_hash": "68be7d18c8bab476fb0106a1ebd89c7b7d77b2251b3b8afdca6c3879f0ad3aa2",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:dphn/dolphin-2.9.1-yi-1.5-34b",
+    "metadata": {
+      "createdAt": "2024-05-18T04:50:56.000Z",
+      "downloads": 4529255,
+      "library_name": "transformers",
+      "likes": 65,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "dphn/dolphin-2.9.1-yi-1.5-34b",
+    "provider": "huggingface",
+    "provider_model_id": "dphn/dolphin-2.9.1-yi-1.5-34b",
+    "source_hash": "a8d7ffd4765f2b4ea82f9db6c1d0c1c876a375dd8d3b29972f43018ba6dce51e",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:facebook/dinov2-small",
+    "metadata": {
+      "createdAt": "2023-07-31T16:53:09.000Z",
+      "downloads": 4506506,
+      "library_name": "transformers",
+      "likes": 72,
+      "pipeline_tag": "image-feature-extraction"
+    },
+    "name": "facebook/dinov2-small",
+    "provider": "huggingface",
+    "provider_model_id": "facebook/dinov2-small",
+    "source_hash": "2f7a48c8102f56c360d00812d1fd067e02587ca385b8a302a6075de826bd5feb",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:BAAI/bge-small-zh-v1.5",
+    "metadata": {
+      "createdAt": "2023-09-12T05:22:29.000Z",
+      "downloads": 4501110,
+      "library_name": "transformers",
+      "likes": 138,
+      "pipeline_tag": "feature-extraction"
+    },
+    "name": "BAAI/bge-small-zh-v1.5",
+    "provider": "huggingface",
+    "provider_model_id": "BAAI/bge-small-zh-v1.5",
+    "source_hash": "a2ea7b4b7cff7d9b7530bbad5b96e826ff4325f2b1542de987e5ba3f5079eb8a",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google/vit-base-patch16-224",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 4490079,
+      "library_name": "transformers",
+      "likes": 992,
+      "pipeline_tag": "image-classification"
+    },
+    "name": "google/vit-base-patch16-224",
+    "provider": "huggingface",
+    "provider_model_id": "google/vit-base-patch16-224",
+    "source_hash": "b712860fbd2613c116319222f936d18a6b7556b0b25a235983c3855276e1e055",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-ASR-1.7B",
+    "metadata": {
+      "createdAt": "2026-01-28T03:22:40.000Z",
+      "downloads": 4445196,
+      "likes": 1043,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "Qwen/Qwen3-ASR-1.7B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-ASR-1.7B",
+    "source_hash": "df19d11492bb5a515b7fcdbdf9aba24b05edf890bdcb4db79648c2460af774cf",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:pyannote/voice-activity-detection",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 4443893,
+      "library_name": "pyannote-audio",
+      "likes": 241,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "pyannote/voice-activity-detection",
+    "provider": "huggingface",
+    "provider_model_id": "pyannote/voice-activity-detection",
+    "source_hash": "c53fe5700e9a9acb7eaf9ea243a80a96fe1806768ad937c68f7783ff9d0813a9",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:openai/whisper-large-v3",
+    "metadata": {
+      "createdAt": "2023-11-07T18:41:14.000Z",
+      "downloads": 4359272,
+      "library_name": "transformers",
+      "likes": 6193,
+      "pipeline_tag": "automatic-speech-recognition"
+    },
+    "name": "openai/whisper-large-v3",
+    "provider": "huggingface",
+    "provider_model_id": "openai/whisper-large-v3",
+    "source_hash": "148f15d648f32514fed26d5edf7ab1da09927fa2f4f5bd4dfd20fb369dfd5c98",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:autogluon/chronos-2",
+    "metadata": {
+      "createdAt": "2025-10-06T18:52:51.000Z",
+      "downloads": 4346116,
+      "library_name": "chronos-forecasting",
+      "likes": 48,
+      "pipeline_tag": "time-series-forecasting"
+    },
+    "name": "autogluon/chronos-2",
+    "provider": "huggingface",
+    "provider_model_id": "autogluon/chronos-2",
+    "source_hash": "b17fe186ab684f2a2c3ad6aa700b36079ee1df4e917415e6704a6c451a1ca021",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:ornith-ai/Ornith-1.0-9B-GGUF",
+    "metadata": {
+      "createdAt": "2026-06-25T04:56:13.000Z",
+      "downloads": 4318642,
+      "library_name": "transformers",
+      "likes": 659,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "ornith-ai/Ornith-1.0-9B-GGUF",
+    "provider": "huggingface",
+    "provider_model_id": "ornith-ai/Ornith-1.0-9B-GGUF",
+    "source_hash": "f50e7075c5cc3d89e3eb975350730192b0eebf83ca8c2152fef023585f89a445",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:FacebookAI/xlm-roberta-large",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 4286771,
+      "library_name": "transformers",
+      "likes": 527,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "FacebookAI/xlm-roberta-large",
+    "provider": "huggingface",
+    "provider_model_id": "FacebookAI/xlm-roberta-large",
+    "source_hash": "0fbb32b6034654622e6c7a0b7ee20bf050636b17fd14e63071b79727cad85a94",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:meta-llama/Prompt-Guard-86M",
+    "metadata": {
+      "createdAt": "2024-07-21T19:18:13.000Z",
+      "downloads": 4263738,
+      "library_name": "transformers",
+      "likes": 395,
+      "pipeline_tag": "text-classification"
+    },
+    "name": "meta-llama/Prompt-Guard-86M",
+    "provider": "huggingface",
+    "provider_model_id": "meta-llama/Prompt-Guard-86M",
+    "source_hash": "2ba70df59ef14c34d2bf21bbbac9a7be35b5c317b6c68f182bcc2574b2b7261d",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:google-bert/bert-base-multilingual-uncased",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:04.000Z",
+      "downloads": 4156483,
+      "library_name": "transformers",
+      "likes": 158,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "google-bert/bert-base-multilingual-uncased",
+    "provider": "huggingface",
+    "provider_model_id": "google-bert/bert-base-multilingual-uncased",
+    "source_hash": "d8a92734238fd2b5b35be0fb63a4f9ab3d3be70e82ca5f1546218e897b3995d6",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:microsoft/mdeberta-v3-base",
+    "metadata": {
+      "createdAt": "2022-03-02T23:29:05.000Z",
+      "downloads": 4155935,
+      "library_name": "transformers",
+      "likes": 235,
+      "pipeline_tag": "fill-mask"
+    },
+    "name": "microsoft/mdeberta-v3-base",
+    "provider": "huggingface",
+    "provider_model_id": "microsoft/mdeberta-v3-base",
+    "source_hash": "28b7a738cb307f778c8dff93e3e5963b73a41fb5cee45ceec63162f51fee2699",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:nomic-ai/nomic-embed-text-v1",
+    "metadata": {
+      "createdAt": "2024-01-31T20:26:50.000Z",
+      "downloads": 4026312,
+      "library_name": "sentence-transformers",
+      "likes": 580,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "nomic-ai/nomic-embed-text-v1",
+    "provider": "huggingface",
+    "provider_model_id": "nomic-ai/nomic-embed-text-v1",
+    "source_hash": "4f0ac6ba953f80681d6a64aeec16c2ab292f6bcecc00564ff5fd1235e6c4b38b",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3-1.7B",
+    "metadata": {
+      "createdAt": "2025-04-27T03:41:05.000Z",
+      "downloads": 4015504,
+      "library_name": "transformers",
+      "likes": 525,
+      "pipeline_tag": "text-generation"
+    },
+    "name": "Qwen/Qwen3-1.7B",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3-1.7B",
+    "source_hash": "db20cd301ae78160f87dc770c9ab50830495cc4151dbb67d321e88260c5c9ea5",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:datasocietyco/bge-base-en-v1.5-course-recommender-v5",
+    "metadata": {
+      "createdAt": "2025-01-09T11:01:33.000Z",
+      "downloads": 4011842,
+      "library_name": "sentence-transformers",
+      "likes": 3,
+      "pipeline_tag": "sentence-similarity"
+    },
+    "name": "datasocietyco/bge-base-en-v1.5-course-recommender-v5",
+    "provider": "huggingface",
+    "provider_model_id": "datasocietyco/bge-base-en-v1.5-course-recommender-v5",
+    "source_hash": "16d9c1c6e629ba716d2776190c283c25e05907daac372fbd93ba03716ab818f8",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "huggingface:Qwen/Qwen3.8-27B-FP8",
+    "metadata": {
+      "createdAt": "2026-08-13T08:01:58.000Z",
+      "downloads": 3974725,
+      "library_name": "transformers",
+      "likes": 717,
+      "pipeline_tag": "image-text-to-text"
+    },
+    "name": "Qwen/Qwen3.8-27B-FP8",
+    "provider": "huggingface",
+    "provider_model_id": "Qwen/Qwen3.8-27B-FP8",
+    "source_hash": "31dbebdf1629037fe65429b95d77c5c6e00277712e53d5e26a5d9b655e333927",
+    "source_url": "https://huggingface.co/api/models?sort=downloads&direction=-1&limit=100",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:alfred",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "alfred",
+    "provider": "ollama",
+    "provider_model_id": "alfred",
+    "source_hash": "7b2b547ab5377906300c69cd065aa48ecc143ddcd9501ef2b7c6408cc3592ac3",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:all-minilm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "all-minilm",
+    "provider": "ollama",
+    "provider_model_id": "all-minilm",
+    "source_hash": "a51ea6ac970865616f6442c59374278d9c611ea1696f2603c11bfee662247789",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:athene-v2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "athene-v2",
+    "provider": "ollama",
+    "provider_model_id": "athene-v2",
+    "source_hash": "1869c84e6eba53d012a493a4636634405095ea1c81ab9d865222a88021521d2c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:aya",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "aya",
+    "provider": "ollama",
+    "provider_model_id": "aya",
+    "source_hash": "7e91f0cff4ec76deae8af961a8c92a755b5fd3a791b6ea87b4db59db7a8101dd",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:aya-expanse",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "aya-expanse",
+    "provider": "ollama",
+    "provider_model_id": "aya-expanse",
+    "source_hash": "7f91e494ce3bd328a1e1079cbeb828aa0a8b2c2733cc8dfa2bb3980da0f468b2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:bakllava",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "bakllava",
+    "provider": "ollama",
+    "provider_model_id": "bakllava",
+    "source_hash": "253d41480aeccb3695a0857adf3910386e77720ea18c96b3a0e53b1035533fca",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:bespoke-minicheck",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "bespoke-minicheck",
+    "provider": "ollama",
+    "provider_model_id": "bespoke-minicheck",
+    "source_hash": "5755b48d05bc15b85e3c1a18ea604e10d0d78fee9ba86e34e7d17e4c665219a8",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:bge-large",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "bge-large",
+    "provider": "ollama",
+    "provider_model_id": "bge-large",
+    "source_hash": "40a4bd14659f0f4f61698ae0c71e69c1fedfbcf83723ff0cf1a60fe462e1d298",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:bge-m3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "bge-m3",
+    "provider": "ollama",
+    "provider_model_id": "bge-m3",
+    "source_hash": "8c041954a2909f2bdb9b04870bf27d3733396941c66698cfa29824014672f44d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codebooga",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codebooga",
+    "provider": "ollama",
+    "provider_model_id": "codebooga",
+    "source_hash": "d28eb8f6d456a02d73b009b828a1467f23232cdef64b8d3989a228c5f7b78e3d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codegeex4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codegeex4",
+    "provider": "ollama",
+    "provider_model_id": "codegeex4",
+    "source_hash": "17b7f1c8fe59247c7c3bba7526136207e4b23881309663e82dcecc743a9b96f6",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codegemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codegemma",
+    "provider": "ollama",
+    "provider_model_id": "codegemma",
+    "source_hash": "949b54e254375b13ddc4d7b1a67719ded35e80ca088fa2fb5fd9a1e49ed49910",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codellama",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codellama",
+    "provider": "ollama",
+    "provider_model_id": "codellama",
+    "source_hash": "5d7269a515e497bd4e14a9cbbf1ffcfbf24a6cfaf4500b9ef5a6d40e870f1a88",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codeqwen",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codeqwen",
+    "provider": "ollama",
+    "provider_model_id": "codeqwen",
+    "source_hash": "3c2022e3bd01e1e8993b9067754186b85f4484f7285a1822fb4e8501a2c9c63a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codestral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codestral",
+    "provider": "ollama",
+    "provider_model_id": "codestral",
+    "source_hash": "1c33f1f4e5c5bec3255747e748adb07b48832d5fe0dedef5239df15255f6b2dc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:codeup",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "codeup",
+    "provider": "ollama",
+    "provider_model_id": "codeup",
+    "source_hash": "09ab52037190cebf30e59c12f92efce4bb44bd64347e712ce9950f33d484d3f4",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:cogito",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "cogito",
+    "provider": "ollama",
+    "provider_model_id": "cogito",
+    "source_hash": "d2915f0e9118f5ae8dbf87f8e7b3686f73d4905b0776284398949d80255dc575",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:cogito-2.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "cogito-2.1",
+    "provider": "ollama",
+    "provider_model_id": "cogito-2.1",
+    "source_hash": "d56d9016c1fff48177e7717b8637940b45af22f06f76b4105bb28844f96297dc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:command-a",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "command-a",
+    "provider": "ollama",
+    "provider_model_id": "command-a",
+    "source_hash": "a57df22028ac9b1151ef45822550190915b090b4f81918782b31a2b223384c80",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:command-r",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "command-r",
+    "provider": "ollama",
+    "provider_model_id": "command-r",
+    "source_hash": "88b077c3c41e61f580332e6a460a9e629a56dd27e060bfc4c2b75ce436dac408",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:command-r-plus",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "command-r-plus",
+    "provider": "ollama",
+    "provider_model_id": "command-r-plus",
+    "source_hash": "8c2f0bf09668064b049745d22fa5d9b07b07a2e951ade8bb79659fccf9e88fa2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:command-r7b",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "command-r7b",
+    "provider": "ollama",
+    "provider_model_id": "command-r7b",
+    "source_hash": "222c264a00e5922e079d87763b053c944a6e517353ab40df3b9b6d88fe120301",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:command-r7b-arabic",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "command-r7b-arabic",
+    "provider": "ollama",
+    "provider_model_id": "command-r7b-arabic",
+    "source_hash": "f64cd9375ae2d235ce4da75a50989b281c20b85e631c055f70435f4bfe2f6657",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dbrx",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dbrx",
+    "provider": "ollama",
+    "provider_model_id": "dbrx",
+    "source_hash": "dff4f10fbafec8cc6d6a287e33d1992ea4db55ee03f49d1d6adc00c34e513eab",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepcoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepcoder",
+    "provider": "ollama",
+    "provider_model_id": "deepcoder",
+    "source_hash": "42e6985cbb6e1373c91a6d443b04f49352b7866e35859a6c997a4407fb29fd08",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepscaler",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepscaler",
+    "provider": "ollama",
+    "provider_model_id": "deepscaler",
+    "source_hash": "fff3f4a8d1f6538f9a941b20feaef0163c9bc0dae4a7e24c1ee29a81808633a1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-coder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-coder",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-coder",
+    "source_hash": "b8f4b7a28d15a70a69cc71c575236daf56f486a937a4d48b5a7408c7a8f03ed2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-coder-v2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-coder-v2",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-coder-v2",
+    "source_hash": "04eb984f2790d9a6c5058450705e2ff6f6e986c70273c981c1ae900227510e05",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-llm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-llm",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-llm",
+    "source_hash": "39246d6c97daa81d08dda616188e20273e17bbc2c6ac3e222f10314de9aeae9c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-ocr",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-ocr",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-ocr",
+    "source_hash": "a787bc358d9480815a679194daefed91a3bad81a42a03dbfb6698d816d6cd6dc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-r1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-r1",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-r1",
+    "source_hash": "28616143fb25a8ed6d0c80088205d9ddbb2e9b91c26e9848d08322a32ed6545d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v2",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v2",
+    "source_hash": "0eda1ed6416aa5fa70c0a3f065541077a16d154246f0ea63ed7f45485d8b8110",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v2.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v2.5",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v2.5",
+    "source_hash": "d8f101e3b6a53464e29c515e418e0d5fe18303c1792bf4c9c25229ea735acc03",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v3",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v3",
+    "source_hash": "9d12a9fe706d0b0cbee0a642eb21f5b378f88ba06bc13d8db3a99461e0fe177c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v3.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v3.1",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v3.1",
+    "source_hash": "da84ac0c3db886e93b9911935d859d2e94897bc31f43f878e88d5c8301693c4d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v4-flash",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v4-flash",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v4-flash",
+    "source_hash": "f61ff5cf8e1cc88da6944d6bcd3e2e7da5ff27dd3288a8781908018cb8240cd6",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:deepseek-v4-pro",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "deepseek-v4-pro",
+    "provider": "ollama",
+    "provider_model_id": "deepseek-v4-pro",
+    "source_hash": "052e4fc0bc88e2a5376eb7461a1ec3686311e42a1f2219ebf9beeac1414e252e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:devstral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "devstral",
+    "provider": "ollama",
+    "provider_model_id": "devstral",
+    "source_hash": "756ec6d4df0447abfbf0261522477f2c4956a6530878f5daf4c716d815ab0196",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:devstral-2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "devstral-2",
+    "provider": "ollama",
+    "provider_model_id": "devstral-2",
+    "source_hash": "4685d45ed8af4057b4367f5a738c883fb786cc94e842bac0834b9f117969d09d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:devstral-small-2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "devstral-small-2",
+    "provider": "ollama",
+    "provider_model_id": "devstral-small-2",
+    "source_hash": "498156d955c12058626cf63b51083159e5caab773fc8b15351308fdb9be43b92",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphin-llama3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphin-llama3",
+    "provider": "ollama",
+    "provider_model_id": "dolphin-llama3",
+    "source_hash": "4f599ca56c9ddea1edb4a90bb9a573210b987a2b120fb3c6b19630c4a4331291",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphin-mistral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphin-mistral",
+    "provider": "ollama",
+    "provider_model_id": "dolphin-mistral",
+    "source_hash": "e30969a24305756b230342dc787b6f7da4a5ca08d7d066e8cad15967258427b1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphin-mixtral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphin-mixtral",
+    "provider": "ollama",
+    "provider_model_id": "dolphin-mixtral",
+    "source_hash": "1c9946718db7969661bb32bd769abfd47325d076227a29400ba63f895b4b9fa1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphin-phi",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphin-phi",
+    "provider": "ollama",
+    "provider_model_id": "dolphin-phi",
+    "source_hash": "21f080354b5a72ebaa08c316f084e9b8ed71adb293fba44e11b5589fea3c2caf",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphin3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphin3",
+    "provider": "ollama",
+    "provider_model_id": "dolphin3",
+    "source_hash": "be2cd9f0c8b0bac65f583b3e3824592f016bb94175ca842214e0be30f43fe1a8",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:dolphincoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "dolphincoder",
+    "provider": "ollama",
+    "provider_model_id": "dolphincoder",
+    "source_hash": "be1ecbc0122cde4ccdde2f53f952df0f5c7627b6b08647ac00d60b8b911ff4d7",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:duckdb-nsql",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "duckdb-nsql",
+    "provider": "ollama",
+    "provider_model_id": "duckdb-nsql",
+    "source_hash": "56c4939b86b866a474bf2ac650ee5bad5fb6fa4301843e0e81174a6a8ab247e9",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:embeddinggemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "embeddinggemma",
+    "provider": "ollama",
+    "provider_model_id": "embeddinggemma",
+    "source_hash": "83ebf1a1f7798131b309f590f7307cb6b1cd5e2ddcda8dca4fc7bf6f727e06cc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:everythinglm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "everythinglm",
+    "provider": "ollama",
+    "provider_model_id": "everythinglm",
+    "source_hash": "e3613470e406849ffd2f7d6e06ee3827900ed7510592571f7b82227255f83d02",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:exaone-deep",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "exaone-deep",
+    "provider": "ollama",
+    "provider_model_id": "exaone-deep",
+    "source_hash": "91dc69f53b81c1b6b78c9d5a448d2d00285b43f47237817bf0eb4da79d1a0652",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:exaone3.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "exaone3.5",
+    "provider": "ollama",
+    "provider_model_id": "exaone3.5",
+    "source_hash": "87ec8cb29f5aec476c22081cee766cf1659357fec03f39b672e7bda0aadf4bc4",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:falcon",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "falcon",
+    "provider": "ollama",
+    "provider_model_id": "falcon",
+    "source_hash": "a84571394b5e99fe70aae39ece25f844acbaf83479e27f39a30732e092b19677",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:falcon2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "falcon2",
+    "provider": "ollama",
+    "provider_model_id": "falcon2",
+    "source_hash": "bfa31f248067ea8bd6a40fd5e3fc6cfc3c826b66cd13856ef7e245bd28cefd0c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:falcon3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "falcon3",
+    "provider": "ollama",
+    "provider_model_id": "falcon3",
+    "source_hash": "62568d42471f6979644c1ff51b369497552668ae80eb62042054da8eb186eea3",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:firefunction-v2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "firefunction-v2",
+    "provider": "ollama",
+    "provider_model_id": "firefunction-v2",
+    "source_hash": "afbbd424a6354c6960510f15f1afe7810093152f19f80a49f20db555efb3ebe1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:functiongemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "functiongemma",
+    "provider": "ollama",
+    "provider_model_id": "functiongemma",
+    "source_hash": "f0a854a40dcde36ac30ebb8f01ec1313c375f3f7fa1ee5fa0d92f7235b336504",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gemma",
+    "provider": "ollama",
+    "provider_model_id": "gemma",
+    "source_hash": "3fb22a5597fb91ee4f9abbf30ea69d318be150e0fcf3ca1db8ca334b520d2894",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gemma2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gemma2",
+    "provider": "ollama",
+    "provider_model_id": "gemma2",
+    "source_hash": "844dbf8fb9d0d91695e8c043348c63026e281189928778efb909469ce6c25441",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gemma3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gemma3",
+    "provider": "ollama",
+    "provider_model_id": "gemma3",
+    "source_hash": "d10904b4e8c455d5650c2061af4d2be591e09b50be7788fed3b88646a0bd6d17",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gemma3n",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gemma3n",
+    "provider": "ollama",
+    "provider_model_id": "gemma3n",
+    "source_hash": "b7bfeebc821a7be9975217893c5f8e59e070d9afffff1e7a41a4805d80d2ca45",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gemma4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gemma4",
+    "provider": "ollama",
+    "provider_model_id": "gemma4",
+    "source_hash": "5b72e85a34a225974caad3d0c8695e16dfc6bc7c3aba8fc4a65594372effe765",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-4.7-flash",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-4.7-flash",
+    "provider": "ollama",
+    "provider_model_id": "glm-4.7-flash",
+    "source_hash": "906b3da4dbf71489afa02bfe8a90925ec3bfe383939dabca87b0f391e84ef539",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-5.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-5.1",
+    "provider": "ollama",
+    "provider_model_id": "glm-5.1",
+    "source_hash": "0d371c4eb8c7bba6166fa27383234b348b2b06bacac1b3d2af1e243eaa1e80de",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-5.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-5.2",
+    "provider": "ollama",
+    "provider_model_id": "glm-5.2",
+    "source_hash": "bb43a640f04c8e5504a8fbc8c6980455029f3e8fc1dedff10bcd04f94c4f4319",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-5.3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-5.3",
+    "provider": "ollama",
+    "provider_model_id": "glm-5.3",
+    "source_hash": "9691a990ed008a6a0ce0bc6fb50dd45af7749ee92e2efb65695698a0dbb806af",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-5.3-flash",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-5.3-flash",
+    "provider": "ollama",
+    "provider_model_id": "glm-5.3-flash",
+    "source_hash": "0d8724178b098d01df9c71a161bf380133fde5832d56d203a0f9ad03389970cc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm-ocr",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm-ocr",
+    "provider": "ollama",
+    "provider_model_id": "glm-ocr",
+    "source_hash": "f6d592bce36c8c5cb0a2b1ebf49cfa9813bb21c34831104d314065470d41788b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:glm4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "glm4",
+    "provider": "ollama",
+    "provider_model_id": "glm4",
+    "source_hash": "0f4087fff9284d7651d3c96c0222e62128fae780c592b767b7b8883adbf44fe8",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:goliath",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "goliath",
+    "provider": "ollama",
+    "provider_model_id": "goliath",
+    "source_hash": "71aaca2df6978aba4c91b4be3e4d98c2bea0ca99f6580174918d5b329934cd36",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gpt-oss",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gpt-oss",
+    "provider": "ollama",
+    "provider_model_id": "gpt-oss",
+    "source_hash": "8217cfd13ef56bd77949fd41152f765cd651c1cb90caf33feb9afce6a820ce36",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:gpt-oss-safeguard",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "gpt-oss-safeguard",
+    "provider": "ollama",
+    "provider_model_id": "gpt-oss-safeguard",
+    "source_hash": "662ea70922d3f250a5d341365612ae67d13f0f1d288874fadaf881c7bfe47125",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite-code",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite-code",
+    "provider": "ollama",
+    "provider_model_id": "granite-code",
+    "source_hash": "d0717b16d7f7b61df366fc0407f4fb117e553dbf3866e5ded37f7337b6bd7b76",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite-embedding",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite-embedding",
+    "provider": "ollama",
+    "provider_model_id": "granite-embedding",
+    "source_hash": "94f464bb6262c90fef8ad91155de62323fdcbaa6901bfb56874dd51640a03e4f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3-dense",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3-dense",
+    "provider": "ollama",
+    "provider_model_id": "granite3-dense",
+    "source_hash": "4bf8fed9f0478be2e7a7ef6fc9e6aa8cadf8d31c8c0145001bf0edfbbb71ae6d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3-guardian",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3-guardian",
+    "provider": "ollama",
+    "provider_model_id": "granite3-guardian",
+    "source_hash": "22327c61ee0a6c86ca26d2d01cdb6ee0e0c5475313e94cb19c6c5eae68df8bf2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3-moe",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3-moe",
+    "provider": "ollama",
+    "provider_model_id": "granite3-moe",
+    "source_hash": "6a649706f49990da5007f62e072c424db9e00f45f5f03e2115c9f40de229aba2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3.1-dense",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3.1-dense",
+    "provider": "ollama",
+    "provider_model_id": "granite3.1-dense",
+    "source_hash": "23adba7f758a76661cbe5e878b3c77595e2a72fa3cc13e5b8aa4594aac5bc7ec",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3.1-moe",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3.1-moe",
+    "provider": "ollama",
+    "provider_model_id": "granite3.1-moe",
+    "source_hash": "0f664cf8f21e7f0b205b589deabc75213d5001376ea428c3cc650492932ff40b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3.2",
+    "provider": "ollama",
+    "provider_model_id": "granite3.2",
+    "source_hash": "74e67ceeaca7e6bd5f00b8cd15e39066fd3006a2b1b42c7c3af737d785506c4b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3.2-vision",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3.2-vision",
+    "provider": "ollama",
+    "provider_model_id": "granite3.2-vision",
+    "source_hash": "f0af8e48108148a77f29e56f76bd09161ba6bd127f2cbc3407dd8c04e0b718e8",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite3.3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite3.3",
+    "provider": "ollama",
+    "provider_model_id": "granite3.3",
+    "source_hash": "197a1ae4d09620f3f2a315bf217e775645e14e6c3a1e4a20f8d5bed5c6acc1b2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite4",
+    "provider": "ollama",
+    "provider_model_id": "granite4",
+    "source_hash": "d290526b7250c17d392b80f4c7429f0fba3966f3903b0f63cbe9e159719b3659",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite4.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite4.1",
+    "provider": "ollama",
+    "provider_model_id": "granite4.1",
+    "source_hash": "e10c8c78472af6758141edc32ee5233b9f27ca7f6f2d87d38342d6193d52c1ae",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite4.1-guardian",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite4.1-guardian",
+    "provider": "ollama",
+    "provider_model_id": "granite4.1-guardian",
+    "source_hash": "bd17082859052bfdb4c6d66f32098376a548e47a49f29d0e2635f87204f53e9c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:granite4.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "granite4.2",
+    "provider": "ollama",
+    "provider_model_id": "granite4.2",
+    "source_hash": "7814facdf7bcf8fa6f70496213297ce106d5edacf315430b4a9f524fa9d5b595",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:hermes3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "hermes3",
+    "provider": "ollama",
+    "provider_model_id": "hermes3",
+    "source_hash": "bf36b9f4a5d6e4dfab397d58800dc021a33483d92edf17a1019c1c217ac207cc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:internlm2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "internlm2",
+    "provider": "ollama",
+    "provider_model_id": "internlm2",
+    "source_hash": "5b8478fa8f5fcf00c376968373a9cea5784f91da362993d4bb4fc05d92bcb183",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:kimi-k2.6",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "kimi-k2.6",
+    "provider": "ollama",
+    "provider_model_id": "kimi-k2.6",
+    "source_hash": "aae2bf7d3eb34afd9848f1b9571875fa445184054948efbda937fcdd60751d09",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:kimi-k2.7-code",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "kimi-k2.7-code",
+    "provider": "ollama",
+    "provider_model_id": "kimi-k2.7-code",
+    "source_hash": "fcab983a97e91c0d1a5b9a02c862c19854f0821ecba0ed81214018681f7bbc33",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:kimi-k3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "kimi-k3",
+    "provider": "ollama",
+    "provider_model_id": "kimi-k3",
+    "source_hash": "80a8bf700c991501c5d0115a423ddabf2bcea9b8978df4297ac7d9ccfe97d583",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:laguna-s-2.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "laguna-s-2.1",
+    "provider": "ollama",
+    "provider_model_id": "laguna-s-2.1",
+    "source_hash": "a63081889a4bce4e22c2a2f16b4d8f2202d19fa5e6c6adf946945f62483b224b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:laguna-xs-2.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "laguna-xs-2.1",
+    "provider": "ollama",
+    "provider_model_id": "laguna-xs-2.1",
+    "source_hash": "64b1fbfdb890787eee528f8f08dbe0c1c5b9d69f39364460e3184db5acfb0dcf",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:laguna-xs.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "laguna-xs.2",
+    "provider": "ollama",
+    "provider_model_id": "laguna-xs.2",
+    "source_hash": "4cbcc5fa52f5429c92e85311b301d8368363ab38313d73320320e2287a5f68f3",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:lfm2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "lfm2",
+    "provider": "ollama",
+    "provider_model_id": "lfm2",
+    "source_hash": "d612a097d83e6a920885f8c06b48db1370d07cd67a62af6599c29ae6612d4454",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:lfm2.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "lfm2.5",
+    "provider": "ollama",
+    "provider_model_id": "lfm2.5",
+    "source_hash": "a7f80f5d802e91134e7d781fc27811ad9aae2871e969ed274be462e3fd605a3d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:lfm2.5-thinking",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "lfm2.5-thinking",
+    "provider": "ollama",
+    "provider_model_id": "lfm2.5-thinking",
+    "source_hash": "ad805461ce5eefd8f1ef8313b782a45d7a729713a16fd49da208c754341e3ff1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama-guard3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama-guard3",
+    "provider": "ollama",
+    "provider_model_id": "llama-guard3",
+    "source_hash": "d179e36a2218ba3d73f4fe9950be2a9c858880cceae527f1918e31c08e19e023",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama-pro",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama-pro",
+    "provider": "ollama",
+    "provider_model_id": "llama-pro",
+    "source_hash": "61e95779f9e7a5e4746a1eb3d6a57587798133bf18b52f9b74ea79139ea09e10",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama2",
+    "provider": "ollama",
+    "provider_model_id": "llama2",
+    "source_hash": "d41c0af6c8278228e6912e310197059aca502a16987aa9c6901dc4ab5586224c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama2-chinese",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama2-chinese",
+    "provider": "ollama",
+    "provider_model_id": "llama2-chinese",
+    "source_hash": "258e76da79f4ff43a0ec82dbd5046754a4bd3b58a667ed685d71b4b0809f385d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama2-uncensored",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama2-uncensored",
+    "provider": "ollama",
+    "provider_model_id": "llama2-uncensored",
+    "source_hash": "8d91d85c4b928fa89f7c8486057a324075172d8ebfdbcbafe55d4e249aeee80d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3",
+    "provider": "ollama",
+    "provider_model_id": "llama3",
+    "source_hash": "4fb53885862e0f970d5063417cd343ab5f75c770897578ce0cf7b37cd04b5122",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3-chatqa",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3-chatqa",
+    "provider": "ollama",
+    "provider_model_id": "llama3-chatqa",
+    "source_hash": "c39f72e255b95c69b419b1ecb4c4b8a12e7f865c58488f9a44b2062b364be609",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3-gradient",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3-gradient",
+    "provider": "ollama",
+    "provider_model_id": "llama3-gradient",
+    "source_hash": "63ce865509b9e46355aa2302630df33a794e537974e6135f959cdc5a4d9693b4",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3-groq-tool-use",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3-groq-tool-use",
+    "provider": "ollama",
+    "provider_model_id": "llama3-groq-tool-use",
+    "source_hash": "dc6198c8bd31872c52da49073ce291c351397777f34bbc1e7d0512cc8bd7bb77",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3.1",
+    "provider": "ollama",
+    "provider_model_id": "llama3.1",
+    "source_hash": "b9734b127ab5c5431a0dcd5b1a83336b2ec6b79f2f5f1eb28d409d8915ee997a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3.2",
+    "provider": "ollama",
+    "provider_model_id": "llama3.2",
+    "source_hash": "45b1c9806e74e0494dd9a08d54a93258ffe5b6ed6468a2c6c274a21bddd7d380",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3.2-vision",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3.2-vision",
+    "provider": "ollama",
+    "provider_model_id": "llama3.2-vision",
+    "source_hash": "dd59d5a1dd2ba0c3f1423c0b36b91f93c078cdde6768b96753e0b80e539beb7c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama3.3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama3.3",
+    "provider": "ollama",
+    "provider_model_id": "llama3.3",
+    "source_hash": "a909b82f64ac8efc8dfc373cc6a3e838111d3321a8801f4e1745dd0b5d8af444",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llama4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llama4",
+    "provider": "ollama",
+    "provider_model_id": "llama4",
+    "source_hash": "e00d2bc18c83c80d47c2c29527fdb11e1c334121ab91268bee343aa4e0d1e54e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llava",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llava",
+    "provider": "ollama",
+    "provider_model_id": "llava",
+    "source_hash": "89d5a3256f5af0afb14219db371dcdbd1183376727ad83ca71e39192cf0f681a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llava-llama3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llava-llama3",
+    "provider": "ollama",
+    "provider_model_id": "llava-llama3",
+    "source_hash": "92b15000e64b4459c819296268399ed5824a82b3088339e8e886d150a43b3b46",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:llava-phi3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "llava-phi3",
+    "provider": "ollama",
+    "provider_model_id": "llava-phi3",
+    "source_hash": "46b406c629f302c1ea29f2a50329eec6d53aa362edc44801b5c673cc9192d5ef",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:magicoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "magicoder",
+    "provider": "ollama",
+    "provider_model_id": "magicoder",
+    "source_hash": "6161fe182689229e1d16f91b9926773e48096c32d93a921c1ddfabf0ecc71e4e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:magistral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "magistral",
+    "provider": "ollama",
+    "provider_model_id": "magistral",
+    "source_hash": "10146443df33e8b82826fc018104b59ced6603eeabcaee29ffb9e5a44bc88d52",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:marco-o1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "marco-o1",
+    "provider": "ollama",
+    "provider_model_id": "marco-o1",
+    "source_hash": "89bf0b064d2f001888e6905226e17d5637f704833e43c63d8fbfeeb872187b9a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mathstral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mathstral",
+    "provider": "ollama",
+    "provider_model_id": "mathstral",
+    "source_hash": "8c7d1ce6d92d4b8035e25dabf2a2a5734953544e67d4508f7414c17aa50c6f12",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:medgemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "medgemma",
+    "provider": "ollama",
+    "provider_model_id": "medgemma",
+    "source_hash": "7e09f51e9c75427626996f057354231c857ebc331a6379fb0cbebde603855ac5",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:medgemma1.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "medgemma1.5",
+    "provider": "ollama",
+    "provider_model_id": "medgemma1.5",
+    "source_hash": "05d6a39c4bf76e9518cfa34944ecea9e73120b071b1b53bd1874239a088d800c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:meditron",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "meditron",
+    "provider": "ollama",
+    "provider_model_id": "meditron",
+    "source_hash": "6656b277be59ba6d5cb50699127c5817cbb0e849f7b5d8990aafe445f7cb455a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:medllama2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "medllama2",
+    "provider": "ollama",
+    "provider_model_id": "medllama2",
+    "source_hash": "a9b3c0a356ef75ed1020c44cf99c4367181c44183a5fd1f520b4d4bb89b2280f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:megadolphin",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "megadolphin",
+    "provider": "ollama",
+    "provider_model_id": "megadolphin",
+    "source_hash": "566d5ac894fb93af1190cc1eb0e953bebb513850e6b848d99ea9d891cf45259d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:minicpm-v",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "minicpm-v",
+    "provider": "ollama",
+    "provider_model_id": "minicpm-v",
+    "source_hash": "77d575506e4dd8687b8e3a50c893a35509478d3745438c69da5e70c769be1368",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:minicpm-v4.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "minicpm-v4.5",
+    "provider": "ollama",
+    "provider_model_id": "minicpm-v4.5",
+    "source_hash": "f9fd56cc5a67be5f68ce6796b4dd48a61eb3295e572650b23a683d485b09e809",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:minicpm-v4.6",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "minicpm-v4.6",
+    "provider": "ollama",
+    "provider_model_id": "minicpm-v4.6",
+    "source_hash": "f4f0bdd493fce81dba6f904416a538cf9f2db9290265b8c1476951ea20d753a2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:minimax-m2.7",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "minimax-m2.7",
+    "provider": "ollama",
+    "provider_model_id": "minimax-m2.7",
+    "source_hash": "1e8d2e4733b404b67eea933402c62983d0d9e049ab98f2a37f6b0a2fd05ea507",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:minimax-m3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "minimax-m3",
+    "provider": "ollama",
+    "provider_model_id": "minimax-m3",
+    "source_hash": "13b76ebe52da50917179b89690eb2d9e2fb433bba12d05e099872be1daeafa45",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:ministral-3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "ministral-3",
+    "provider": "ollama",
+    "provider_model_id": "ministral-3",
+    "source_hash": "e1ec402f48c0bd3f726f7dd6e3e740e138a2f6ada84a92f4c4e413fdfb6a52fc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral",
+    "provider": "ollama",
+    "provider_model_id": "mistral",
+    "source_hash": "920510199770f4d65cb8aaa2cd12bdb2b8c37f5b3907c50a734a0e3409da2823",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-large",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-large",
+    "provider": "ollama",
+    "provider_model_id": "mistral-large",
+    "source_hash": "451324ec0b1a531df73c7ebe483644668e6930c0261fa6286fc05d84eed974e1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-large-3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-large-3",
+    "provider": "ollama",
+    "provider_model_id": "mistral-large-3",
+    "source_hash": "37d0ad746b46f6dc1fe8715f2003be61a371235c7c720569d54071895fb63d34",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-medium-3.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-medium-3.5",
+    "provider": "ollama",
+    "provider_model_id": "mistral-medium-3.5",
+    "source_hash": "827c67faab861b523bfbd32325e8875b97645ba391c8e45ed1cd8c54cadaf7b9",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-nemo",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-nemo",
+    "provider": "ollama",
+    "provider_model_id": "mistral-nemo",
+    "source_hash": "96da30a59672fbbbd5ed955c55adbceb1a7f0700abf950528277197d7eb31e55",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-openorca",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-openorca",
+    "provider": "ollama",
+    "provider_model_id": "mistral-openorca",
+    "source_hash": "2a18a99f20e82dadafdd6dfd694c826f0c59a0375fd730ad05cfc02b4f20192d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-small",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-small",
+    "provider": "ollama",
+    "provider_model_id": "mistral-small",
+    "source_hash": "2b28a00529bfa667061fa7aa699feb6a92eb83ce7a28924974de3e3b3013f118",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-small3.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-small3.1",
+    "provider": "ollama",
+    "provider_model_id": "mistral-small3.1",
+    "source_hash": "3a7beb0c0737dbffcbe4531de527cde587947e4c61ce395d3a02df904df5875c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistral-small3.2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistral-small3.2",
+    "provider": "ollama",
+    "provider_model_id": "mistral-small3.2",
+    "source_hash": "b0985c1b2270f4a4dda219fee7acf2c762b2fcac6c8980ed60406198f843197a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mistrallite",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mistrallite",
+    "provider": "ollama",
+    "provider_model_id": "mistrallite",
+    "source_hash": "11f6532b187db2b413cd7f9a19e66698af2fa27b9b24969295269e7cd5602748",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mixtral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mixtral",
+    "provider": "ollama",
+    "provider_model_id": "mixtral",
+    "source_hash": "c97504235ab15009f6c5f11ba890007a5f3fdd20c9e57b53ea74855033572ddf",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:moondream",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "moondream",
+    "provider": "ollama",
+    "provider_model_id": "moondream",
+    "source_hash": "ff9fef1eee67cdf0538854e744d0c6fd505624cef31f2a94c27e7fed934ec00d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:muse-glimmer",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "muse-glimmer",
+    "provider": "ollama",
+    "provider_model_id": "muse-glimmer",
+    "source_hash": "9aa6a3cad446fefe7be41913c891fb57ae12155df887a699247ffc49cc70089e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:mxbai-embed-large",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "mxbai-embed-large",
+    "provider": "ollama",
+    "provider_model_id": "mxbai-embed-large",
+    "source_hash": "1aa5dd19c3d900f19e14fdc81f64128514d083934b997272a00e78061e766ac7",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron",
+    "provider": "ollama",
+    "provider_model_id": "nemotron",
+    "source_hash": "751a16d8cb41ea83c7b7c76d8deaa859cb1d10760163b5f184be6a79ed913c85",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-3-nano",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-3-nano",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-3-nano",
+    "source_hash": "3143e6610f673fd66c1c503dc360f642e637a8729bbba0460018f3a72c1d54f0",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-3-super",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-3-super",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-3-super",
+    "source_hash": "74d6e5ad36f4167681263b2943ed988d9cdc93e62dad282245e74b466a31b500",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-3-ultra",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-3-ultra",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-3-ultra",
+    "source_hash": "0b3a2f8a5a25e11f566638576dd40401c323213ab37684c552ddb80be177abd2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-3.5-lightning",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-3.5-lightning",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-3.5-lightning",
+    "source_hash": "591f3a2c7142cb47008618177a95373d353ef1c21947356c21ccef7c5a8970d9",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-cascade-2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-cascade-2",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-cascade-2",
+    "source_hash": "03f2f38bc9a5b8e69afb6c38d364e6ace3c500139ffdcc3cb03f3f1dd9d998a6",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron-mini",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron-mini",
+    "provider": "ollama",
+    "provider_model_id": "nemotron-mini",
+    "source_hash": "6e17456e4f674a78ba9efe3229c3611bc54987f705c9f769d0d72a29c3555c2a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nemotron3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nemotron3",
+    "provider": "ollama",
+    "provider_model_id": "nemotron3",
+    "source_hash": "4e1efb968b18465025e4fd35a9faf9b504fe7956fb6e4363664cd5187d0f4025",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:neural-chat",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "neural-chat",
+    "provider": "ollama",
+    "provider_model_id": "neural-chat",
+    "source_hash": "940488d3e5963792c9277d59f2f5fb9c1b6c0e4238531097e2063153f5ad51b4",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nexusraven",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nexusraven",
+    "provider": "ollama",
+    "provider_model_id": "nexusraven",
+    "source_hash": "188147aa06ea0376745b55fcba71805f7046a0b5b3f0f081ebde0d75f413a8c9",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nomic-embed-text",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nomic-embed-text",
+    "provider": "ollama",
+    "provider_model_id": "nomic-embed-text",
+    "source_hash": "a4134b0e39785810a45922e0b9dcf450702ce8d7d2514ef5d4c4ef3c81a08e5b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nomic-embed-text-v2-moe",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nomic-embed-text-v2-moe",
+    "provider": "ollama",
+    "provider_model_id": "nomic-embed-text-v2-moe",
+    "source_hash": "f12f4f28cec80055b38daa2e6626a15b23b9bd3281749dcfdac976d544d8e10b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:north-mini-code-1.0",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "north-mini-code-1.0",
+    "provider": "ollama",
+    "provider_model_id": "north-mini-code-1.0",
+    "source_hash": "d15c423c965064baaeb0dc2669dd581cfe2b67b8f01890e4dd298d35c3571e7d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:notus",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "notus",
+    "provider": "ollama",
+    "provider_model_id": "notus",
+    "source_hash": "4ff6562c8002aaa053782c31b2625e6a67028d16e1bfcc884cb11dfd1ba4d4c6",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:notux",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "notux",
+    "provider": "ollama",
+    "provider_model_id": "notux",
+    "source_hash": "1fe5fd23d7af5f3a7b916cdeb7942e976a11fd0282bf0a46ede69248e1f75139",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nous-hermes",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nous-hermes",
+    "provider": "ollama",
+    "provider_model_id": "nous-hermes",
+    "source_hash": "8092fe16c46b3d4b88dda5850e55d4a88840037ddd4af6f4c167d1eca1ae94fd",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nous-hermes2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nous-hermes2",
+    "provider": "ollama",
+    "provider_model_id": "nous-hermes2",
+    "source_hash": "64b1b38bd1ce1fe1ccf8cd49318147b5dc3e50962df031e5e7df20f31056d44b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nous-hermes2-mixtral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nous-hermes2-mixtral",
+    "provider": "ollama",
+    "provider_model_id": "nous-hermes2-mixtral",
+    "source_hash": "154b1d8e502933f3324c3fc2807a6a0ede374ef623a1e8933fab71a1be35197a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:nuextract",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "nuextract",
+    "provider": "ollama",
+    "provider_model_id": "nuextract",
+    "source_hash": "42ef6f09f0e4e5515977099681bd48a20735b199f18965c54ee7fc6957ee4770",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:olmo-3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "olmo-3",
+    "provider": "ollama",
+    "provider_model_id": "olmo-3",
+    "source_hash": "f43fc10763715b7d6af3d3afeb5bb692823d6ccb8e86b5d151d471b41807ef37",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:olmo-3.1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "olmo-3.1",
+    "provider": "ollama",
+    "provider_model_id": "olmo-3.1",
+    "source_hash": "7b5c9e8956884dc7e60980c3aa653da178c30927ee2b3ce6b00fdff6b0628323",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:olmo2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "olmo2",
+    "provider": "ollama",
+    "provider_model_id": "olmo2",
+    "source_hash": "a88389a1976d4e4b00d30911347e0c0b7f607145aa71a3ac1a98a4e5c1b7075f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:open-orca-platypus2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "open-orca-platypus2",
+    "provider": "ollama",
+    "provider_model_id": "open-orca-platypus2",
+    "source_hash": "38602422b6a13f5ea0f1311e7ef4ff47b6dcf549353f3103422ebd71dcccf91f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:openchat",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "openchat",
+    "provider": "ollama",
+    "provider_model_id": "openchat",
+    "source_hash": "36b41beb089797292c31236e9250dad35c1a72301314d88788c8a485fb118efe",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:opencoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "opencoder",
+    "provider": "ollama",
+    "provider_model_id": "opencoder",
+    "source_hash": "ab4fc568a6bd7ab34d0b9367a0203741921eecbe863344a9924927e8a372af81",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:openhermes",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "openhermes",
+    "provider": "ollama",
+    "provider_model_id": "openhermes",
+    "source_hash": "4f8192c882852e26c7ea7b3eddf4106019d214f48bbbbf5675813ed1d57cd9c3",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:openthinker",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "openthinker",
+    "provider": "ollama",
+    "provider_model_id": "openthinker",
+    "source_hash": "a79dcffa85904e96eb8f35d2715f54aa6f81c2db827ddb57ae758d62c8518797",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:orca-mini",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "orca-mini",
+    "provider": "ollama",
+    "provider_model_id": "orca-mini",
+    "source_hash": "c9a6de540399ef9e7c20595a209f34cc828fd8357e256c7fb67ddf70ea01894b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:orca2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "orca2",
+    "provider": "ollama",
+    "provider_model_id": "orca2",
+    "source_hash": "2cb14a9ab902d16900be9df036724740dcc42893fa16f6ccf7ab0031445a0baa",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:ornith",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "ornith",
+    "provider": "ollama",
+    "provider_model_id": "ornith",
+    "source_hash": "f9faa931ecfa1c1581b8a96b53c36094596edda2671acf24611aa70548493567",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:ornith-1.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "ornith-1.5",
+    "provider": "ollama",
+    "provider_model_id": "ornith-1.5",
+    "source_hash": "2bdefa8568e4a906dfb2008e3250d616226fa60292b696d6f5ba07560cc5bdc7",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:paraphrase-multilingual",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "paraphrase-multilingual",
+    "provider": "ollama",
+    "provider_model_id": "paraphrase-multilingual",
+    "source_hash": "3a0126ef178d845b07ce65ac24c2c7e6f12431eca40d3bc60177372af8b55425",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi",
+    "provider": "ollama",
+    "provider_model_id": "phi",
+    "source_hash": "7f754d3dbef2f9c8be86a085d505d9bf943e8a9d0c2d84c5015e92e97c53040d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi3",
+    "provider": "ollama",
+    "provider_model_id": "phi3",
+    "source_hash": "f4a92fb5a4addcfc2a82d033dec357b0a6ea4f687d9bf492024355f70713ca07",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi3.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi3.5",
+    "provider": "ollama",
+    "provider_model_id": "phi3.5",
+    "source_hash": "1618c1b01324b90840d076c6e29e49149832c43df668df7e522e35feaecdec11",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi4",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi4",
+    "provider": "ollama",
+    "provider_model_id": "phi4",
+    "source_hash": "7be1a5685de2633c9c9835cbdc388563e8a8f62ce689f14a5d88ffe63ddece59",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi4-mini",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi4-mini",
+    "provider": "ollama",
+    "provider_model_id": "phi4-mini",
+    "source_hash": "ef2358c104f0fc68fb992bb9798f04b630e128b6d96aa5da28327a4f19fe6fb6",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi4-mini-reasoning",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi4-mini-reasoning",
+    "provider": "ollama",
+    "provider_model_id": "phi4-mini-reasoning",
+    "source_hash": "056befd681b7e4e22708ee06cccfc51468489239adf098a98e9823f368a5f02d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phi4-reasoning",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phi4-reasoning",
+    "provider": "ollama",
+    "provider_model_id": "phi4-reasoning",
+    "source_hash": "d4a9c83ef6134b4c71e58430516c17e40150178a9b9de528901ffd2c95ffab68",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:phind-codellama",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "phind-codellama",
+    "provider": "ollama",
+    "provider_model_id": "phind-codellama",
+    "source_hash": "f881ccae2f5f7a079d44c17c165d27f3a50d5bbc7ca6510b58d7f302e9843eaf",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen",
+    "provider": "ollama",
+    "provider_model_id": "qwen",
+    "source_hash": "67f2d22514622d1be30c14ee9f3cb104503a159a33a656ca91a1953aa9616429",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen2",
+    "provider": "ollama",
+    "provider_model_id": "qwen2",
+    "source_hash": "a7b9a042ed47b2e33c54acf5b92815729f08e700415a38a8d744a7938f773f4c",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen2-math",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen2-math",
+    "provider": "ollama",
+    "provider_model_id": "qwen2-math",
+    "source_hash": "74211d6b45c1144a2e1c6046eec4edcf3eed727c020516ec6627abc1319988e4",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen2.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen2.5",
+    "provider": "ollama",
+    "provider_model_id": "qwen2.5",
+    "source_hash": "4a65eed368b066945e57bb625e89d33190ea4863abb1c53422d4f9118a6d5e81",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen2.5-coder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen2.5-coder",
+    "provider": "ollama",
+    "provider_model_id": "qwen2.5-coder",
+    "source_hash": "8ca35f228d71a2f45206ef82386894581a53f6d5b7a60dba11bdf628ac649fb2",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen2.5vl",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen2.5vl",
+    "provider": "ollama",
+    "provider_model_id": "qwen2.5vl",
+    "source_hash": "da0ea8f04866447d19a215f085b80318a197b78d3ac102fcdaf7f6589f194226",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3",
+    "provider": "ollama",
+    "provider_model_id": "qwen3",
+    "source_hash": "61b6a80524bed7a2b8b0702c24f050fbc3a72a02875a4deddd7cd41a9f29e1d3",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3-coder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3-coder",
+    "provider": "ollama",
+    "provider_model_id": "qwen3-coder",
+    "source_hash": "64d0c085c15a8f98a6b670ddf4f4eb2142397d08541c0ece745fc20124f9f0a7",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3-coder-next",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3-coder-next",
+    "provider": "ollama",
+    "provider_model_id": "qwen3-coder-next",
+    "source_hash": "600c8b0d48155fbed0b96277d364cc98439471614467fffdca8abd4b90985568",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3-embedding",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3-embedding",
+    "provider": "ollama",
+    "provider_model_id": "qwen3-embedding",
+    "source_hash": "d1f2367ec3d82ff5345ab1b09d2065289485fbc61dfbbfbaf6b70a62d1dd92b1",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3-next",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3-next",
+    "provider": "ollama",
+    "provider_model_id": "qwen3-next",
+    "source_hash": "d5529da90edcf5223b8ece72cd3cd52b941a82434a49fe47c5c6970e44f9d751",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3-vl",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3-vl",
+    "provider": "ollama",
+    "provider_model_id": "qwen3-vl",
+    "source_hash": "5f7af12a5c339ead91a44c73031460ae4c5a18813f777a7619624707e5927792",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3.5",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3.5",
+    "provider": "ollama",
+    "provider_model_id": "qwen3.5",
+    "source_hash": "29be8bce39bb53af9e2fa06e8c7fdf32727be13b7d3d3888364ba5e37cd8074b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3.6",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3.6",
+    "provider": "ollama",
+    "provider_model_id": "qwen3.6",
+    "source_hash": "bdd9a1d75b245e7b15066bc9adde2a8538f59e719066a3a9726193cdc865b51e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3.8",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3.8",
+    "provider": "ollama",
+    "provider_model_id": "qwen3.8",
+    "source_hash": "3b4b72eead418dc8ed5b698b6b110600e0c8378c335c294484bba8bd9fc8ab28",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwen3.8-flash-next",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwen3.8-flash-next",
+    "provider": "ollama",
+    "provider_model_id": "qwen3.8-flash-next",
+    "source_hash": "9b17db7ab3d1a67f8615283f796812e9a5891c257aa303a6001af56576ce18eb",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:qwq",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "qwq",
+    "provider": "ollama",
+    "provider_model_id": "qwq",
+    "source_hash": "53ddd800a3ef24a55414bd607d995fe121836375b71ecbeb9d8d0eba710cce4f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:r1-1776",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "r1-1776",
+    "provider": "ollama",
+    "provider_model_id": "r1-1776",
+    "source_hash": "d98816398d5758c6049e91ebc06ec8042fee6a4daac48f642b7db27a2a98f65f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:reader-lm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "reader-lm",
+    "provider": "ollama",
+    "provider_model_id": "reader-lm",
+    "source_hash": "55b06bfe375778bbf4ae320d7324f6f052737540d4b5068c41be0fc1159c404e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:reflection",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "reflection",
+    "provider": "ollama",
+    "provider_model_id": "reflection",
+    "source_hash": "f30409c51a78ed6906df6e53052bcb0fe52ae708ebd809bd2d52820fceb253ed",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:rnj-1",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "rnj-1",
+    "provider": "ollama",
+    "provider_model_id": "rnj-1",
+    "source_hash": "2840a7bab4fc74b3a7477d8c0c6104c37d1451eaa894dcda3219904c47a56e28",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:sailor2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "sailor2",
+    "provider": "ollama",
+    "provider_model_id": "sailor2",
+    "source_hash": "155f561e5095a5411577ae1fc89f97636d1aa4b44ac6abb4d632a2633c7b667e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:samantha-mistral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "samantha-mistral",
+    "provider": "ollama",
+    "provider_model_id": "samantha-mistral",
+    "source_hash": "848499eb95664e60343468ae200fecade15346702154dfa8abef7b9c5c26f599",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:shieldgemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "shieldgemma",
+    "provider": "ollama",
+    "provider_model_id": "shieldgemma",
+    "source_hash": "02a10e8d8438254b2da8366bd90d1b630912ebf4ee1e05b190af00daf8daceed",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:smallthinker",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "smallthinker",
+    "provider": "ollama",
+    "provider_model_id": "smallthinker",
+    "source_hash": "b9956d71a8a4662632ec6cf6f8df7f110d8d50f4b1d405ff29189e15510b8e45",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:smollm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "smollm",
+    "provider": "ollama",
+    "provider_model_id": "smollm",
+    "source_hash": "ff5c7e22fe1e88c4551bcdaf54fe3c45a78f565267a6573c1777e6903d281e91",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:smollm2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "smollm2",
+    "provider": "ollama",
+    "provider_model_id": "smollm2",
+    "source_hash": "2d6e5b4efedbc3a739d84f09bfd11328b7807c96ba35aeb2643aed289c4b0604",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:snowflake-arctic-embed",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "snowflake-arctic-embed",
+    "provider": "ollama",
+    "provider_model_id": "snowflake-arctic-embed",
+    "source_hash": "2ffd52d7fe4b17e6cb3ed4c6e567a50de943bc62010297c8fc186745a1ba944a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:snowflake-arctic-embed2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "snowflake-arctic-embed2",
+    "provider": "ollama",
+    "provider_model_id": "snowflake-arctic-embed2",
+    "source_hash": "83b1fadecdb9058525c36ae02c09a247bd14788ec2cfca381558d3b29d7b7581",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:solar",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "solar",
+    "provider": "ollama",
+    "provider_model_id": "solar",
+    "source_hash": "2bfbc118abcafe8c53ee6a46b79bed6638ae9eefda8dfd2d7948d02f40481739",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:solar-pro",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "solar-pro",
+    "provider": "ollama",
+    "provider_model_id": "solar-pro",
+    "source_hash": "df756884d54a93bcd9ce2738b2948dcaf6f1b87457be0e7828095720e986d338",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:sqlcoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "sqlcoder",
+    "provider": "ollama",
+    "provider_model_id": "sqlcoder",
+    "source_hash": "4723936b9fe8501f522324d8dc26b525577b8b1dba2e2e907ef89c2dd4cf43be",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:stable-beluga",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "stable-beluga",
+    "provider": "ollama",
+    "provider_model_id": "stable-beluga",
+    "source_hash": "646f8d5a37320d8e1142b11ae64ee458f800e3f28164ee7bff49392ec8aba650",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:stable-code",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "stable-code",
+    "provider": "ollama",
+    "provider_model_id": "stable-code",
+    "source_hash": "ab6f1ad99ec2118795187f38027864edae2634000a878ef6fb1b18a98a6f8a0e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:stablelm-zephyr",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "stablelm-zephyr",
+    "provider": "ollama",
+    "provider_model_id": "stablelm-zephyr",
+    "source_hash": "0548d82c836aa9bceedf5e4216cfa6ac0c3170329fc1d3add36952619c21b528",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:stablelm2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "stablelm2",
+    "provider": "ollama",
+    "provider_model_id": "stablelm2",
+    "source_hash": "166dc5b248744bd80b38d5406fcf6929ba808a9125d8813060018a9cc8b55578",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:starcoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "starcoder",
+    "provider": "ollama",
+    "provider_model_id": "starcoder",
+    "source_hash": "b46573f3283d5eb9274cb9a227e37a9a00a4b04b73e40700901c1160346cdd96",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:starcoder2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "starcoder2",
+    "provider": "ollama",
+    "provider_model_id": "starcoder2",
+    "source_hash": "81b397c7cbdc5f56aaba7266f969d243f21a424a9877bcc8eb2c7586d21a70bc",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:starling-lm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "starling-lm",
+    "provider": "ollama",
+    "provider_model_id": "starling-lm",
+    "source_hash": "d32a14d5ecb273aeb59cf60cbc34d833c46c0f6e15ab3822cbe362b83cb89447",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:tinydolphin",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "tinydolphin",
+    "provider": "ollama",
+    "provider_model_id": "tinydolphin",
+    "source_hash": "200b5af378c2f559f2c1c17c93551b6a2c2271487623cd9ee2c526a094b5197a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:tinyllama",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "tinyllama",
+    "provider": "ollama",
+    "provider_model_id": "tinyllama",
+    "source_hash": "82cad9d8c383d729a0e9eeedcabc51316fdb40c9961d75673007439a4d3fc81e",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:translategemma",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "translategemma",
+    "provider": "ollama",
+    "provider_model_id": "translategemma",
+    "source_hash": "cb2898244010f6a59bed84e9469362f1aea30cbcf4bc583868471b2317b1ee4a",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:tulu3",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "tulu3",
+    "provider": "ollama",
+    "provider_model_id": "tulu3",
+    "source_hash": "891e153b2de11f010581f960724b8226a95b6ea8658052e80b08fa44aa49760b",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:vicuna",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "vicuna",
+    "provider": "ollama",
+    "provider_model_id": "vicuna",
+    "source_hash": "e12fe631288e303b91d2fc33e97fed2c4c08234d384ed19a5b3e9c79fc3ac49d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizard-math",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizard-math",
+    "provider": "ollama",
+    "provider_model_id": "wizard-math",
+    "source_hash": "0d65675e58f5772c15b30de43c7a1e2051cb4968a9a34a4937e46ba070d59ac0",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizard-vicuna",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizard-vicuna",
+    "provider": "ollama",
+    "provider_model_id": "wizard-vicuna",
+    "source_hash": "e1f47624601f7bb31f7a0f35240bdd3d1a9ab8030acc69ffbf844e1b679dc165",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizard-vicuna-uncensored",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizard-vicuna-uncensored",
+    "provider": "ollama",
+    "provider_model_id": "wizard-vicuna-uncensored",
+    "source_hash": "c7f93944c2a6c17bc526a0133e11fe8dfeca8b2de1871b31879c66962a76e304",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizardcoder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizardcoder",
+    "provider": "ollama",
+    "provider_model_id": "wizardcoder",
+    "source_hash": "d114d8e7cdf065f516f6ea25399b725e0cc38ad687e309209345b1934acaec41",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizardlm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizardlm",
+    "provider": "ollama",
+    "provider_model_id": "wizardlm",
+    "source_hash": "83ec2fcbb884d6a5af3c82fba397bcb399fdd69664f4f0a3291054749d3e7aec",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizardlm-uncensored",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizardlm-uncensored",
+    "provider": "ollama",
+    "provider_model_id": "wizardlm-uncensored",
+    "source_hash": "3bc94c8845d4b8cf802db93350a8294dff824ed7411e81f0828a75bc16f1813f",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:wizardlm2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "wizardlm2",
+    "provider": "ollama",
+    "provider_model_id": "wizardlm2",
+    "source_hash": "7730e9d966dfcff78f0e9fcf6898cb05cf833da2f846858ba3ccc0156f32f02d",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:xwinlm",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "xwinlm",
+    "provider": "ollama",
+    "provider_model_id": "xwinlm",
+    "source_hash": "9629173bf6f96d13b939f300a5d2fef4a53b0879ce2b3e72efe5fa060d7bbb86",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:yarn-llama2",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "yarn-llama2",
+    "provider": "ollama",
+    "provider_model_id": "yarn-llama2",
+    "source_hash": "7107394addfa71b44ed4e2ef6c73db6f6708c5994030f8a651a5551454369844",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:yarn-mistral",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "yarn-mistral",
+    "provider": "ollama",
+    "provider_model_id": "yarn-mistral",
+    "source_hash": "50055f8407c4a8ed5e5aa3beb8b048f5574c2672aec0f7104acfb07a41324fd5",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:yi",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "yi",
+    "provider": "ollama",
+    "provider_model_id": "yi",
+    "source_hash": "a5f5bb0f06efb99aca21bfb3fa34193a0985b4c63e85d150eecea2b514c78019",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:yi-coder",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "yi-coder",
+    "provider": "ollama",
+    "provider_model_id": "yi-coder",
+    "source_hash": "eb1bf6a0ca4774403201b99b07dcdd81142fe27872aad70d7ee0256dc97a1545",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  },
+  {
+    "id": "ollama:zephyr",
+    "metadata": {
+      "source_format": "ollama_library_html"
+    },
+    "name": "zephyr",
+    "provider": "ollama",
+    "provider_model_id": "zephyr",
+    "source_hash": "d47c40bea34483aafa4af5bd36af4f6adff17bda66d1cedbaf9c93e9bb9cf387",
+    "source_url": "https://ollama.com/library",
+    "status": "review_required"
+  }
+]
